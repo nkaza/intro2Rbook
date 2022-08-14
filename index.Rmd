@@ -1,6 +1,6 @@
 --- 
 title: "An Introduction to R"
-author: "Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau"
+author: "Nikhil Kaza"
 date: "`r gsub(' 0', ' ', format(Sys.Date(), '%B %d, %Y'))`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -12,13 +12,14 @@ link-citations: yes
 colorlinks: yes
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 fontsize: 12pt
-monofont: "Source Code Pro"
-monofontoptions: "Scale=0.7"
+# monofont: "Source Code Pro"
+#monofont: "SFMono"
+#monofontoptions: "Scale=0.7"
 # linestretch: 1.15
-github-repo: "alexd106/Rbook"
+github-repo: "nkaza/intro2Rbook"
 description: "A practical introduction to using R for data analysis"
 url: 'https\://alexd106.github.io/Rbook/'
-cover-image: "images/cover_v3.png"
+cover-image: "images/cover_v4.png"
 ---
 
 ```{r create_chunk_options1, include=FALSE}
@@ -36,148 +37,21 @@ source('wrap_lines.R')
 \markboth{PREFACE}{}
 
 ```{r,echo=FALSE,fig.align="center",eval=knitr::is_html_output(), out.width='50%'}
-knitr::include_graphics('images/cover_v3.png')
+knitr::include_graphics('images/cover_v4.png')
 ```
 
 ----
 
 ## The aim of this book
 
-The aim of this book is to introduce you to using R, a powerful and flexible interactive environment for statistical computing and research. R in itself is not difficult to learn, but as with learning any new language (spoken or computer) the initial learning curve can be a little steep and somewhat daunting. We have tried to simplify the content of this book as much as possible and have based it on our own personal experience of teaching (and learning) R over the last 15 years. It is not intended to cover everything there is to know about R - that would be an impossible task. Neither is it intended to be an introductory statistics course, although you will be using some simple statistics to highlight some of R’s capabilities. The main aim of this book is to help you climb the initial learning curve and provide you with the basic skills and experience (and confidence!) to enable you to further your experience in using R.
+This book is a derivative of  "[An Introduction to R](https://intro2r.com/)" by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau". I have adapated it  in 2022 to make it suitable for students who are getting started with Urban Analytics course and want to have a refresher course in R. As such much of this book is verbatim from Douglas et. al(2022) with no claim to originality. The same license (CC-NC-SA) applies.
+
+The aim of this book is to introduce you to using R, a powerful and flexible interactive environment for statistical computing and research. R in itself is not difficult to learn, but as with learning any new language (spoken or computer) the initial learning curve can be a little steep and somewhat daunting. We have tried to simplify the content of this book as much as possible. It is not intended to cover everything there is to know about R - that would be an impossible task. Neither is it intended to be an introductory statistics course, although you will be using some simple statistics to highlight some of R’s capabilities. The main aim of this book is to help you get over the initial learning hurdle and provide you with the basic skills and experience (and confidence!) to enable you to further your experience in using R.
 
 ## Who is this book for?
 
-We hope this book will be a useful introduction for anyone who wants to learn how to use R. It started out as a 100 page pdf manual used to support our teaching in numerous undergraduate and postgraduate biostatistics classes at the [University of Aberdeen][uoa] and has evolved over the last 10 years to the book you're now reading. Consequently, this book is primarily written with the advanced undergraduate or postgraduate student in mind although the material should be useful for anyone with an interest in learning R regardless of background. Our book assumes that you have no previous experience of using either R or RStudio and no background in programming or using command-line driven software. We've also tried to make the content of this book operating system agnostic and have included information for Windows, Mac and Linux users where appropriate. 
+We hope this book will be a useful introduction for anyone who wants to learn how to use R. It is primarily intended for students who have some experience with programming and little experience with R. It is also intended for students, typically advanced undergraduates and graduate students, who are interested in urban analytics. I've also tried to make the content of this book operating system agnostic and have included information for Windows, Mac and Linux users where appropriate. 
 
-## Why an open book?
-
-We decided to write this book as a freely available open source document for a number of reasons. Firstly, we hope this book will be a living document that naturally evolves over time. If you find any errors in the book or want to make a suggestion on how to improve it, please open an issue on the GitHub [site][github-issue] or even better click on the edit button `r icons::fontawesome('edit', style = 'solid')` in the navigation bar at the top of this page and issue a pull request (only available on the web version of this book). Please note that this book uses a [Contributor Code of Conduct][code-conduct]. By contributing to this book, you agree to abide by its terms. If you feel like contributing to the book, please get in touch, we'd be happy to hear from you. If you want to take a peek at all the code behind the book visit the book GitHub [repo][github-repo]. Secondly, the release of the [bookdown][bookdown] package by Yihui Xie has made it incredibly easy to collaboratively write, update and maintain this book using [RMarkdown][rmarkdown], [RStudio][rstudio] and [GitHub][github]. Without the bookdown package this book wouldn't exist in its current format. Lastly, R is not just software, it's also a wonderful open community with many thousands of contributors all working to make R even easier to learn and use. This is our small contribution.  
-
-## Who are we? {#whoarewe}
-
-:::::: {.columns}
-
-::: {.column width="20%" data-latex="{0.20\textwidth}"}
-```{r, echo=FALSE, out.width="90%", fig.align="center"}
-knitr::include_graphics(path = "images/alex.png")
-```
-:::
-
-::: {.column width="5%" data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="75%" data-latex="{0.75\textwidth}"}
-**Alex Douglas** is a Professor of Biostatistics at the University of Aberdeen and has been teaching (and learning) R since version 2.1.
-
-- Web:https://www.abdn.ac.uk/people/a.douglas/
-- Twitter:https://twitter.com/Scedacity
-- GitHub:https://github.com/alexd106
-:::
-::::::
-
-\  
-
-:::::: {.columns}
-
-::: {.column width="20%" data-latex="{0.20\textwidth}"}
-```{r, echo=FALSE, out.width="90%", fig.align="center"}
-knitr::include_graphics(path = "images/deon.png")
-```
-:::
-
-::: {.column width="5%" data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="77%" data-latex="{0.75\textwidth}"}
-**Deon Roos** is a PhD student in applied ecology at the University of Aberdeen researching spatial variation of the temporal kind in population dynamics. He has been using and teaching R for 5 years.
-
-- Twitter:https://twitter.com/DeonRoos88
-- GitHub:https://github.com/Deon88
-:::
-::::::
-
-\  
-
-:::::: {.columns}
-
-::: {.column width="20%" data-latex="{0.20\textwidth}"}
-```{r, echo=FALSE, out.width="90%", fig.align="center"}
-knitr::include_graphics(path = "images/ana.png")
-```
-:::
-
-::: {.column width="5%" data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="75%" data-latex="{0.75\textwidth}"}
-**Ana Couto** is a PhD student in Ecology at the University of Aberdeen looking at the ecology and physics of tidal stream habitats. She has been using and teaching R for 7 years.
-
-- Web:https://t.co/KRUlw1Grjr
-- Twitter:https://twitter.com/AnaSofiaCouto
-- GitHub:https://github.com/Anofia
-
-:::
-::::::
-
-\  
-
-:::::: {.columns}
-
-::: {.column width="20%" data-latex="{0.20\textwidth}"}
-```{r, echo=FALSE, out.width="90%", fig.align="center"}
-knitr::include_graphics(path = "images/francesca2.png")
-```
-:::
-
-::: {.column width="5%" data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="75%" data-latex="{0.75\textwidth}"}
-**Francesca Mancini** is an ecological modeller, working with large citizen science datasets and statistical models to derive trends in biodiversity change and investigate its drivers.
-
-- Web:https://FrancescaMancini.github.io
-- Twitter:https://twitter.com/frances_mancini
-- GitHub:https://github.com/FrancescaMancini
-
-:::
-::::::
-
-\  
-
-:::::: {.columns}
-
-::: {.column width="20%" data-latex="{0.20\textwidth}"}
-```{r, echo=FALSE, out.width="90%", fig.align="center"}
-knitr::include_graphics(path = "images/lusseau.png")
-```
-:::
-
-::: {.column width="5%" data-latex="{0.05\textwidth}"}
-\ 
-<!-- an empty Div (with a white space), serving as
-a column separator -->
-:::
-
-::: {.column width="75%" data-latex="{0.75\textwidth}"}
-**David Lusseau** is a Professor of Marine Sustainability at the Danish Technical University. He's been using R for 15 years and teaching it for 12 years.
-
-- Twitter:https://twitter.com/lusseau
-- GitHub:https://github.com/dlusseau
-
-:::
-::::::
 
 ## How to use this book
 
@@ -215,7 +89,6 @@ Although you can use this book as a standalone resource, we recommend you use it
 
 ## Some R pointers
 
-A question we get asked fairly regularly is *'what's the best/easiest way to learn R?'*. Unfortunately, we don't have a ready answer to this question as everyone tends to learn R in their own way and at their own pace. Having said that, here are a few things to bear in mind that might help:
 
 - Use R often and use it regularly - find any excuse to fire up RStudio (or just R) and get coding. This will help build and maintain all important momentum. 
 
@@ -227,7 +100,7 @@ A question we get asked fairly regularly is *'what's the best/easiest way to lea
 
 - In R there are many ways to tackle a particular problem. If your code doesn't look like someone elses, but it does what you want it to do in a reasonable time and robustly then don't worry about it - job done. 
 
-- Related to our previous point, remember R is just a tool to help you answer your interesting questions. Although it can be fun to immerse yourself in all things R (we often do), don't lose sight of what's important - your research question(s) and your data. No amount of skill using R will help if your data collection is fundamentally flawed or your question vague. 
+- Related to our previous point, remember R is just a tool to help you answer your interesting questions. Although it can be fun to immerse yourself in all things R, don't lose sight of what's important - your analytical question(s) and your data. No amount of skill using R will help if your data collection is fundamentally flawed or your question vague. 
 
 - Recognise that there will be times when things will get a little tough or frustrating. Try to accept these periods as part of the natural process of learning a new skill (we've all been there) and remember, the time and energy you invest now will be more than payed back in the not too distant future.
 
@@ -235,17 +108,6 @@ Finally, once you've finished working your way through this book, we encourage y
 
 Good luck and don’t forget to have fun. 
 
-## Thanks
-
-The vast majority of the content of this book has been used to help teach our applied statistics courses in the [School of Biological Sciences][sbs] and [School of Medicine, Medical Sciences and Nutrition][smmsn] at the [University of Aberdeen][uoa]. It's been tremendous fun to meet and interact with the 1000's of students who have attended these courses over the last 10 years, many of whom helped improve this book by suggesting changes and spotting our daft mistakes (we still own any that remain!). Teaching these courses would have been much more difficult (and a lot less fun) without the enthusiastic help of a small army of postgraduate instructors. Their skill, patience and passion for teaching R and statistics has been a constant source of inspiration over the years. Thank you all (you know who you are!).   
-
-Thanks also to the following who have generously contributed fixes and improvements to the book via pull requests, raising an issue or email: 
-
-- Frédéric Santos ([\@frederic-santos](https://github.com/frederic-santos))
-- azzco ([\@azzco](https://github.com/azzco))
-- Cian McAuley
-- Constantinos C ([\@Gesler16](https://github.com/Gesler16))
-- Lee Sanders ([\@LSanders1](https://github.com/LSanders1))
 
 ## License
 

@@ -4,26 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.5 Summarising data frames | An Introduction to R</title>
+  <title>3.6 Summarising data frames | An Introduction to R</title>
   <meta name="description" content="A practical introduction to using R for data analysis" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.5 Summarising data frames | An Introduction to R" />
+  <meta property="og:title" content="3.6 Summarising data frames | An Introduction to R" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://alexd106.github.io/Rbook//images/cover_v3.png" />
+  <meta property="og:image" content="https://alexd106.github.io/Rbook//images/cover_v4.png" />
   <meta property="og:description" content="A practical introduction to using R for data analysis" />
-  <meta name="github-repo" content="alexd106/Rbook" />
+  <meta name="github-repo" content="nkaza/intro2Rbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.5 Summarising data frames | An Introduction to R" />
+  <meta name="twitter:title" content="3.6 Summarising data frames | An Introduction to R" />
   
   <meta name="twitter:description" content="A practical introduction to using R for data analysis" />
-  <meta name="twitter:image" content="https://alexd106.github.io/Rbook//images/cover_v3.png" />
+  <meta name="twitter:image" content="https://alexd106.github.io/Rbook//images/cover_v4.png" />
 
-<meta name="author" content="Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto &amp; David Lusseau" />
+<meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-07-22" />
+<meta name="date" content="2022-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -153,13 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="0.1" data-path="the-aim-of-this-book.html"><a href="the-aim-of-this-book.html"><i class="fa fa-check"></i><b>0.1</b> The aim of this book</a></li>
 <li class="chapter" data-level="0.2" data-path="who-is-this-book-for.html"><a href="who-is-this-book-for.html"><i class="fa fa-check"></i><b>0.2</b> Who is this book for?</a></li>
-<li class="chapter" data-level="0.3" data-path="why-an-open-book.html"><a href="why-an-open-book.html"><i class="fa fa-check"></i><b>0.3</b> Why an open book?</a></li>
-<li class="chapter" data-level="0.4" data-path="whoarewe.html"><a href="whoarewe.html"><i class="fa fa-check"></i><b>0.4</b> Who are we?</a></li>
-<li class="chapter" data-level="0.5" data-path="how-to-use-this-book.html"><a href="how-to-use-this-book.html"><i class="fa fa-check"></i><b>0.5</b> How to use this book</a></li>
-<li class="chapter" data-level="0.6" data-path="book-website.html"><a href="book-website.html"><i class="fa fa-check"></i><b>0.6</b> Book website</a></li>
-<li class="chapter" data-level="0.7" data-path="some-r-pointers.html"><a href="some-r-pointers.html"><i class="fa fa-check"></i><b>0.7</b> Some R pointers</a></li>
-<li class="chapter" data-level="0.8" data-path="thanks.html"><a href="thanks.html"><i class="fa fa-check"></i><b>0.8</b> Thanks</a></li>
-<li class="chapter" data-level="0.9" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i><b>0.9</b> License</a></li>
+<li class="chapter" data-level="0.3" data-path="how-to-use-this-book.html"><a href="how-to-use-this-book.html"><i class="fa fa-check"></i><b>0.3</b> How to use this book</a></li>
+<li class="chapter" data-level="0.4" data-path="book-website.html"><a href="book-website.html"><i class="fa fa-check"></i><b>0.4</b> Book website</a></li>
+<li class="chapter" data-level="0.5" data-path="some-r-pointers.html"><a href="some-r-pointers.html"><i class="fa fa-check"></i><b>0.5</b> Some R pointers</a></li>
+<li class="chapter" data-level="0.6" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i><b>0.6</b> License</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Getting started with R and RStudio</a>
 <ul>
@@ -212,7 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.1" data-path="objects-in-r.html"><a href="objects-in-r.html#r_objs"><i class="fa fa-check"></i><b>2.2.1</b> Creating objects</a></li>
 <li class="chapter" data-level="2.2.2" data-path="objects-in-r.html"><a href="objects-in-r.html#naming-objects"><i class="fa fa-check"></i><b>2.2.2</b> Naming objects</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html"><i class="fa fa-check"></i><b>2.3</b> Using functions in R</a></li>
+<li class="chapter" data-level="2.3" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html"><i class="fa fa-check"></i><b>2.3</b> Using functions in R</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html#pipes.-a-better-way"><i class="fa fa-check"></i><b>2.3.1</b> Pipes. A better way!!!!!</a></li>
+</ul></li>
 <li class="chapter" data-level="2.4" data-path="vectors.html"><a href="vectors.html"><i class="fa fa-check"></i><b>2.4</b> Working with vectors</a>
 <ul>
 <li class="chapter" data-level="2.4.1" data-path="vectors.html"><a href="vectors.html#extracting-elements"><i class="fa fa-check"></i><b>2.4.1</b> Extracting elements</a></li>
@@ -231,59 +231,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="data_r.html"><a href="data_r.html"><i class="fa fa-check"></i><b>3</b> Data in R</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-types.html"><a href="data-types.html"><i class="fa fa-check"></i><b>3.1</b> Data types</a></li>
-<li class="chapter" data-level="3.2" data-path="data-structures.html"><a href="data-structures.html"><i class="fa fa-check"></i><b>3.2</b> Data structures</a>
+<li class="chapter" data-level="3.1" data-path="basic-data-types.html"><a href="basic-data-types.html"><i class="fa fa-check"></i><b>3.1</b> Basic Data types</a></li>
+<li class="chapter" data-level="3.2" data-path="complicated-data-types.html"><a href="complicated-data-types.html"><i class="fa fa-check"></i><b>3.2</b> Complicated Data Types</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="data-structures.html"><a href="data-structures.html#scal_vecs"><i class="fa fa-check"></i><b>3.2.1</b> Scalars and vectors</a></li>
-<li class="chapter" data-level="3.2.2" data-path="data-structures.html"><a href="data-structures.html#mat_array"><i class="fa fa-check"></i><b>3.2.2</b> Matrices and arrays</a></li>
-<li class="chapter" data-level="3.2.3" data-path="data-structures.html"><a href="data-structures.html#lists"><i class="fa fa-check"></i><b>3.2.3</b> Lists</a></li>
-<li class="chapter" data-level="3.2.4" data-path="data-structures.html"><a href="data-structures.html#df"><i class="fa fa-check"></i><b>3.2.4</b> Data frames</a></li>
+<li class="chapter" data-level="3.2.1" data-path="complicated-data-types.html"><a href="complicated-data-types.html#dealing-with-date-and-time"><i class="fa fa-check"></i><b>3.2.1</b> Dealing with Date and Time</a></li>
+<li class="chapter" data-level="3.2.2" data-path="complicated-data-types.html"><a href="complicated-data-types.html#factors"><i class="fa fa-check"></i><b>3.2.2</b> Factors</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>3.3</b> Importing data</a>
+<li class="chapter" data-level="3.3" data-path="data-structures.html"><a href="data-structures.html"><i class="fa fa-check"></i><b>3.3</b> Data structures</a>
 <ul>
-<li class="chapter" data-level="3.3.1" data-path="importing-data.html"><a href="importing-data.html#saving-files-to-import"><i class="fa fa-check"></i><b>3.3.1</b> Saving files to import</a></li>
-<li class="chapter" data-level="3.3.2" data-path="importing-data.html"><a href="importing-data.html#import_fnc"><i class="fa fa-check"></i><b>3.3.2</b> Import functions</a></li>
-<li class="chapter" data-level="3.3.3" data-path="importing-data.html"><a href="importing-data.html#common-import-frustrations"><i class="fa fa-check"></i><b>3.3.3</b> Common import frustrations</a></li>
-<li class="chapter" data-level="3.3.4" data-path="importing-data.html"><a href="importing-data.html#import_other"><i class="fa fa-check"></i><b>3.3.4</b> Other import options</a></li>
+<li class="chapter" data-level="3.3.1" data-path="data-structures.html"><a href="data-structures.html#scal_vecs"><i class="fa fa-check"></i><b>3.3.1</b> Scalars and vectors</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-structures.html"><a href="data-structures.html#mat_array"><i class="fa fa-check"></i><b>3.3.2</b> Matrices and arrays</a></li>
+<li class="chapter" data-level="3.3.3" data-path="data-structures.html"><a href="data-structures.html#lists"><i class="fa fa-check"></i><b>3.3.3</b> Lists</a></li>
+<li class="chapter" data-level="3.3.4" data-path="data-structures.html"><a href="data-structures.html#df"><i class="fa fa-check"></i><b>3.3.4</b> Data frames</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html"><i class="fa fa-check"></i><b>3.4</b> Wrangling data frames</a>
+<li class="chapter" data-level="3.4" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>3.4</b> Importing data</a>
 <ul>
-<li class="chapter" data-level="3.4.1" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#positional-indexes"><i class="fa fa-check"></i><b>3.4.1</b> Positional indexes</a></li>
-<li class="chapter" data-level="3.4.2" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#logical-indexes"><i class="fa fa-check"></i><b>3.4.2</b> Logical indexes</a></li>
-<li class="chapter" data-level="3.4.3" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#ordering-data-frames"><i class="fa fa-check"></i><b>3.4.3</b> Ordering data frames</a></li>
-<li class="chapter" data-level="3.4.4" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#adding-columns-and-rows"><i class="fa fa-check"></i><b>3.4.4</b> Adding columns and rows</a></li>
-<li class="chapter" data-level="3.4.5" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#merging-data-frames"><i class="fa fa-check"></i><b>3.4.5</b> Merging data frames</a></li>
-<li class="chapter" data-level="3.4.6" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#reshape"><i class="fa fa-check"></i><b>3.4.6</b> Reshaping data frames</a></li>
+<li class="chapter" data-level="3.4.1" data-path="importing-data.html"><a href="importing-data.html#saving-files-to-import"><i class="fa fa-check"></i><b>3.4.1</b> Saving files to import</a></li>
+<li class="chapter" data-level="3.4.2" data-path="importing-data.html"><a href="importing-data.html#import_fnc"><i class="fa fa-check"></i><b>3.4.2</b> Import functions</a></li>
+<li class="chapter" data-level="3.4.3" data-path="importing-data.html"><a href="importing-data.html#common-import-frustrations"><i class="fa fa-check"></i><b>3.4.3</b> Common import frustrations</a></li>
+<li class="chapter" data-level="3.4.4" data-path="importing-data.html"><a href="importing-data.html#import_other"><i class="fa fa-check"></i><b>3.4.4</b> Other import options</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="summarising-data-frames.html"><a href="summarising-data-frames.html"><i class="fa fa-check"></i><b>3.5</b> Summarising data frames</a></li>
-<li class="chapter" data-level="3.6" data-path="exporting-data.html"><a href="exporting-data.html"><i class="fa fa-check"></i><b>3.6</b> Exporting data</a>
+<li class="chapter" data-level="3.5" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html"><i class="fa fa-check"></i><b>3.5</b> Wrangling data frames</a>
 <ul>
-<li class="chapter" data-level="3.6.1" data-path="exporting-data.html"><a href="exporting-data.html#export-functions"><i class="fa fa-check"></i><b>3.6.1</b> Export functions</a></li>
-<li class="chapter" data-level="3.6.2" data-path="exporting-data.html"><a href="exporting-data.html#other-export-functions"><i class="fa fa-check"></i><b>3.6.2</b> Other export functions</a></li>
+<li class="chapter" data-level="3.5.1" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#positional-indexes"><i class="fa fa-check"></i><b>3.5.1</b> Positional indexes</a></li>
+<li class="chapter" data-level="3.5.2" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#logical-indexes"><i class="fa fa-check"></i><b>3.5.2</b> Logical indexes</a></li>
+<li class="chapter" data-level="3.5.3" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#adding-columns-and-rows"><i class="fa fa-check"></i><b>3.5.3</b> Adding columns and rows</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="exercise-3.html"><a href="exercise-3.html"><i class="fa fa-check"></i><b>3.7</b> Exercise 3</a></li>
+<li class="chapter" data-level="3.6" data-path="summarising-data-frames.html"><a href="summarising-data-frames.html"><i class="fa fa-check"></i><b>3.6</b> Summarising data frames</a></li>
+<li class="chapter" data-level="3.7" data-path="exporting-data.html"><a href="exporting-data.html"><i class="fa fa-check"></i><b>3.7</b> Exporting data</a></li>
+<li class="chapter" data-level="3.8" data-path="exercise-3.html"><a href="exercise-3.html"><i class="fa fa-check"></i><b>3.8</b> Exercise 3</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="graphics_base_r.html"><a href="graphics_base_r.html"><i class="fa fa-check"></i><b>4</b> Graphics with base R</a>
+<li class="chapter" data-level="4" data-path="data_tidyverse.html"><a href="data_tidyverse.html"><i class="fa fa-check"></i><b>4</b> Tidyverse</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="baseplot_start.html"><a href="baseplot_start.html"><i class="fa fa-check"></i><b>4.1</b> Getting started</a></li>
-<li class="chapter" data-level="4.2" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html"><i class="fa fa-check"></i><b>4.2</b> Simple base R plots</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#scatterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scatterplots</a></li>
-<li class="chapter" data-level="4.2.2" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#histograms"><i class="fa fa-check"></i><b>4.2.2</b> Histograms</a></li>
-<li class="chapter" data-level="4.2.3" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#box-and-violin-plots"><i class="fa fa-check"></i><b>4.2.3</b> Box and violin plots</a></li>
-<li class="chapter" data-level="4.2.4" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#dotcharts"><i class="fa fa-check"></i><b>4.2.4</b> Dot charts</a></li>
-<li class="chapter" data-level="4.2.5" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#pairs-plots"><i class="fa fa-check"></i><b>4.2.5</b> Pairs plots</a></li>
-<li class="chapter" data-level="4.2.6" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#coplots"><i class="fa fa-check"></i><b>4.2.6</b> Coplots</a></li>
-<li class="chapter" data-level="4.2.7" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#lattice-plots"><i class="fa fa-check"></i><b>4.2.7</b> Lattice plots</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="custom_plot.html"><a href="custom_plot.html"><i class="fa fa-check"></i><b>4.3</b> Customising plots</a>
-<ul>
-<li class="chapter" data-level="4.3.1" data-path="custom_plot.html"><a href="custom_plot.html#customising-with-arguments"><i class="fa fa-check"></i><b>4.3.1</b> Customising with arguments</a></li>
-<li class="chapter" data-level="4.3.2" data-path="custom_plot.html"><a href="custom_plot.html#building-plots"><i class="fa fa-check"></i><b>4.3.2</b> Building plots</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="mult_graphs.html"><a href="mult_graphs.html"><i class="fa fa-check"></i><b>4.4</b> Multiple graphs</a></li>
-<li class="chapter" data-level="4.5" data-path="export_plots.html"><a href="export_plots.html"><i class="fa fa-check"></i><b>4.5</b> Exporting plots</a></li>
-<li class="chapter" data-level="4.6" data-path="exercise-4.html"><a href="exercise-4.html"><i class="fa fa-check"></i><b>4.6</b> Exercise 4</a></li>
+<li class="chapter" data-level="4.1" data-path="data-frames-tibbles.html"><a href="data-frames-tibbles.html"><i class="fa fa-check"></i><b>4.1</b> Data Frames &amp; Tibbles</a></li>
+<li class="chapter" data-level="4.2" data-path="reading-external-data.html"><a href="reading-external-data.html"><i class="fa fa-check"></i><b>4.2</b> Reading external data</a></li>
+<li class="chapter" data-level="4.3" data-path="wrangling-data.html"><a href="wrangling-data.html"><i class="fa fa-check"></i><b>4.3</b> Wrangling Data</a></li>
+<li class="chapter" data-level="4.4" data-path="relational-data.html"><a href="relational-data.html"><i class="fa fa-check"></i><b>4.4</b> Relational Data</a></li>
+<li class="chapter" data-level="4.5" data-path="exercise-4.html"><a href="exercise-4.html"><i class="fa fa-check"></i><b>4.5</b> Exercise 4</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="graphics_r.html"><a href="graphics_r.html"><i class="fa fa-check"></i><b>5</b> Graphics with ggplot</a>
 <ul>
@@ -328,73 +312,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="exercise-5.html"><a href="exercise-5.html"><i class="fa fa-check"></i><b>5.5</b> Exercise 5</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="stats_r.html"><a href="stats_r.html"><i class="fa fa-check"></i><b>6</b> Simple Statistics in R</a>
+<li class="chapter" data-level="6" data-path="prog_r.html"><a href="prog_r.html"><i class="fa fa-check"></i><b>6</b> Programming in R</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="one-and-two-sample-tests.html"><a href="one-and-two-sample-tests.html"><i class="fa fa-check"></i><b>6.1</b> One and two sample tests</a></li>
-<li class="chapter" data-level="6.2" data-path="correlation.html"><a href="correlation.html"><i class="fa fa-check"></i><b>6.2</b> Correlation</a></li>
-<li class="chapter" data-level="6.3" data-path="simple_lm.html"><a href="simple_lm.html"><i class="fa fa-check"></i><b>6.3</b> Simple linear modelling</a></li>
-<li class="chapter" data-level="6.4" data-path="other-modelling-approaches.html"><a href="other-modelling-approaches.html"><i class="fa fa-check"></i><b>6.4</b> Other modelling approaches</a></li>
-<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
+<li class="chapter" data-level="6.1" data-path="looking-behind-the-curtain.html"><a href="looking-behind-the-curtain.html"><i class="fa fa-check"></i><b>6.1</b> Looking behind the curtain</a></li>
+<li class="chapter" data-level="6.2" data-path="functions-in-r.html"><a href="functions-in-r.html"><i class="fa fa-check"></i><b>6.2</b> Functions in R</a></li>
+<li class="chapter" data-level="6.3" data-path="conditional-statements.html"><a href="conditional-statements.html"><i class="fa fa-check"></i><b>6.3</b> Conditional statements</a></li>
+<li class="chapter" data-level="6.4" data-path="combining-logical-operators.html"><a href="combining-logical-operators.html"><i class="fa fa-check"></i><b>6.4</b> Combining logical operators</a></li>
+<li class="chapter" data-level="6.5" data-path="loops.html"><a href="loops.html"><i class="fa fa-check"></i><b>6.5</b> Loops</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="loops.html"><a href="loops.html#for-loop"><i class="fa fa-check"></i><b>6.5.1</b> For loop</a></li>
+<li class="chapter" data-level="6.5.2" data-path="loops.html"><a href="loops.html#while-loop"><i class="fa fa-check"></i><b>6.5.2</b> While loop</a></li>
+<li class="chapter" data-level="6.5.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.5.3</b> When to use a loop?</a></li>
+<li class="chapter" data-level="6.5.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.5.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="prog_r.html"><a href="prog_r.html"><i class="fa fa-check"></i><b>7</b> Programming in R</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="looking-behind-the-curtain.html"><a href="looking-behind-the-curtain.html"><i class="fa fa-check"></i><b>7.1</b> Looking behind the curtain</a></li>
-<li class="chapter" data-level="7.2" data-path="functions-in-r.html"><a href="functions-in-r.html"><i class="fa fa-check"></i><b>7.2</b> Functions in R</a></li>
-<li class="chapter" data-level="7.3" data-path="conditional-statements.html"><a href="conditional-statements.html"><i class="fa fa-check"></i><b>7.3</b> Conditional statements</a></li>
-<li class="chapter" data-level="7.4" data-path="combining-logical-operators.html"><a href="combining-logical-operators.html"><i class="fa fa-check"></i><b>7.4</b> Combining logical operators</a></li>
-<li class="chapter" data-level="7.5" data-path="loops.html"><a href="loops.html"><i class="fa fa-check"></i><b>7.5</b> Loops</a>
-<ul>
-<li class="chapter" data-level="7.5.1" data-path="loops.html"><a href="loops.html#for-loop"><i class="fa fa-check"></i><b>7.5.1</b> For loop</a></li>
-<li class="chapter" data-level="7.5.2" data-path="loops.html"><a href="loops.html#while-loop"><i class="fa fa-check"></i><b>7.5.2</b> While loop</a></li>
-<li class="chapter" data-level="7.5.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>7.5.3</b> When to use a loop?</a></li>
-<li class="chapter" data-level="7.5.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>7.5.4</b> If not loops, then what?</a></li>
+<li class="chapter" data-level="6.6" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.6</b> Exercise 7</a></li>
 </ul></li>
-<li class="chapter" data-level="7.6" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>7.6</b> Exercise 7</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="rmarkdown_r.html"><a href="rmarkdown_r.html"><i class="fa fa-check"></i><b>8</b> Reproducible reports with R markdown</a>
+<li class="chapter" data-level="7" data-path="rmarkdown_r.html"><a href="rmarkdown_r.html"><i class="fa fa-check"></i><b>7</b> Reproducible reports with R markdown</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="what-is-r-markdown.html"><a href="what-is-r-markdown.html"><i class="fa fa-check"></i><b>8.1</b> What is R markdown?</a></li>
-<li class="chapter" data-level="8.2" data-path="why-use-r-markdown.html"><a href="why-use-r-markdown.html"><i class="fa fa-check"></i><b>8.2</b> Why use R markdown?</a></li>
-<li class="chapter" data-level="8.3" data-path="get-started-with-r-markdown.html"><a href="get-started-with-r-markdown.html"><i class="fa fa-check"></i><b>8.3</b> Get started with R markdown</a></li>
-<li class="chapter" data-level="8.4" data-path="new_rm.html"><a href="new_rm.html"><i class="fa fa-check"></i><b>8.4</b> Create an R markdown document</a></li>
-<li class="chapter" data-level="8.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html"><i class="fa fa-check"></i><b>8.5</b> R markdown anatomy</a>
+<li class="chapter" data-level="7.1" data-path="what-is-r-markdown.html"><a href="what-is-r-markdown.html"><i class="fa fa-check"></i><b>7.1</b> What is R markdown?</a></li>
+<li class="chapter" data-level="7.2" data-path="why-use-r-markdown.html"><a href="why-use-r-markdown.html"><i class="fa fa-check"></i><b>7.2</b> Why use R markdown?</a></li>
+<li class="chapter" data-level="7.3" data-path="get-started-with-r-markdown.html"><a href="get-started-with-r-markdown.html"><i class="fa fa-check"></i><b>7.3</b> Get started with R markdown</a></li>
+<li class="chapter" data-level="7.4" data-path="new_rm.html"><a href="new_rm.html"><i class="fa fa-check"></i><b>7.4</b> Create an R markdown document</a></li>
+<li class="chapter" data-level="7.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html"><i class="fa fa-check"></i><b>7.5</b> R markdown anatomy</a>
 <ul>
-<li class="chapter" data-level="8.5.1" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#yaml-header"><i class="fa fa-check"></i><b>8.5.1</b> YAML header</a></li>
-<li class="chapter" data-level="8.5.2" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#formatted-text"><i class="fa fa-check"></i><b>8.5.2</b> Formatted text</a></li>
-<li class="chapter" data-level="8.5.3" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#code_chunks"><i class="fa fa-check"></i><b>8.5.3</b> Code chunks</a></li>
-<li class="chapter" data-level="8.5.4" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-figures"><i class="fa fa-check"></i><b>8.5.4</b> Adding figures</a></li>
-<li class="chapter" data-level="8.5.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-tables"><i class="fa fa-check"></i><b>8.5.5</b> Adding tables</a></li>
-<li class="chapter" data-level="8.5.6" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#inline-r-code"><i class="fa fa-check"></i><b>8.5.6</b> Inline R code</a></li>
+<li class="chapter" data-level="7.5.1" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#yaml-header"><i class="fa fa-check"></i><b>7.5.1</b> YAML header</a></li>
+<li class="chapter" data-level="7.5.2" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#formatted-text"><i class="fa fa-check"></i><b>7.5.2</b> Formatted text</a></li>
+<li class="chapter" data-level="7.5.3" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#code_chunks"><i class="fa fa-check"></i><b>7.5.3</b> Code chunks</a></li>
+<li class="chapter" data-level="7.5.4" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-figures"><i class="fa fa-check"></i><b>7.5.4</b> Adding figures</a></li>
+<li class="chapter" data-level="7.5.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-tables"><i class="fa fa-check"></i><b>7.5.5</b> Adding tables</a></li>
+<li class="chapter" data-level="7.5.6" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#inline-r-code"><i class="fa fa-check"></i><b>7.5.6</b> Inline R code</a></li>
 </ul></li>
-<li class="chapter" data-level="8.6" data-path="tips_tricks.html"><a href="tips_tricks.html"><i class="fa fa-check"></i><b>8.6</b> Some tips and tricks</a></li>
-<li class="chapter" data-level="8.7" data-path="further-information.html"><a href="further-information.html"><i class="fa fa-check"></i><b>8.7</b> Further Information</a></li>
+<li class="chapter" data-level="7.6" data-path="tips_tricks.html"><a href="tips_tricks.html"><i class="fa fa-check"></i><b>7.6</b> Some tips and tricks</a></li>
+<li class="chapter" data-level="7.7" data-path="further-information.html"><a href="further-information.html"><i class="fa fa-check"></i><b>7.7</b> Further Information</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="github_r.html"><a href="github_r.html"><i class="fa fa-check"></i><b>9</b> Version control with Git and GitHub</a>
+<li class="chapter" data-level="8" data-path="github_r.html"><a href="github_r.html"><i class="fa fa-check"></i><b>8</b> Version control with Git and GitHub</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="what-is-version-control.html"><a href="what-is-version-control.html"><i class="fa fa-check"></i><b>9.1</b> What is version control?</a></li>
-<li class="chapter" data-level="9.2" data-path="why-use-version-control.html"><a href="why-use-version-control.html"><i class="fa fa-check"></i><b>9.2</b> Why use version control?</a></li>
-<li class="chapter" data-level="9.3" data-path="what-is-git-and-github.html"><a href="what-is-git-and-github.html"><i class="fa fa-check"></i><b>9.3</b> What is Git and GitHub?</a></li>
-<li class="chapter" data-level="9.4" data-path="setup_git.html"><a href="setup_git.html"><i class="fa fa-check"></i><b>9.4</b> Getting started</a>
+<li class="chapter" data-level="8.1" data-path="what-is-version-control.html"><a href="what-is-version-control.html"><i class="fa fa-check"></i><b>8.1</b> What is version control?</a></li>
+<li class="chapter" data-level="8.2" data-path="why-use-version-control.html"><a href="why-use-version-control.html"><i class="fa fa-check"></i><b>8.2</b> Why use version control?</a></li>
+<li class="chapter" data-level="8.3" data-path="what-is-git-and-github.html"><a href="what-is-git-and-github.html"><i class="fa fa-check"></i><b>8.3</b> What is Git and GitHub?</a></li>
+<li class="chapter" data-level="8.4" data-path="setup_git.html"><a href="setup_git.html"><i class="fa fa-check"></i><b>8.4</b> Getting started</a>
 <ul>
-<li class="chapter" data-level="9.4.1" data-path="setup_git.html"><a href="setup_git.html#install-git"><i class="fa fa-check"></i><b>9.4.1</b> Install Git</a></li>
-<li class="chapter" data-level="9.4.2" data-path="setup_git.html"><a href="setup_git.html#configure-git"><i class="fa fa-check"></i><b>9.4.2</b> Configure Git</a></li>
-<li class="chapter" data-level="9.4.3" data-path="setup_git.html"><a href="setup_git.html#rs_config"><i class="fa fa-check"></i><b>9.4.3</b> Configure RStudio</a></li>
-<li class="chapter" data-level="9.4.4" data-path="setup_git.html"><a href="setup_git.html#register-a-github-account"><i class="fa fa-check"></i><b>9.4.4</b> Register a GitHub account</a></li>
+<li class="chapter" data-level="8.4.1" data-path="setup_git.html"><a href="setup_git.html#install-git"><i class="fa fa-check"></i><b>8.4.1</b> Install Git</a></li>
+<li class="chapter" data-level="8.4.2" data-path="setup_git.html"><a href="setup_git.html#configure-git"><i class="fa fa-check"></i><b>8.4.2</b> Configure Git</a></li>
+<li class="chapter" data-level="8.4.3" data-path="setup_git.html"><a href="setup_git.html#rs_config"><i class="fa fa-check"></i><b>8.4.3</b> Configure RStudio</a></li>
+<li class="chapter" data-level="8.4.4" data-path="setup_git.html"><a href="setup_git.html#register-a-github-account"><i class="fa fa-check"></i><b>8.4.4</b> Register a GitHub account</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html"><i class="fa fa-check"></i><b>9.5</b> Setting up a project in RStudio</a>
+<li class="chapter" data-level="8.5" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html"><i class="fa fa-check"></i><b>8.5</b> Setting up a project in RStudio</a>
 <ul>
-<li class="chapter" data-level="9.5.1" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt1"><i class="fa fa-check"></i><b>9.5.1</b> Option 1 - GitHub first</a></li>
-<li class="chapter" data-level="9.5.2" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt2"><i class="fa fa-check"></i><b>9.5.2</b> Option 2 - RStudio first</a></li>
+<li class="chapter" data-level="8.5.1" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt1"><i class="fa fa-check"></i><b>8.5.1</b> Option 1 - GitHub first</a></li>
+<li class="chapter" data-level="8.5.2" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt2"><i class="fa fa-check"></i><b>8.5.2</b> Option 2 - RStudio first</a></li>
 </ul></li>
-<li class="chapter" data-level="9.6" data-path="use_git.html"><a href="use_git.html"><i class="fa fa-check"></i><b>9.6</b> Using Git</a>
+<li class="chapter" data-level="8.6" data-path="use_git.html"><a href="use_git.html"><i class="fa fa-check"></i><b>8.6</b> Using Git</a>
 <ul>
-<li class="chapter" data-level="9.6.1" data-path="use_git.html"><a href="use_git.html#tracking-changes"><i class="fa fa-check"></i><b>9.6.1</b> Tracking changes</a></li>
-<li class="chapter" data-level="9.6.2" data-path="use_git.html"><a href="use_git.html#commit-history"><i class="fa fa-check"></i><b>9.6.2</b> Commit history</a></li>
-<li class="chapter" data-level="9.6.3" data-path="use_git.html"><a href="use_git.html#undo"><i class="fa fa-check"></i><b>9.6.3</b> Reverting changes</a></li>
-<li class="chapter" data-level="9.6.4" data-path="use_git.html"><a href="use_git.html#collab"><i class="fa fa-check"></i><b>9.6.4</b> Collaborate with Git</a></li>
-<li class="chapter" data-level="9.6.5" data-path="use_git.html"><a href="use_git.html#git-tips"><i class="fa fa-check"></i><b>9.6.5</b> Git tips</a></li>
+<li class="chapter" data-level="8.6.1" data-path="use_git.html"><a href="use_git.html#tracking-changes"><i class="fa fa-check"></i><b>8.6.1</b> Tracking changes</a></li>
+<li class="chapter" data-level="8.6.2" data-path="use_git.html"><a href="use_git.html#commit-history"><i class="fa fa-check"></i><b>8.6.2</b> Commit history</a></li>
+<li class="chapter" data-level="8.6.3" data-path="use_git.html"><a href="use_git.html#undo"><i class="fa fa-check"></i><b>8.6.3</b> Reverting changes</a></li>
+<li class="chapter" data-level="8.6.4" data-path="use_git.html"><a href="use_git.html#collab"><i class="fa fa-check"></i><b>8.6.4</b> Collaborate with Git</a></li>
+<li class="chapter" data-level="8.6.5" data-path="use_git.html"><a href="use_git.html#git-tips"><i class="fa fa-check"></i><b>8.6.5</b> Git tips</a></li>
 </ul></li>
-<li class="chapter" data-level="9.7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>9.7</b> Further resources</a></li>
+<li class="chapter" data-level="8.7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>8.7</b> Further resources</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -422,173 +398,85 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="summarising-data-frames" class="section level2 hasAnchor" number="3.5">
-<h2><span class="header-section-number">3.5</span> Summarising data frames<a href="summarising-data-frames.html#summarising-data-frames" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summarising-data-frames" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Summarising data frames<a href="summarising-data-frames.html#summarising-data-frames" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Now that we’re able to manipulate and extract data from our data frames our next task is to start exploring and getting to know our data. In this section we’ll start producing tables of useful summary statistics of the variables in our data frame and in the next two Chapters we’ll cover visualising our data with base R graphics and using the <code>ggplot2</code> package.</p>
-<p>A really useful starting point is to produce some simple summary statistics of all of the variables in our <code>flowers</code> data frame using the <code>summary()</code> function.</p>
-<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="summarising-data-frames.html#cb161-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(flowers)</span>
-<span id="cb161-2"><a href="summarising-data-frames.html#cb161-2" aria-hidden="true" tabindex="-1"></a><span class="do">##     treat             nitrogen      block         height           weight      </span></span>
-<span id="cb161-3"><a href="summarising-data-frames.html#cb161-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Length:96          low   :32   Min.   :1.0   Min.   : 1.200   Min.   : 5.790  </span></span>
-<span id="cb161-4"><a href="summarising-data-frames.html#cb161-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  Class :character   medium:32   1st Qu.:1.0   1st Qu.: 4.475   1st Qu.: 9.027  </span></span>
-<span id="cb161-5"><a href="summarising-data-frames.html#cb161-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mode  :character   high  :32   Median :1.5   Median : 6.450   Median :11.395  </span></span>
-<span id="cb161-6"><a href="summarising-data-frames.html#cb161-6" aria-hidden="true" tabindex="-1"></a><span class="do">##                                 Mean   :1.5   Mean   : 6.840   Mean   :12.155  </span></span>
-<span id="cb161-7"><a href="summarising-data-frames.html#cb161-7" aria-hidden="true" tabindex="-1"></a><span class="do">##                                 3rd Qu.:2.0   3rd Qu.: 9.025   3rd Qu.:14.537  </span></span>
-<span id="cb161-8"><a href="summarising-data-frames.html#cb161-8" aria-hidden="true" tabindex="-1"></a><span class="do">##                                 Max.   :2.0   Max.   :17.200   Max.   :23.890  </span></span>
-<span id="cb161-9"><a href="summarising-data-frames.html#cb161-9" aria-hidden="true" tabindex="-1"></a><span class="do">##     leafarea       shootarea         flowers      </span></span>
-<span id="cb161-10"><a href="summarising-data-frames.html#cb161-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  Min.   : 5.80   Min.   :  5.80   Min.   : 1.000  </span></span>
-<span id="cb161-11"><a href="summarising-data-frames.html#cb161-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  1st Qu.:11.07   1st Qu.: 39.05   1st Qu.: 4.000  </span></span>
-<span id="cb161-12"><a href="summarising-data-frames.html#cb161-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  Median :13.45   Median : 70.05   Median : 6.000  </span></span>
-<span id="cb161-13"><a href="summarising-data-frames.html#cb161-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mean   :14.05   Mean   : 79.78   Mean   : 7.062  </span></span>
-<span id="cb161-14"><a href="summarising-data-frames.html#cb161-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  3rd Qu.:16.45   3rd Qu.:113.28   3rd Qu.: 9.000  </span></span>
-<span id="cb161-15"><a href="summarising-data-frames.html#cb161-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  Max.   :49.20   Max.   :189.60   Max.   :17.000</span></span></code></pre></div>
-<p>For numeric variables (i.e. <code>height</code>, <code>weight</code> etc) the mean, minimum, maximum, median, first (lower) quartile and third (upper) quartile are presented. For factor variables (i.e. <code>treat</code> and <code>nitrogen</code>) the number of observations in each of the factor levels is given. If a variable contains missing data then the number of <code>NA</code> values is also reported.</p>
-<p>If we wanted to summarise a smaller subset of variables in our data frame we can use our indexing skills in combination with the <code>summary()</code> function. For example, to summarise only the <code>height</code>, <code>weight</code>, <code>leafarea</code> and <code>shootarea</code> variables we can include the appropriate column indexes when using the <code>[ ]</code>. Notice we include all rows by not specifying a row index.</p>
-<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="summarising-data-frames.html#cb162-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(flowers[, <span class="dv">4</span><span class="sc">:</span><span class="dv">7</span>])</span>
-<span id="cb162-2"><a href="summarising-data-frames.html#cb162-2" aria-hidden="true" tabindex="-1"></a><span class="do">##      height           weight          leafarea       shootarea     </span></span>
-<span id="cb162-3"><a href="summarising-data-frames.html#cb162-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Min.   : 1.200   Min.   : 5.790   Min.   : 5.80   Min.   :  5.80  </span></span>
-<span id="cb162-4"><a href="summarising-data-frames.html#cb162-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  1st Qu.: 4.475   1st Qu.: 9.027   1st Qu.:11.07   1st Qu.: 39.05  </span></span>
-<span id="cb162-5"><a href="summarising-data-frames.html#cb162-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  Median : 6.450   Median :11.395   Median :13.45   Median : 70.05  </span></span>
-<span id="cb162-6"><a href="summarising-data-frames.html#cb162-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mean   : 6.840   Mean   :12.155   Mean   :14.05   Mean   : 79.78  </span></span>
-<span id="cb162-7"><a href="summarising-data-frames.html#cb162-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  3rd Qu.: 9.025   3rd Qu.:14.537   3rd Qu.:16.45   3rd Qu.:113.28  </span></span>
-<span id="cb162-8"><a href="summarising-data-frames.html#cb162-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  Max.   :17.200   Max.   :23.890   Max.   :49.20   Max.   :189.60</span></span>
-<span id="cb162-9"><a href="summarising-data-frames.html#cb162-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-10"><a href="summarising-data-frames.html#cb162-10" aria-hidden="true" tabindex="-1"></a><span class="co"># or equivalently </span></span>
-<span id="cb162-11"><a href="summarising-data-frames.html#cb162-11" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(flowers[, c(&quot;height&quot;, &quot;weight&quot;, &quot;leafarea&quot;, &quot;shootarea&quot;)])</span></span></code></pre></div>
+<p>A really useful starting point is to produce some simple summary statistics of all of the variables in our <code>str</code> data frame using the <code>summary()</code> function.</p>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="summarising-data-frames.html#cb146-1" aria-hidden="true" tabindex="-1"></a>nola_str<span class="sc">$</span>Permit.Type <span class="ot">&lt;-</span> <span class="fu">factor</span>(nola_str<span class="sc">$</span>Permit.Type)</span>
+<span id="cb146-2"><a href="summarising-data-frames.html#cb146-2" aria-hidden="true" tabindex="-1"></a>nola_str<span class="sc">$</span>Current.Status <span class="ot">&lt;-</span> <span class="fu">factor</span>(nola_str<span class="sc">$</span>Current.Status)</span>
+<span id="cb146-3"><a href="summarising-data-frames.html#cb146-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(nola_str)</span>
+<span id="cb146-4"><a href="summarising-data-frames.html#cb146-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  Permit.Number        Address                                       Permit.Type</span></span>
+<span id="cb146-5"><a href="summarising-data-frames.html#cb146-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  Length:23          Length:23                                             : 1  </span></span>
+<span id="cb146-6"><a href="summarising-data-frames.html#cb146-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  Class :character   Class :character   Commercial STR                     : 1  </span></span>
+<span id="cb146-7"><a href="summarising-data-frames.html#cb146-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mode  :character   Mode  :character   Short Term Rental Commercial Owner :10  </span></span>
+<span id="cb146-8"><a href="summarising-data-frames.html#cb146-8" aria-hidden="true" tabindex="-1"></a><span class="do">##                                        Short Term Rental Residential Owner:11  </span></span>
+<span id="cb146-9"><a href="summarising-data-frames.html#cb146-9" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                                                </span></span>
+<span id="cb146-10"><a href="summarising-data-frames.html#cb146-10" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                                                </span></span>
+<span id="cb146-11"><a href="summarising-data-frames.html#cb146-11" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                                                </span></span>
+<span id="cb146-12"><a href="summarising-data-frames.html#cb146-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  Residential.Subtype Current.Status Expiration.Date    Bedroom.Limit  </span></span>
+<span id="cb146-13"><a href="summarising-data-frames.html#cb146-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  Length:23                  : 1     Length:23          Min.   :1.000  </span></span>
+<span id="cb146-14"><a href="summarising-data-frames.html#cb146-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  Class :character    Issued : 3     Class :character   1st Qu.:1.000  </span></span>
+<span id="cb146-15"><a href="summarising-data-frames.html#cb146-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mode  :character    Pending:19     Mode  :character   Median :2.000  </span></span>
+<span id="cb146-16"><a href="summarising-data-frames.html#cb146-16" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        Mean   :2.227  </span></span>
+<span id="cb146-17"><a href="summarising-data-frames.html#cb146-17" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        3rd Qu.:3.000  </span></span>
+<span id="cb146-18"><a href="summarising-data-frames.html#cb146-18" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        Max.   :5.000  </span></span>
+<span id="cb146-19"><a href="summarising-data-frames.html#cb146-19" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        NA&#39;s   :1      </span></span>
+<span id="cb146-20"><a href="summarising-data-frames.html#cb146-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  Guest.Occupancy.Limit Operator.Name      License.Holder.Name</span></span>
+<span id="cb146-21"><a href="summarising-data-frames.html#cb146-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  Min.   : 2.000        Length:23          Length:23          </span></span>
+<span id="cb146-22"><a href="summarising-data-frames.html#cb146-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  1st Qu.: 2.000        Class :character   Class :character   </span></span>
+<span id="cb146-23"><a href="summarising-data-frames.html#cb146-23" aria-hidden="true" tabindex="-1"></a><span class="do">##  Median : 4.000        Mode  :character   Mode  :character   </span></span>
+<span id="cb146-24"><a href="summarising-data-frames.html#cb146-24" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mean   : 4.455                                              </span></span>
+<span id="cb146-25"><a href="summarising-data-frames.html#cb146-25" aria-hidden="true" tabindex="-1"></a><span class="do">##  3rd Qu.: 6.000                                              </span></span>
+<span id="cb146-26"><a href="summarising-data-frames.html#cb146-26" aria-hidden="true" tabindex="-1"></a><span class="do">##  Max.   :10.000                                              </span></span>
+<span id="cb146-27"><a href="summarising-data-frames.html#cb146-27" aria-hidden="true" tabindex="-1"></a><span class="do">##  NA&#39;s   :1                                                   </span></span>
+<span id="cb146-28"><a href="summarising-data-frames.html#cb146-28" aria-hidden="true" tabindex="-1"></a><span class="do">##  Application.Date    Issue_Date       </span></span>
+<span id="cb146-29"><a href="summarising-data-frames.html#cb146-29" aria-hidden="true" tabindex="-1"></a><span class="do">##  Length:23          Length:23         </span></span>
+<span id="cb146-30"><a href="summarising-data-frames.html#cb146-30" aria-hidden="true" tabindex="-1"></a><span class="do">##  Class :character   Class :character  </span></span>
+<span id="cb146-31"><a href="summarising-data-frames.html#cb146-31" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mode  :character   Mode  :character  </span></span>
+<span id="cb146-32"><a href="summarising-data-frames.html#cb146-32" aria-hidden="true" tabindex="-1"></a><span class="do">##                                       </span></span>
+<span id="cb146-33"><a href="summarising-data-frames.html#cb146-33" aria-hidden="true" tabindex="-1"></a><span class="do">##                                       </span></span>
+<span id="cb146-34"><a href="summarising-data-frames.html#cb146-34" aria-hidden="true" tabindex="-1"></a><span class="do">##                                       </span></span>
+<span id="cb146-35"><a href="summarising-data-frames.html#cb146-35" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span></code></pre></div>
+<p>For numeric variables the mean, minimum, maximum, median, first (lower) quartile and third (upper) quartile are presented. For factor variables (i.e. <code>Permit.Type</code> and <code>current.status</code>) the number of observations in each of the factor levels is given. If a variable contains missing data then the number of <code>NA</code> values is also reported. For character variables, only length of the vector is reported.</p>
+<p>If we wanted to summarise a smaller subset of variables in our data frame we can use our indexing skills in combination with the <code>summary()</code> function. Notice we include all rows by not specifying a row index.</p>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="summarising-data-frames.html#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(nola_str[, <span class="dv">4</span><span class="sc">:</span><span class="dv">7</span>])</span>
+<span id="cb147-2"><a href="summarising-data-frames.html#cb147-2" aria-hidden="true" tabindex="-1"></a><span class="do">##  Residential.Subtype Current.Status Expiration.Date    Bedroom.Limit  </span></span>
+<span id="cb147-3"><a href="summarising-data-frames.html#cb147-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Length:23                  : 1     Length:23          Min.   :1.000  </span></span>
+<span id="cb147-4"><a href="summarising-data-frames.html#cb147-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  Class :character    Issued : 3     Class :character   1st Qu.:1.000  </span></span>
+<span id="cb147-5"><a href="summarising-data-frames.html#cb147-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  Mode  :character    Pending:19     Mode  :character   Median :2.000  </span></span>
+<span id="cb147-6"><a href="summarising-data-frames.html#cb147-6" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        Mean   :2.227  </span></span>
+<span id="cb147-7"><a href="summarising-data-frames.html#cb147-7" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        3rd Qu.:3.000  </span></span>
+<span id="cb147-8"><a href="summarising-data-frames.html#cb147-8" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        Max.   :5.000  </span></span>
+<span id="cb147-9"><a href="summarising-data-frames.html#cb147-9" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                        NA&#39;s   :1</span></span></code></pre></div>
 <p>And to summarise a single variable.</p>
-<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="summarising-data-frames.html#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(flowers<span class="sc">$</span>leafarea)</span>
-<span id="cb163-2"><a href="summarising-data-frames.html#cb163-2" aria-hidden="true" tabindex="-1"></a><span class="do">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
-<span id="cb163-3"><a href="summarising-data-frames.html#cb163-3" aria-hidden="true" tabindex="-1"></a><span class="do">##    5.80   11.07   13.45   14.05   16.45   49.20</span></span>
-<span id="cb163-4"><a href="summarising-data-frames.html#cb163-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb163-5"><a href="summarising-data-frames.html#cb163-5" aria-hidden="true" tabindex="-1"></a><span class="co"># or equivalently</span></span>
-<span id="cb163-6"><a href="summarising-data-frames.html#cb163-6" aria-hidden="true" tabindex="-1"></a><span class="co"># summary(flowers[, 6])</span></span></code></pre></div>
-<p>As you’ve seen above, the <code>summary()</code> function reports the number of observations in each level of our factor variables. Another useful function for generating tables of counts is the <code>table()</code> function. The <code>table()</code> function can be used to build contingency tables of different combinations of factor levels. For example, to count the number of observations for each level of <code>nitrogen</code></p>
-<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="summarising-data-frames.html#cb164-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(flowers<span class="sc">$</span>nitrogen)</span>
-<span id="cb164-2"><a href="summarising-data-frames.html#cb164-2" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb164-3"><a href="summarising-data-frames.html#cb164-3" aria-hidden="true" tabindex="-1"></a><span class="do">##    low medium   high </span></span>
-<span id="cb164-4"><a href="summarising-data-frames.html#cb164-4" aria-hidden="true" tabindex="-1"></a><span class="do">##     32     32     32</span></span></code></pre></div>
-<p>We can extend this further by producing a table of counts for each combination of <code>nitrogen</code> and <code>treat</code> factor levels.</p>
-<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="summarising-data-frames.html#cb165-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(flowers<span class="sc">$</span>nitrogen, flowers<span class="sc">$</span>treat)</span>
-<span id="cb165-2"><a href="summarising-data-frames.html#cb165-2" aria-hidden="true" tabindex="-1"></a><span class="do">##         </span></span>
-<span id="cb165-3"><a href="summarising-data-frames.html#cb165-3" aria-hidden="true" tabindex="-1"></a><span class="do">##          notip tip</span></span>
-<span id="cb165-4"><a href="summarising-data-frames.html#cb165-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   low       16  16</span></span>
-<span id="cb165-5"><a href="summarising-data-frames.html#cb165-5" aria-hidden="true" tabindex="-1"></a><span class="do">##   medium    16  16</span></span>
-<span id="cb165-6"><a href="summarising-data-frames.html#cb165-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   high      16  16</span></span></code></pre></div>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="summarising-data-frames.html#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(nola_str<span class="sc">$</span>Permit.Type)</span>
+<span id="cb148-2"><a href="summarising-data-frames.html#cb148-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                          Commercial STR </span></span>
+<span id="cb148-3"><a href="summarising-data-frames.html#cb148-3" aria-hidden="true" tabindex="-1"></a><span class="do">##                                   1                                   1 </span></span>
+<span id="cb148-4"><a href="summarising-data-frames.html#cb148-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  Short Term Rental Commercial Owner Short Term Rental Residential Owner </span></span>
+<span id="cb148-5"><a href="summarising-data-frames.html#cb148-5" aria-hidden="true" tabindex="-1"></a><span class="do">##                                  10                                  11</span></span></code></pre></div>
+<p>As you’ve seen above, the <code>summary()</code> function reports the number of observations in each level of our factor variables. Another useful function for generating tables of counts is the <code>table()</code> function. The <code>table()</code> function can be used to build contingency tables of different combinations of factor levels. For example, to count the number of observations for each level of <code>Permit.Type</code></p>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="summarising-data-frames.html#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(nola_str<span class="sc">$</span>Permit.Type)</span>
+<span id="cb149-2"><a href="summarising-data-frames.html#cb149-2" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb149-3"><a href="summarising-data-frames.html#cb149-3" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                          Commercial STR </span></span>
+<span id="cb149-4"><a href="summarising-data-frames.html#cb149-4" aria-hidden="true" tabindex="-1"></a><span class="do">##                                   1                                   1 </span></span>
+<span id="cb149-5"><a href="summarising-data-frames.html#cb149-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  Short Term Rental Commercial Owner Short Term Rental Residential Owner </span></span>
+<span id="cb149-6"><a href="summarising-data-frames.html#cb149-6" aria-hidden="true" tabindex="-1"></a><span class="do">##                                  10                                  11</span></span></code></pre></div>
+<p>We can extend this further by producing a table of counts for each combination of <code>Permit.Type</code> and <code>Current.Status</code> factor levels.</p>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="summarising-data-frames.html#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(nola_str<span class="sc">$</span>Permit.Type, nola_str<span class="sc">$</span>Current.Status)</span>
+<span id="cb150-2"><a href="summarising-data-frames.html#cb150-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                                      </span></span>
+<span id="cb150-3"><a href="summarising-data-frames.html#cb150-3" aria-hidden="true" tabindex="-1"></a><span class="do">##                                         Issued Pending</span></span>
+<span id="cb150-4"><a href="summarising-data-frames.html#cb150-4" aria-hidden="true" tabindex="-1"></a><span class="do">##                                       1      0       0</span></span>
+<span id="cb150-5"><a href="summarising-data-frames.html#cb150-5" aria-hidden="true" tabindex="-1"></a><span class="do">##   Commercial STR                      0      0       1</span></span>
+<span id="cb150-6"><a href="summarising-data-frames.html#cb150-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   Short Term Rental Commercial Owner  0      1       9</span></span>
+<span id="cb150-7"><a href="summarising-data-frames.html#cb150-7" aria-hidden="true" tabindex="-1"></a><span class="do">##   Short Term Rental Residential Owner 0      2       9</span></span></code></pre></div>
 <p>A more flexible version of the <code>table()</code> function is the <code>xtabs()</code> function. The <code>xtabs()</code> function uses a formula notation (<code>~</code>) to build contingency tables with the cross-classifying variables separated by a <code>+</code> symbol on the right hand side of the formula. <code>xtabs()</code> also has a useful <code>data =</code> argument so you don’t have to include the data frame name when specifying each variable.</p>
-<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="summarising-data-frames.html#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> nitrogen <span class="sc">+</span> treat, <span class="at">data =</span> flowers)</span>
-<span id="cb166-2"><a href="summarising-data-frames.html#cb166-2" aria-hidden="true" tabindex="-1"></a><span class="do">##         treat</span></span>
-<span id="cb166-3"><a href="summarising-data-frames.html#cb166-3" aria-hidden="true" tabindex="-1"></a><span class="do">## nitrogen notip tip</span></span>
-<span id="cb166-4"><a href="summarising-data-frames.html#cb166-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   low       16  16</span></span>
-<span id="cb166-5"><a href="summarising-data-frames.html#cb166-5" aria-hidden="true" tabindex="-1"></a><span class="do">##   medium    16  16</span></span>
-<span id="cb166-6"><a href="summarising-data-frames.html#cb166-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   high      16  16</span></span></code></pre></div>
-<p>We can even build more complicated contingency tables using more variables. Note, in the example below the <code>xtabs()</code> function has quietly coerced our <code>block</code> variable to a factor.</p>
-<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="summarising-data-frames.html#cb167-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> nitrogen <span class="sc">+</span> treat <span class="sc">+</span> block, <span class="at">data =</span> flowers)</span>
-<span id="cb167-2"><a href="summarising-data-frames.html#cb167-2" aria-hidden="true" tabindex="-1"></a><span class="do">## , , block = 1</span></span>
-<span id="cb167-3"><a href="summarising-data-frames.html#cb167-3" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb167-4"><a href="summarising-data-frames.html#cb167-4" aria-hidden="true" tabindex="-1"></a><span class="do">##         treat</span></span>
-<span id="cb167-5"><a href="summarising-data-frames.html#cb167-5" aria-hidden="true" tabindex="-1"></a><span class="do">## nitrogen notip tip</span></span>
-<span id="cb167-6"><a href="summarising-data-frames.html#cb167-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   low        8   8</span></span>
-<span id="cb167-7"><a href="summarising-data-frames.html#cb167-7" aria-hidden="true" tabindex="-1"></a><span class="do">##   medium     8   8</span></span>
-<span id="cb167-8"><a href="summarising-data-frames.html#cb167-8" aria-hidden="true" tabindex="-1"></a><span class="do">##   high       8   8</span></span>
-<span id="cb167-9"><a href="summarising-data-frames.html#cb167-9" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb167-10"><a href="summarising-data-frames.html#cb167-10" aria-hidden="true" tabindex="-1"></a><span class="do">## , , block = 2</span></span>
-<span id="cb167-11"><a href="summarising-data-frames.html#cb167-11" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb167-12"><a href="summarising-data-frames.html#cb167-12" aria-hidden="true" tabindex="-1"></a><span class="do">##         treat</span></span>
-<span id="cb167-13"><a href="summarising-data-frames.html#cb167-13" aria-hidden="true" tabindex="-1"></a><span class="do">## nitrogen notip tip</span></span>
-<span id="cb167-14"><a href="summarising-data-frames.html#cb167-14" aria-hidden="true" tabindex="-1"></a><span class="do">##   low        8   8</span></span>
-<span id="cb167-15"><a href="summarising-data-frames.html#cb167-15" aria-hidden="true" tabindex="-1"></a><span class="do">##   medium     8   8</span></span>
-<span id="cb167-16"><a href="summarising-data-frames.html#cb167-16" aria-hidden="true" tabindex="-1"></a><span class="do">##   high       8   8</span></span></code></pre></div>
-<p>And for a nicer formatted table we can nest the <code>xtabs()</code> function inside the <code>ftable()</code> function to ‘flatten’ the table.</p>
-<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="summarising-data-frames.html#cb168-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ftable</span>(<span class="fu">xtabs</span>(<span class="sc">~</span> nitrogen <span class="sc">+</span> treat <span class="sc">+</span> block, <span class="at">data =</span> flowers))</span>
-<span id="cb168-2"><a href="summarising-data-frames.html#cb168-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                block 1 2</span></span>
-<span id="cb168-3"><a href="summarising-data-frames.html#cb168-3" aria-hidden="true" tabindex="-1"></a><span class="do">## nitrogen treat          </span></span>
-<span id="cb168-4"><a href="summarising-data-frames.html#cb168-4" aria-hidden="true" tabindex="-1"></a><span class="do">## low      notip       8 8</span></span>
-<span id="cb168-5"><a href="summarising-data-frames.html#cb168-5" aria-hidden="true" tabindex="-1"></a><span class="do">##          tip         8 8</span></span>
-<span id="cb168-6"><a href="summarising-data-frames.html#cb168-6" aria-hidden="true" tabindex="-1"></a><span class="do">## medium   notip       8 8</span></span>
-<span id="cb168-7"><a href="summarising-data-frames.html#cb168-7" aria-hidden="true" tabindex="-1"></a><span class="do">##          tip         8 8</span></span>
-<span id="cb168-8"><a href="summarising-data-frames.html#cb168-8" aria-hidden="true" tabindex="-1"></a><span class="do">## high     notip       8 8</span></span>
-<span id="cb168-9"><a href="summarising-data-frames.html#cb168-9" aria-hidden="true" tabindex="-1"></a><span class="do">##          tip         8 8</span></span></code></pre></div>
-<p>We can also summarise our data for each level of a factor variable. Let’s say we want to calculate the mean value of <code>height</code> for each of our <code>low</code>, <code>meadium</code> and <code>high</code> levels of <code>nitrogen</code>. To do this we will use the <code>mean()</code> function and apply this to the <code>height</code> variable for each level of <code>nitrogen</code> using the <code>tapply()</code> function.</p>
-<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="summarising-data-frames.html#cb169-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(flowers<span class="sc">$</span>height, flowers<span class="sc">$</span>nitrogen, mean)</span>
-<span id="cb169-2"><a href="summarising-data-frames.html#cb169-2" aria-hidden="true" tabindex="-1"></a><span class="do">##      low   medium     high </span></span>
-<span id="cb169-3"><a href="summarising-data-frames.html#cb169-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 5.853125 7.012500 7.653125</span></span></code></pre></div>
-<p>The <code>tapply()</code> function is not just restricted to calculating mean values, you can use it to apply many of the functions that come with R or even functions you’ve written yourself (see <a href="prog_r.html#prog_r">Chapter 7</a> for more details). For example, we can apply the <code>sd()</code> function to calculate the standard deviation for each level of <code>nitrogen</code> or even the <code>summary()</code> function.</p>
-<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="summarising-data-frames.html#cb170-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(flowers<span class="sc">$</span>height, flowers<span class="sc">$</span>nitrogen, sd)</span>
-<span id="cb170-2"><a href="summarising-data-frames.html#cb170-2" aria-hidden="true" tabindex="-1"></a><span class="do">##      low   medium     high </span></span>
-<span id="cb170-3"><a href="summarising-data-frames.html#cb170-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2.828425 3.005345 3.483323</span></span>
-<span id="cb170-4"><a href="summarising-data-frames.html#cb170-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(flowers<span class="sc">$</span>height, flowers<span class="sc">$</span>nitrogen, summary)</span>
-<span id="cb170-5"><a href="summarising-data-frames.html#cb170-5" aria-hidden="true" tabindex="-1"></a><span class="do">## $low</span></span>
-<span id="cb170-6"><a href="summarising-data-frames.html#cb170-6" aria-hidden="true" tabindex="-1"></a><span class="do">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
-<span id="cb170-7"><a href="summarising-data-frames.html#cb170-7" aria-hidden="true" tabindex="-1"></a><span class="do">##   1.800   3.600   5.550   5.853   8.000  12.300 </span></span>
-<span id="cb170-8"><a href="summarising-data-frames.html#cb170-8" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb170-9"><a href="summarising-data-frames.html#cb170-9" aria-hidden="true" tabindex="-1"></a><span class="do">## $medium</span></span>
-<span id="cb170-10"><a href="summarising-data-frames.html#cb170-10" aria-hidden="true" tabindex="-1"></a><span class="do">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
-<span id="cb170-11"><a href="summarising-data-frames.html#cb170-11" aria-hidden="true" tabindex="-1"></a><span class="do">##   1.800   4.500   7.000   7.013   9.950  12.300 </span></span>
-<span id="cb170-12"><a href="summarising-data-frames.html#cb170-12" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb170-13"><a href="summarising-data-frames.html#cb170-13" aria-hidden="true" tabindex="-1"></a><span class="do">## $high</span></span>
-<span id="cb170-14"><a href="summarising-data-frames.html#cb170-14" aria-hidden="true" tabindex="-1"></a><span class="do">##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. </span></span>
-<span id="cb170-15"><a href="summarising-data-frames.html#cb170-15" aria-hidden="true" tabindex="-1"></a><span class="do">##   1.200   5.800   7.450   7.653   9.475  17.200</span></span></code></pre></div>
-<p>Note, if the variable you want to summarise contains missing values (<code>NA</code>) you will also need to include an argument specifying how you want the function to deal with the <code>NA</code> values. We saw an example if this in <a href="vectors.html#na_vals">Chapter 2</a> where the <code>mean()</code> function returned an <code>NA</code> when we had missing data. To include the <code>na.rm = TRUE</code> argument we simply add this as another argument when using <code>tapply()</code>.</p>
-<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="summarising-data-frames.html#cb171-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(flowers<span class="sc">$</span>height, flowers<span class="sc">$</span>nitrogen, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb171-2"><a href="summarising-data-frames.html#cb171-2" aria-hidden="true" tabindex="-1"></a><span class="do">##      low   medium     high </span></span>
-<span id="cb171-3"><a href="summarising-data-frames.html#cb171-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 5.853125 7.012500 7.653125</span></span></code></pre></div>
-<p>We can also use <code>tapply()</code> to apply functions to more than one factor. The only thing to remember is that the factors need to be supplied to the <code>tapply()</code> function in the form of a list using the <code>list()</code> function. To calculate the mean <code>height</code> for each combination of <code>nitrogen</code> and <code>treat</code> factor levels we can use the <code>list(flowers$nitrogen, flowers$treat)</code> notation.</p>
-<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="summarising-data-frames.html#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(flowers<span class="sc">$</span>height, <span class="fu">list</span>(flowers<span class="sc">$</span>nitrogen, flowers<span class="sc">$</span>treat), mean)</span>
-<span id="cb172-2"><a href="summarising-data-frames.html#cb172-2" aria-hidden="true" tabindex="-1"></a><span class="do">##          notip    tip</span></span>
-<span id="cb172-3"><a href="summarising-data-frames.html#cb172-3" aria-hidden="true" tabindex="-1"></a><span class="do">## low    3.66875 8.0375</span></span>
-<span id="cb172-4"><a href="summarising-data-frames.html#cb172-4" aria-hidden="true" tabindex="-1"></a><span class="do">## medium 4.83750 9.1875</span></span>
-<span id="cb172-5"><a href="summarising-data-frames.html#cb172-5" aria-hidden="true" tabindex="-1"></a><span class="do">## high   5.70625 9.6000</span></span></code></pre></div>
-<p>And if you get a little fed up with having to write <code>flowers$</code> for every variable you can nest the <code>tapply()</code> function inside the <code>with()</code> function. The <code>with()</code> function allows R to evaluate an R expression with respect to a named data object (in this case <code>flowers</code>).</p>
-<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="summarising-data-frames.html#cb173-1" aria-hidden="true" tabindex="-1"></a><span class="fu">with</span>(flowers, <span class="fu">tapply</span>(height, <span class="fu">list</span>(nitrogen, treat), mean))</span>
-<span id="cb173-2"><a href="summarising-data-frames.html#cb173-2" aria-hidden="true" tabindex="-1"></a><span class="do">##          notip    tip</span></span>
-<span id="cb173-3"><a href="summarising-data-frames.html#cb173-3" aria-hidden="true" tabindex="-1"></a><span class="do">## low    3.66875 8.0375</span></span>
-<span id="cb173-4"><a href="summarising-data-frames.html#cb173-4" aria-hidden="true" tabindex="-1"></a><span class="do">## medium 4.83750 9.1875</span></span>
-<span id="cb173-5"><a href="summarising-data-frames.html#cb173-5" aria-hidden="true" tabindex="-1"></a><span class="do">## high   5.70625 9.6000</span></span></code></pre></div>
-<p>The <code>with()</code> function also works with many other functions and can save you alot of typing!</p>
-<p>Another really useful function for summarising data is the <code>aggregate()</code> function. The <code>aggregate()</code> function works in a very similar way to <code>tapply()</code> but is a bit more flexible.</p>
-<p>For example, to calculate the mean of the variables <code>height</code>, <code>weight</code>, <code>leafarea</code> and <code>shootarea</code> for each level of <code>nitrogen</code>.</p>
-<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="summarising-data-frames.html#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(flowers[, <span class="dv">4</span><span class="sc">:</span><span class="dv">7</span>], <span class="at">by =</span> <span class="fu">list</span>(<span class="at">nitrogen =</span> flowers<span class="sc">$</span>nitrogen), <span class="at">FUN =</span> mean)</span>
-<span id="cb174-2"><a href="summarising-data-frames.html#cb174-2" aria-hidden="true" tabindex="-1"></a><span class="do">##   nitrogen   height    weight leafarea shootarea</span></span>
-<span id="cb174-3"><a href="summarising-data-frames.html#cb174-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1      low 5.853125  8.652812 11.14375   45.1000</span></span>
-<span id="cb174-4"><a href="summarising-data-frames.html#cb174-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   medium 7.012500 11.164062 13.83125   67.5625</span></span>
-<span id="cb174-5"><a href="summarising-data-frames.html#cb174-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 3     high 7.653125 16.646875 17.18125  126.6875</span></span></code></pre></div>
-<p>In the code above we have indexed the columns we want to summarise in the <code>flowers</code> data frame using <code>flowers[, 4:7]</code>. The <code>by =</code> argument specifies a list of factors (<code>list(nitrogen = flowers$nitrogen)</code>) and the <code>FUN =</code> argument names the function to apply (<code>mean</code> in this example).</p>
-<p>Similar to the <code>tapply()</code> function we can include more than one factor to apply a function to. Here we calculate the mean values for each combination of <code>nitrogen</code> and <code>treat</code></p>
-<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="summarising-data-frames.html#cb175-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(flowers[, <span class="dv">4</span><span class="sc">:</span><span class="dv">7</span>], <span class="at">by =</span> <span class="fu">list</span>(<span class="at">nitrogen =</span> flowers<span class="sc">$</span>nitrogen,</span>
-<span id="cb175-2"><a href="summarising-data-frames.html#cb175-2" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">treat =</span> flowers<span class="sc">$</span>treat), <span class="at">FUN =</span> mean)</span>
-<span id="cb175-3"><a href="summarising-data-frames.html#cb175-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   nitrogen treat  height    weight leafarea shootarea</span></span>
-<span id="cb175-4"><a href="summarising-data-frames.html#cb175-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 1      low notip 3.66875  8.289375 12.32500  59.89375</span></span>
-<span id="cb175-5"><a href="summarising-data-frames.html#cb175-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   medium notip 4.83750 11.316875 14.17500  94.53125</span></span>
-<span id="cb175-6"><a href="summarising-data-frames.html#cb175-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 3     high notip 5.70625 16.604375 18.81875 155.31875</span></span>
-<span id="cb175-7"><a href="summarising-data-frames.html#cb175-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 4      low   tip 8.03750  9.016250  9.96250  30.30625</span></span>
-<span id="cb175-8"><a href="summarising-data-frames.html#cb175-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 5   medium   tip 9.18750 11.011250 13.48750  40.59375</span></span>
-<span id="cb175-9"><a href="summarising-data-frames.html#cb175-9" aria-hidden="true" tabindex="-1"></a><span class="do">## 6     high   tip 9.60000 16.689375 15.54375  98.05625</span></span></code></pre></div>
-<p>We can also use the <code>aggregate()</code> function in a different way by using the formula method (as we did with <code>xtabs()</code>). On the left hand side of the formula (<code>~</code>) we specify the variable we want to apply the mean function on and to the right hand side our factors separated by a <code>+</code> symbol. The formula method also allows you to use the <code>data =</code> argument for convenience.</p>
-<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="summarising-data-frames.html#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(height <span class="sc">~</span> nitrogen <span class="sc">+</span> treat, <span class="at">FUN =</span> mean, <span class="at">data =</span> flowers)</span>
-<span id="cb176-2"><a href="summarising-data-frames.html#cb176-2" aria-hidden="true" tabindex="-1"></a><span class="do">##   nitrogen treat  height</span></span>
-<span id="cb176-3"><a href="summarising-data-frames.html#cb176-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1      low notip 3.66875</span></span>
-<span id="cb176-4"><a href="summarising-data-frames.html#cb176-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   medium notip 4.83750</span></span>
-<span id="cb176-5"><a href="summarising-data-frames.html#cb176-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 3     high notip 5.70625</span></span>
-<span id="cb176-6"><a href="summarising-data-frames.html#cb176-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 4      low   tip 8.03750</span></span>
-<span id="cb176-7"><a href="summarising-data-frames.html#cb176-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 5   medium   tip 9.18750</span></span>
-<span id="cb176-8"><a href="summarising-data-frames.html#cb176-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 6     high   tip 9.60000</span></span></code></pre></div>
-<p>One advantage of using the formula method is that we can also use the <code>subset =</code> argument to apply the function to subsets of the original data. For example, to calculate the mean <code>height</code> for each combination of the <code>nitrogen</code> and <code>treat</code> levels but only for those plants that have less than 7 <code>flowers</code>.</p>
-<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="summarising-data-frames.html#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(height <span class="sc">~</span> nitrogen <span class="sc">+</span> treat, <span class="at">FUN =</span> mean, <span class="at">subset =</span> flowers <span class="sc">&lt;</span> <span class="dv">7</span>, <span class="at">data =</span> flowers)</span>
-<span id="cb177-2"><a href="summarising-data-frames.html#cb177-2" aria-hidden="true" tabindex="-1"></a><span class="do">##   nitrogen treat   height</span></span>
-<span id="cb177-3"><a href="summarising-data-frames.html#cb177-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1      low notip 3.533333</span></span>
-<span id="cb177-4"><a href="summarising-data-frames.html#cb177-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   medium notip 5.316667</span></span>
-<span id="cb177-5"><a href="summarising-data-frames.html#cb177-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 3     high notip 3.850000</span></span>
-<span id="cb177-6"><a href="summarising-data-frames.html#cb177-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 4      low   tip 8.176923</span></span>
-<span id="cb177-7"><a href="summarising-data-frames.html#cb177-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 5   medium   tip 8.570000</span></span>
-<span id="cb177-8"><a href="summarising-data-frames.html#cb177-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 6     high   tip 7.900000</span></span></code></pre></div>
-<p>Or for only those plants in <code>block</code> 1.</p>
-<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="summarising-data-frames.html#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(height <span class="sc">~</span> nitrogen <span class="sc">+</span> treat, <span class="at">FUN =</span> mean, <span class="at">subset =</span> block <span class="sc">==</span> <span class="st">&quot;1&quot;</span>, <span class="at">data =</span> flowers)</span>
-<span id="cb178-2"><a href="summarising-data-frames.html#cb178-2" aria-hidden="true" tabindex="-1"></a><span class="do">##   nitrogen treat  height</span></span>
-<span id="cb178-3"><a href="summarising-data-frames.html#cb178-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 1      low notip  3.3250</span></span>
-<span id="cb178-4"><a href="summarising-data-frames.html#cb178-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   medium notip  5.2375</span></span>
-<span id="cb178-5"><a href="summarising-data-frames.html#cb178-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 3     high notip  5.9250</span></span>
-<span id="cb178-6"><a href="summarising-data-frames.html#cb178-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 4      low   tip  8.7500</span></span>
-<span id="cb178-7"><a href="summarising-data-frames.html#cb178-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 5   medium   tip  9.5375</span></span>
-<span id="cb178-8"><a href="summarising-data-frames.html#cb178-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 6     high   tip 10.0375</span></span></code></pre></div>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="summarising-data-frames.html#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtabs</span>(<span class="sc">~</span> Permit.Type <span class="sc">+</span> Current.Status, <span class="at">data =</span> nola_str)</span>
+<span id="cb151-2"><a href="summarising-data-frames.html#cb151-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                                      Current.Status</span></span>
+<span id="cb151-3"><a href="summarising-data-frames.html#cb151-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Permit.Type                             Issued Pending</span></span>
+<span id="cb151-4"><a href="summarising-data-frames.html#cb151-4" aria-hidden="true" tabindex="-1"></a><span class="do">##                                       1      0       0</span></span>
+<span id="cb151-5"><a href="summarising-data-frames.html#cb151-5" aria-hidden="true" tabindex="-1"></a><span class="do">##   Commercial STR                      0      0       1</span></span>
+<span id="cb151-6"><a href="summarising-data-frames.html#cb151-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   Short Term Rental Commercial Owner  0      1       9</span></span>
+<span id="cb151-7"><a href="summarising-data-frames.html#cb151-7" aria-hidden="true" tabindex="-1"></a><span class="do">##   Short Term Rental Residential Owner 0      2       9</span></span></code></pre></div>
 </div>
             </section>
 

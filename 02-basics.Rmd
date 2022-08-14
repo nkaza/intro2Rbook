@@ -39,6 +39,7 @@ pi 					  # not a function but useful
 
 It's important to realise that when you run code as we've done above, the result of the code (or **value**) is only displayed in the console. Whilst this can sometimes be useful it is usually much more practical to store the value(s) in a object.
 
+
 ## Objects in R
 
 At the heart of almost everything you will do (or ever likely to do) in R is the concept that everything in R is an [object][chambers]. These objects can be almost anything, from a single number or character string (like a word) to highly complex structures like the output of a plot, a summary of your statistical analysis or a set of R commands that perform a specific task. Understanding how you create objects and assign values to objects is key to understanding R.
@@ -281,6 +282,29 @@ my_seq7 <- rep(in_vec, each = 3)	# repeats each element of
 my_seq7
 ```
 
+### Pipes. A better way!!!!! 
+
+A better way to nest functions is to use what are called pipes. Pipes are a way of passing the output of one function to another function without storing the values in an object in between. You can use two different pipes, one in native R (`|>`) and another from `magittr` (`%>%`) packages.  
+
+
+```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
+
+my_seq8 <- c(3, 1, 10, 7) |>  # Native R version
+							rep(each = 3)	
+
+my_seq8
+
+library(magrittr)
+my_seq9 <- c(3, 1, 10, 7) %>%  # magittr version
+							rep(each = 3)	
+
+all.equal(my_seq8, my_seq9)
+```
+
+
+You can build long series of these nested functions as you will do in the urban analytics course. 
+
+Notice that in both cases the the first argument of the `rep` function is not specified. That is because the output of the previous step before the pipe is automatically the first argument. This is how you will use it in many situations, however, in more advanced settings you can change the output to be a different agument of a later functions. But that is for a different day!
 
 ## Working with vectors {#vectors}
 

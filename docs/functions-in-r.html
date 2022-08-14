@@ -4,26 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7.2 Functions in R | An Introduction to R</title>
+  <title>6.2 Functions in R | An Introduction to R</title>
   <meta name="description" content="A practical introduction to using R for data analysis" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7.2 Functions in R | An Introduction to R" />
+  <meta property="og:title" content="6.2 Functions in R | An Introduction to R" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://alexd106.github.io/Rbook//images/cover_v3.png" />
+  <meta property="og:image" content="https://alexd106.github.io/Rbook//images/cover_v4.png" />
   <meta property="og:description" content="A practical introduction to using R for data analysis" />
-  <meta name="github-repo" content="alexd106/Rbook" />
+  <meta name="github-repo" content="nkaza/intro2Rbook" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7.2 Functions in R | An Introduction to R" />
+  <meta name="twitter:title" content="6.2 Functions in R | An Introduction to R" />
   
   <meta name="twitter:description" content="A practical introduction to using R for data analysis" />
-  <meta name="twitter:image" content="https://alexd106.github.io/Rbook//images/cover_v3.png" />
+  <meta name="twitter:image" content="https://alexd106.github.io/Rbook//images/cover_v4.png" />
 
-<meta name="author" content="Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto &amp; David Lusseau" />
+<meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-07-22" />
+<meta name="date" content="2022-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -153,13 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="0.1" data-path="the-aim-of-this-book.html"><a href="the-aim-of-this-book.html"><i class="fa fa-check"></i><b>0.1</b> The aim of this book</a></li>
 <li class="chapter" data-level="0.2" data-path="who-is-this-book-for.html"><a href="who-is-this-book-for.html"><i class="fa fa-check"></i><b>0.2</b> Who is this book for?</a></li>
-<li class="chapter" data-level="0.3" data-path="why-an-open-book.html"><a href="why-an-open-book.html"><i class="fa fa-check"></i><b>0.3</b> Why an open book?</a></li>
-<li class="chapter" data-level="0.4" data-path="whoarewe.html"><a href="whoarewe.html"><i class="fa fa-check"></i><b>0.4</b> Who are we?</a></li>
-<li class="chapter" data-level="0.5" data-path="how-to-use-this-book.html"><a href="how-to-use-this-book.html"><i class="fa fa-check"></i><b>0.5</b> How to use this book</a></li>
-<li class="chapter" data-level="0.6" data-path="book-website.html"><a href="book-website.html"><i class="fa fa-check"></i><b>0.6</b> Book website</a></li>
-<li class="chapter" data-level="0.7" data-path="some-r-pointers.html"><a href="some-r-pointers.html"><i class="fa fa-check"></i><b>0.7</b> Some R pointers</a></li>
-<li class="chapter" data-level="0.8" data-path="thanks.html"><a href="thanks.html"><i class="fa fa-check"></i><b>0.8</b> Thanks</a></li>
-<li class="chapter" data-level="0.9" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i><b>0.9</b> License</a></li>
+<li class="chapter" data-level="0.3" data-path="how-to-use-this-book.html"><a href="how-to-use-this-book.html"><i class="fa fa-check"></i><b>0.3</b> How to use this book</a></li>
+<li class="chapter" data-level="0.4" data-path="book-website.html"><a href="book-website.html"><i class="fa fa-check"></i><b>0.4</b> Book website</a></li>
+<li class="chapter" data-level="0.5" data-path="some-r-pointers.html"><a href="some-r-pointers.html"><i class="fa fa-check"></i><b>0.5</b> Some R pointers</a></li>
+<li class="chapter" data-level="0.6" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i><b>0.6</b> License</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Getting started with R and RStudio</a>
 <ul>
@@ -212,7 +209,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.1" data-path="objects-in-r.html"><a href="objects-in-r.html#r_objs"><i class="fa fa-check"></i><b>2.2.1</b> Creating objects</a></li>
 <li class="chapter" data-level="2.2.2" data-path="objects-in-r.html"><a href="objects-in-r.html#naming-objects"><i class="fa fa-check"></i><b>2.2.2</b> Naming objects</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html"><i class="fa fa-check"></i><b>2.3</b> Using functions in R</a></li>
+<li class="chapter" data-level="2.3" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html"><i class="fa fa-check"></i><b>2.3</b> Using functions in R</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="using-functions-in-r.html"><a href="using-functions-in-r.html#pipes.-a-better-way"><i class="fa fa-check"></i><b>2.3.1</b> Pipes. A better way!!!!!</a></li>
+</ul></li>
 <li class="chapter" data-level="2.4" data-path="vectors.html"><a href="vectors.html"><i class="fa fa-check"></i><b>2.4</b> Working with vectors</a>
 <ul>
 <li class="chapter" data-level="2.4.1" data-path="vectors.html"><a href="vectors.html#extracting-elements"><i class="fa fa-check"></i><b>2.4.1</b> Extracting elements</a></li>
@@ -231,59 +231,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="data_r.html"><a href="data_r.html"><i class="fa fa-check"></i><b>3</b> Data in R</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-types.html"><a href="data-types.html"><i class="fa fa-check"></i><b>3.1</b> Data types</a></li>
-<li class="chapter" data-level="3.2" data-path="data-structures.html"><a href="data-structures.html"><i class="fa fa-check"></i><b>3.2</b> Data structures</a>
+<li class="chapter" data-level="3.1" data-path="basic-data-types.html"><a href="basic-data-types.html"><i class="fa fa-check"></i><b>3.1</b> Basic Data types</a></li>
+<li class="chapter" data-level="3.2" data-path="complicated-data-types.html"><a href="complicated-data-types.html"><i class="fa fa-check"></i><b>3.2</b> Complicated Data Types</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="data-structures.html"><a href="data-structures.html#scal_vecs"><i class="fa fa-check"></i><b>3.2.1</b> Scalars and vectors</a></li>
-<li class="chapter" data-level="3.2.2" data-path="data-structures.html"><a href="data-structures.html#mat_array"><i class="fa fa-check"></i><b>3.2.2</b> Matrices and arrays</a></li>
-<li class="chapter" data-level="3.2.3" data-path="data-structures.html"><a href="data-structures.html#lists"><i class="fa fa-check"></i><b>3.2.3</b> Lists</a></li>
-<li class="chapter" data-level="3.2.4" data-path="data-structures.html"><a href="data-structures.html#df"><i class="fa fa-check"></i><b>3.2.4</b> Data frames</a></li>
+<li class="chapter" data-level="3.2.1" data-path="complicated-data-types.html"><a href="complicated-data-types.html#dealing-with-date-and-time"><i class="fa fa-check"></i><b>3.2.1</b> Dealing with Date and Time</a></li>
+<li class="chapter" data-level="3.2.2" data-path="complicated-data-types.html"><a href="complicated-data-types.html#factors"><i class="fa fa-check"></i><b>3.2.2</b> Factors</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>3.3</b> Importing data</a>
+<li class="chapter" data-level="3.3" data-path="data-structures.html"><a href="data-structures.html"><i class="fa fa-check"></i><b>3.3</b> Data structures</a>
 <ul>
-<li class="chapter" data-level="3.3.1" data-path="importing-data.html"><a href="importing-data.html#saving-files-to-import"><i class="fa fa-check"></i><b>3.3.1</b> Saving files to import</a></li>
-<li class="chapter" data-level="3.3.2" data-path="importing-data.html"><a href="importing-data.html#import_fnc"><i class="fa fa-check"></i><b>3.3.2</b> Import functions</a></li>
-<li class="chapter" data-level="3.3.3" data-path="importing-data.html"><a href="importing-data.html#common-import-frustrations"><i class="fa fa-check"></i><b>3.3.3</b> Common import frustrations</a></li>
-<li class="chapter" data-level="3.3.4" data-path="importing-data.html"><a href="importing-data.html#import_other"><i class="fa fa-check"></i><b>3.3.4</b> Other import options</a></li>
+<li class="chapter" data-level="3.3.1" data-path="data-structures.html"><a href="data-structures.html#scal_vecs"><i class="fa fa-check"></i><b>3.3.1</b> Scalars and vectors</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-structures.html"><a href="data-structures.html#mat_array"><i class="fa fa-check"></i><b>3.3.2</b> Matrices and arrays</a></li>
+<li class="chapter" data-level="3.3.3" data-path="data-structures.html"><a href="data-structures.html#lists"><i class="fa fa-check"></i><b>3.3.3</b> Lists</a></li>
+<li class="chapter" data-level="3.3.4" data-path="data-structures.html"><a href="data-structures.html#df"><i class="fa fa-check"></i><b>3.3.4</b> Data frames</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html"><i class="fa fa-check"></i><b>3.4</b> Wrangling data frames</a>
+<li class="chapter" data-level="3.4" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>3.4</b> Importing data</a>
 <ul>
-<li class="chapter" data-level="3.4.1" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#positional-indexes"><i class="fa fa-check"></i><b>3.4.1</b> Positional indexes</a></li>
-<li class="chapter" data-level="3.4.2" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#logical-indexes"><i class="fa fa-check"></i><b>3.4.2</b> Logical indexes</a></li>
-<li class="chapter" data-level="3.4.3" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#ordering-data-frames"><i class="fa fa-check"></i><b>3.4.3</b> Ordering data frames</a></li>
-<li class="chapter" data-level="3.4.4" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#adding-columns-and-rows"><i class="fa fa-check"></i><b>3.4.4</b> Adding columns and rows</a></li>
-<li class="chapter" data-level="3.4.5" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#merging-data-frames"><i class="fa fa-check"></i><b>3.4.5</b> Merging data frames</a></li>
-<li class="chapter" data-level="3.4.6" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#reshape"><i class="fa fa-check"></i><b>3.4.6</b> Reshaping data frames</a></li>
+<li class="chapter" data-level="3.4.1" data-path="importing-data.html"><a href="importing-data.html#saving-files-to-import"><i class="fa fa-check"></i><b>3.4.1</b> Saving files to import</a></li>
+<li class="chapter" data-level="3.4.2" data-path="importing-data.html"><a href="importing-data.html#import_fnc"><i class="fa fa-check"></i><b>3.4.2</b> Import functions</a></li>
+<li class="chapter" data-level="3.4.3" data-path="importing-data.html"><a href="importing-data.html#common-import-frustrations"><i class="fa fa-check"></i><b>3.4.3</b> Common import frustrations</a></li>
+<li class="chapter" data-level="3.4.4" data-path="importing-data.html"><a href="importing-data.html#import_other"><i class="fa fa-check"></i><b>3.4.4</b> Other import options</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="summarising-data-frames.html"><a href="summarising-data-frames.html"><i class="fa fa-check"></i><b>3.5</b> Summarising data frames</a></li>
-<li class="chapter" data-level="3.6" data-path="exporting-data.html"><a href="exporting-data.html"><i class="fa fa-check"></i><b>3.6</b> Exporting data</a>
+<li class="chapter" data-level="3.5" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html"><i class="fa fa-check"></i><b>3.5</b> Wrangling data frames</a>
 <ul>
-<li class="chapter" data-level="3.6.1" data-path="exporting-data.html"><a href="exporting-data.html#export-functions"><i class="fa fa-check"></i><b>3.6.1</b> Export functions</a></li>
-<li class="chapter" data-level="3.6.2" data-path="exporting-data.html"><a href="exporting-data.html#other-export-functions"><i class="fa fa-check"></i><b>3.6.2</b> Other export functions</a></li>
+<li class="chapter" data-level="3.5.1" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#positional-indexes"><i class="fa fa-check"></i><b>3.5.1</b> Positional indexes</a></li>
+<li class="chapter" data-level="3.5.2" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#logical-indexes"><i class="fa fa-check"></i><b>3.5.2</b> Logical indexes</a></li>
+<li class="chapter" data-level="3.5.3" data-path="wrangling-data-frames.html"><a href="wrangling-data-frames.html#adding-columns-and-rows"><i class="fa fa-check"></i><b>3.5.3</b> Adding columns and rows</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="exercise-3.html"><a href="exercise-3.html"><i class="fa fa-check"></i><b>3.7</b> Exercise 3</a></li>
+<li class="chapter" data-level="3.6" data-path="summarising-data-frames.html"><a href="summarising-data-frames.html"><i class="fa fa-check"></i><b>3.6</b> Summarising data frames</a></li>
+<li class="chapter" data-level="3.7" data-path="exporting-data.html"><a href="exporting-data.html"><i class="fa fa-check"></i><b>3.7</b> Exporting data</a></li>
+<li class="chapter" data-level="3.8" data-path="exercise-3.html"><a href="exercise-3.html"><i class="fa fa-check"></i><b>3.8</b> Exercise 3</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="graphics_base_r.html"><a href="graphics_base_r.html"><i class="fa fa-check"></i><b>4</b> Graphics with base R</a>
+<li class="chapter" data-level="4" data-path="data_tidyverse.html"><a href="data_tidyverse.html"><i class="fa fa-check"></i><b>4</b> Tidyverse</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="baseplot_start.html"><a href="baseplot_start.html"><i class="fa fa-check"></i><b>4.1</b> Getting started</a></li>
-<li class="chapter" data-level="4.2" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html"><i class="fa fa-check"></i><b>4.2</b> Simple base R plots</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#scatterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scatterplots</a></li>
-<li class="chapter" data-level="4.2.2" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#histograms"><i class="fa fa-check"></i><b>4.2.2</b> Histograms</a></li>
-<li class="chapter" data-level="4.2.3" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#box-and-violin-plots"><i class="fa fa-check"></i><b>4.2.3</b> Box and violin plots</a></li>
-<li class="chapter" data-level="4.2.4" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#dotcharts"><i class="fa fa-check"></i><b>4.2.4</b> Dot charts</a></li>
-<li class="chapter" data-level="4.2.5" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#pairs-plots"><i class="fa fa-check"></i><b>4.2.5</b> Pairs plots</a></li>
-<li class="chapter" data-level="4.2.6" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#coplots"><i class="fa fa-check"></i><b>4.2.6</b> Coplots</a></li>
-<li class="chapter" data-level="4.2.7" data-path="simple-base-r-plots.html"><a href="simple-base-r-plots.html#lattice-plots"><i class="fa fa-check"></i><b>4.2.7</b> Lattice plots</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="custom_plot.html"><a href="custom_plot.html"><i class="fa fa-check"></i><b>4.3</b> Customising plots</a>
-<ul>
-<li class="chapter" data-level="4.3.1" data-path="custom_plot.html"><a href="custom_plot.html#customising-with-arguments"><i class="fa fa-check"></i><b>4.3.1</b> Customising with arguments</a></li>
-<li class="chapter" data-level="4.3.2" data-path="custom_plot.html"><a href="custom_plot.html#building-plots"><i class="fa fa-check"></i><b>4.3.2</b> Building plots</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="mult_graphs.html"><a href="mult_graphs.html"><i class="fa fa-check"></i><b>4.4</b> Multiple graphs</a></li>
-<li class="chapter" data-level="4.5" data-path="export_plots.html"><a href="export_plots.html"><i class="fa fa-check"></i><b>4.5</b> Exporting plots</a></li>
-<li class="chapter" data-level="4.6" data-path="exercise-4.html"><a href="exercise-4.html"><i class="fa fa-check"></i><b>4.6</b> Exercise 4</a></li>
+<li class="chapter" data-level="4.1" data-path="data-frames-tibbles.html"><a href="data-frames-tibbles.html"><i class="fa fa-check"></i><b>4.1</b> Data Frames &amp; Tibbles</a></li>
+<li class="chapter" data-level="4.2" data-path="reading-external-data.html"><a href="reading-external-data.html"><i class="fa fa-check"></i><b>4.2</b> Reading external data</a></li>
+<li class="chapter" data-level="4.3" data-path="wrangling-data.html"><a href="wrangling-data.html"><i class="fa fa-check"></i><b>4.3</b> Wrangling Data</a></li>
+<li class="chapter" data-level="4.4" data-path="relational-data.html"><a href="relational-data.html"><i class="fa fa-check"></i><b>4.4</b> Relational Data</a></li>
+<li class="chapter" data-level="4.5" data-path="exercise-4.html"><a href="exercise-4.html"><i class="fa fa-check"></i><b>4.5</b> Exercise 4</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="graphics_r.html"><a href="graphics_r.html"><i class="fa fa-check"></i><b>5</b> Graphics with ggplot</a>
 <ul>
@@ -328,73 +312,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="exercise-5.html"><a href="exercise-5.html"><i class="fa fa-check"></i><b>5.5</b> Exercise 5</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="stats_r.html"><a href="stats_r.html"><i class="fa fa-check"></i><b>6</b> Simple Statistics in R</a>
+<li class="chapter" data-level="6" data-path="prog_r.html"><a href="prog_r.html"><i class="fa fa-check"></i><b>6</b> Programming in R</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="one-and-two-sample-tests.html"><a href="one-and-two-sample-tests.html"><i class="fa fa-check"></i><b>6.1</b> One and two sample tests</a></li>
-<li class="chapter" data-level="6.2" data-path="correlation.html"><a href="correlation.html"><i class="fa fa-check"></i><b>6.2</b> Correlation</a></li>
-<li class="chapter" data-level="6.3" data-path="simple_lm.html"><a href="simple_lm.html"><i class="fa fa-check"></i><b>6.3</b> Simple linear modelling</a></li>
-<li class="chapter" data-level="6.4" data-path="other-modelling-approaches.html"><a href="other-modelling-approaches.html"><i class="fa fa-check"></i><b>6.4</b> Other modelling approaches</a></li>
-<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
+<li class="chapter" data-level="6.1" data-path="looking-behind-the-curtain.html"><a href="looking-behind-the-curtain.html"><i class="fa fa-check"></i><b>6.1</b> Looking behind the curtain</a></li>
+<li class="chapter" data-level="6.2" data-path="functions-in-r.html"><a href="functions-in-r.html"><i class="fa fa-check"></i><b>6.2</b> Functions in R</a></li>
+<li class="chapter" data-level="6.3" data-path="conditional-statements.html"><a href="conditional-statements.html"><i class="fa fa-check"></i><b>6.3</b> Conditional statements</a></li>
+<li class="chapter" data-level="6.4" data-path="combining-logical-operators.html"><a href="combining-logical-operators.html"><i class="fa fa-check"></i><b>6.4</b> Combining logical operators</a></li>
+<li class="chapter" data-level="6.5" data-path="loops.html"><a href="loops.html"><i class="fa fa-check"></i><b>6.5</b> Loops</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="loops.html"><a href="loops.html#for-loop"><i class="fa fa-check"></i><b>6.5.1</b> For loop</a></li>
+<li class="chapter" data-level="6.5.2" data-path="loops.html"><a href="loops.html#while-loop"><i class="fa fa-check"></i><b>6.5.2</b> While loop</a></li>
+<li class="chapter" data-level="6.5.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.5.3</b> When to use a loop?</a></li>
+<li class="chapter" data-level="6.5.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.5.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="prog_r.html"><a href="prog_r.html"><i class="fa fa-check"></i><b>7</b> Programming in R</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="looking-behind-the-curtain.html"><a href="looking-behind-the-curtain.html"><i class="fa fa-check"></i><b>7.1</b> Looking behind the curtain</a></li>
-<li class="chapter" data-level="7.2" data-path="functions-in-r.html"><a href="functions-in-r.html"><i class="fa fa-check"></i><b>7.2</b> Functions in R</a></li>
-<li class="chapter" data-level="7.3" data-path="conditional-statements.html"><a href="conditional-statements.html"><i class="fa fa-check"></i><b>7.3</b> Conditional statements</a></li>
-<li class="chapter" data-level="7.4" data-path="combining-logical-operators.html"><a href="combining-logical-operators.html"><i class="fa fa-check"></i><b>7.4</b> Combining logical operators</a></li>
-<li class="chapter" data-level="7.5" data-path="loops.html"><a href="loops.html"><i class="fa fa-check"></i><b>7.5</b> Loops</a>
-<ul>
-<li class="chapter" data-level="7.5.1" data-path="loops.html"><a href="loops.html#for-loop"><i class="fa fa-check"></i><b>7.5.1</b> For loop</a></li>
-<li class="chapter" data-level="7.5.2" data-path="loops.html"><a href="loops.html#while-loop"><i class="fa fa-check"></i><b>7.5.2</b> While loop</a></li>
-<li class="chapter" data-level="7.5.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>7.5.3</b> When to use a loop?</a></li>
-<li class="chapter" data-level="7.5.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>7.5.4</b> If not loops, then what?</a></li>
+<li class="chapter" data-level="6.6" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.6</b> Exercise 7</a></li>
 </ul></li>
-<li class="chapter" data-level="7.6" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>7.6</b> Exercise 7</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="rmarkdown_r.html"><a href="rmarkdown_r.html"><i class="fa fa-check"></i><b>8</b> Reproducible reports with R markdown</a>
+<li class="chapter" data-level="7" data-path="rmarkdown_r.html"><a href="rmarkdown_r.html"><i class="fa fa-check"></i><b>7</b> Reproducible reports with R markdown</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="what-is-r-markdown.html"><a href="what-is-r-markdown.html"><i class="fa fa-check"></i><b>8.1</b> What is R markdown?</a></li>
-<li class="chapter" data-level="8.2" data-path="why-use-r-markdown.html"><a href="why-use-r-markdown.html"><i class="fa fa-check"></i><b>8.2</b> Why use R markdown?</a></li>
-<li class="chapter" data-level="8.3" data-path="get-started-with-r-markdown.html"><a href="get-started-with-r-markdown.html"><i class="fa fa-check"></i><b>8.3</b> Get started with R markdown</a></li>
-<li class="chapter" data-level="8.4" data-path="new_rm.html"><a href="new_rm.html"><i class="fa fa-check"></i><b>8.4</b> Create an R markdown document</a></li>
-<li class="chapter" data-level="8.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html"><i class="fa fa-check"></i><b>8.5</b> R markdown anatomy</a>
+<li class="chapter" data-level="7.1" data-path="what-is-r-markdown.html"><a href="what-is-r-markdown.html"><i class="fa fa-check"></i><b>7.1</b> What is R markdown?</a></li>
+<li class="chapter" data-level="7.2" data-path="why-use-r-markdown.html"><a href="why-use-r-markdown.html"><i class="fa fa-check"></i><b>7.2</b> Why use R markdown?</a></li>
+<li class="chapter" data-level="7.3" data-path="get-started-with-r-markdown.html"><a href="get-started-with-r-markdown.html"><i class="fa fa-check"></i><b>7.3</b> Get started with R markdown</a></li>
+<li class="chapter" data-level="7.4" data-path="new_rm.html"><a href="new_rm.html"><i class="fa fa-check"></i><b>7.4</b> Create an R markdown document</a></li>
+<li class="chapter" data-level="7.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html"><i class="fa fa-check"></i><b>7.5</b> R markdown anatomy</a>
 <ul>
-<li class="chapter" data-level="8.5.1" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#yaml-header"><i class="fa fa-check"></i><b>8.5.1</b> YAML header</a></li>
-<li class="chapter" data-level="8.5.2" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#formatted-text"><i class="fa fa-check"></i><b>8.5.2</b> Formatted text</a></li>
-<li class="chapter" data-level="8.5.3" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#code_chunks"><i class="fa fa-check"></i><b>8.5.3</b> Code chunks</a></li>
-<li class="chapter" data-level="8.5.4" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-figures"><i class="fa fa-check"></i><b>8.5.4</b> Adding figures</a></li>
-<li class="chapter" data-level="8.5.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-tables"><i class="fa fa-check"></i><b>8.5.5</b> Adding tables</a></li>
-<li class="chapter" data-level="8.5.6" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#inline-r-code"><i class="fa fa-check"></i><b>8.5.6</b> Inline R code</a></li>
+<li class="chapter" data-level="7.5.1" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#yaml-header"><i class="fa fa-check"></i><b>7.5.1</b> YAML header</a></li>
+<li class="chapter" data-level="7.5.2" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#formatted-text"><i class="fa fa-check"></i><b>7.5.2</b> Formatted text</a></li>
+<li class="chapter" data-level="7.5.3" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#code_chunks"><i class="fa fa-check"></i><b>7.5.3</b> Code chunks</a></li>
+<li class="chapter" data-level="7.5.4" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-figures"><i class="fa fa-check"></i><b>7.5.4</b> Adding figures</a></li>
+<li class="chapter" data-level="7.5.5" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#adding-tables"><i class="fa fa-check"></i><b>7.5.5</b> Adding tables</a></li>
+<li class="chapter" data-level="7.5.6" data-path="r-markdown-anatomy.html"><a href="r-markdown-anatomy.html#inline-r-code"><i class="fa fa-check"></i><b>7.5.6</b> Inline R code</a></li>
 </ul></li>
-<li class="chapter" data-level="8.6" data-path="tips_tricks.html"><a href="tips_tricks.html"><i class="fa fa-check"></i><b>8.6</b> Some tips and tricks</a></li>
-<li class="chapter" data-level="8.7" data-path="further-information.html"><a href="further-information.html"><i class="fa fa-check"></i><b>8.7</b> Further Information</a></li>
+<li class="chapter" data-level="7.6" data-path="tips_tricks.html"><a href="tips_tricks.html"><i class="fa fa-check"></i><b>7.6</b> Some tips and tricks</a></li>
+<li class="chapter" data-level="7.7" data-path="further-information.html"><a href="further-information.html"><i class="fa fa-check"></i><b>7.7</b> Further Information</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="github_r.html"><a href="github_r.html"><i class="fa fa-check"></i><b>9</b> Version control with Git and GitHub</a>
+<li class="chapter" data-level="8" data-path="github_r.html"><a href="github_r.html"><i class="fa fa-check"></i><b>8</b> Version control with Git and GitHub</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="what-is-version-control.html"><a href="what-is-version-control.html"><i class="fa fa-check"></i><b>9.1</b> What is version control?</a></li>
-<li class="chapter" data-level="9.2" data-path="why-use-version-control.html"><a href="why-use-version-control.html"><i class="fa fa-check"></i><b>9.2</b> Why use version control?</a></li>
-<li class="chapter" data-level="9.3" data-path="what-is-git-and-github.html"><a href="what-is-git-and-github.html"><i class="fa fa-check"></i><b>9.3</b> What is Git and GitHub?</a></li>
-<li class="chapter" data-level="9.4" data-path="setup_git.html"><a href="setup_git.html"><i class="fa fa-check"></i><b>9.4</b> Getting started</a>
+<li class="chapter" data-level="8.1" data-path="what-is-version-control.html"><a href="what-is-version-control.html"><i class="fa fa-check"></i><b>8.1</b> What is version control?</a></li>
+<li class="chapter" data-level="8.2" data-path="why-use-version-control.html"><a href="why-use-version-control.html"><i class="fa fa-check"></i><b>8.2</b> Why use version control?</a></li>
+<li class="chapter" data-level="8.3" data-path="what-is-git-and-github.html"><a href="what-is-git-and-github.html"><i class="fa fa-check"></i><b>8.3</b> What is Git and GitHub?</a></li>
+<li class="chapter" data-level="8.4" data-path="setup_git.html"><a href="setup_git.html"><i class="fa fa-check"></i><b>8.4</b> Getting started</a>
 <ul>
-<li class="chapter" data-level="9.4.1" data-path="setup_git.html"><a href="setup_git.html#install-git"><i class="fa fa-check"></i><b>9.4.1</b> Install Git</a></li>
-<li class="chapter" data-level="9.4.2" data-path="setup_git.html"><a href="setup_git.html#configure-git"><i class="fa fa-check"></i><b>9.4.2</b> Configure Git</a></li>
-<li class="chapter" data-level="9.4.3" data-path="setup_git.html"><a href="setup_git.html#rs_config"><i class="fa fa-check"></i><b>9.4.3</b> Configure RStudio</a></li>
-<li class="chapter" data-level="9.4.4" data-path="setup_git.html"><a href="setup_git.html#register-a-github-account"><i class="fa fa-check"></i><b>9.4.4</b> Register a GitHub account</a></li>
+<li class="chapter" data-level="8.4.1" data-path="setup_git.html"><a href="setup_git.html#install-git"><i class="fa fa-check"></i><b>8.4.1</b> Install Git</a></li>
+<li class="chapter" data-level="8.4.2" data-path="setup_git.html"><a href="setup_git.html#configure-git"><i class="fa fa-check"></i><b>8.4.2</b> Configure Git</a></li>
+<li class="chapter" data-level="8.4.3" data-path="setup_git.html"><a href="setup_git.html#rs_config"><i class="fa fa-check"></i><b>8.4.3</b> Configure RStudio</a></li>
+<li class="chapter" data-level="8.4.4" data-path="setup_git.html"><a href="setup_git.html#register-a-github-account"><i class="fa fa-check"></i><b>8.4.4</b> Register a GitHub account</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html"><i class="fa fa-check"></i><b>9.5</b> Setting up a project in RStudio</a>
+<li class="chapter" data-level="8.5" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html"><i class="fa fa-check"></i><b>8.5</b> Setting up a project in RStudio</a>
 <ul>
-<li class="chapter" data-level="9.5.1" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt1"><i class="fa fa-check"></i><b>9.5.1</b> Option 1 - GitHub first</a></li>
-<li class="chapter" data-level="9.5.2" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt2"><i class="fa fa-check"></i><b>9.5.2</b> Option 2 - RStudio first</a></li>
+<li class="chapter" data-level="8.5.1" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt1"><i class="fa fa-check"></i><b>8.5.1</b> Option 1 - GitHub first</a></li>
+<li class="chapter" data-level="8.5.2" data-path="setting-up-a-project-in-rstudio.html"><a href="setting-up-a-project-in-rstudio.html#opt2"><i class="fa fa-check"></i><b>8.5.2</b> Option 2 - RStudio first</a></li>
 </ul></li>
-<li class="chapter" data-level="9.6" data-path="use_git.html"><a href="use_git.html"><i class="fa fa-check"></i><b>9.6</b> Using Git</a>
+<li class="chapter" data-level="8.6" data-path="use_git.html"><a href="use_git.html"><i class="fa fa-check"></i><b>8.6</b> Using Git</a>
 <ul>
-<li class="chapter" data-level="9.6.1" data-path="use_git.html"><a href="use_git.html#tracking-changes"><i class="fa fa-check"></i><b>9.6.1</b> Tracking changes</a></li>
-<li class="chapter" data-level="9.6.2" data-path="use_git.html"><a href="use_git.html#commit-history"><i class="fa fa-check"></i><b>9.6.2</b> Commit history</a></li>
-<li class="chapter" data-level="9.6.3" data-path="use_git.html"><a href="use_git.html#undo"><i class="fa fa-check"></i><b>9.6.3</b> Reverting changes</a></li>
-<li class="chapter" data-level="9.6.4" data-path="use_git.html"><a href="use_git.html#collab"><i class="fa fa-check"></i><b>9.6.4</b> Collaborate with Git</a></li>
-<li class="chapter" data-level="9.6.5" data-path="use_git.html"><a href="use_git.html#git-tips"><i class="fa fa-check"></i><b>9.6.5</b> Git tips</a></li>
+<li class="chapter" data-level="8.6.1" data-path="use_git.html"><a href="use_git.html#tracking-changes"><i class="fa fa-check"></i><b>8.6.1</b> Tracking changes</a></li>
+<li class="chapter" data-level="8.6.2" data-path="use_git.html"><a href="use_git.html#commit-history"><i class="fa fa-check"></i><b>8.6.2</b> Commit history</a></li>
+<li class="chapter" data-level="8.6.3" data-path="use_git.html"><a href="use_git.html#undo"><i class="fa fa-check"></i><b>8.6.3</b> Reverting changes</a></li>
+<li class="chapter" data-level="8.6.4" data-path="use_git.html"><a href="use_git.html#collab"><i class="fa fa-check"></i><b>8.6.4</b> Collaborate with Git</a></li>
+<li class="chapter" data-level="8.6.5" data-path="use_git.html"><a href="use_git.html#git-tips"><i class="fa fa-check"></i><b>8.6.5</b> Git tips</a></li>
 </ul></li>
-<li class="chapter" data-level="9.7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>9.7</b> Further resources</a></li>
+<li class="chapter" data-level="8.7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>8.7</b> Further resources</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -422,8 +398,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="functions-in-r" class="section level2 hasAnchor" number="7.2">
-<h2><span class="header-section-number">7.2</span> Functions in R<a href="functions-in-r.html#functions-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="functions-in-r" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Functions in R<a href="functions-in-r.html#functions-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Functions are your loyal servants, waiting patiently to do your bidding to the best of their ability. They’re made with the utmost care and attention … though sometimes may end up being something of a Frankenstein’s monster - with an extra limb or two and a head put on backwards. But no matter how ugly they may be they’re completely faithful to you.</p>
 <p>They’re also very stupid.</p>
 <p>If we asked you to go to the supermarket to get us some ingredients to make <em>Francesinha</em>, even if you don’t know what the heck that is, you’d be able to guess and bring at least <em>something</em> back. Or you could decide to make something else. Or you could ask a celebrity chef for help. Or you could pull out your phone and search online for what <a href="https://en.wikipedia.org/wiki/Francesinha"><em>Francesinha</em></a> is. The point is, even if we didn’t give you enough information to do the task, you’re intelligent enough to, at the very least, try to find a work around.</p>
@@ -431,114 +407,114 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Remember two things: the intelligence of code comes from the coder, not the computer and functions need exact instructions to work.</p>
 <p>To prevent functions from being <em>too</em> stupid you must provide the information the function needs in order for it to function. As with the <em>Francesinha</em> example, if we’d supplied a recipe list to the function, it would have managed just fine. We call this “fulfilling an argument”. The vast majority of functions require the user to fulfill at least one argument.</p>
 <p>This can be illustrated in the pseudocode below. When we make a function we can specify what arguments the user must fulfill (e.g. <code>argument1</code> and <code>argument2</code>), as well as what to do once it has this information (<code>expression</code>):</p>
-<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="functions-in-r.html#cb373-1" aria-hidden="true" tabindex="-1"></a>nameOfFunction <span class="ot">&lt;-</span> <span class="cf">function</span>(argument1, argument2, ...) {expression}</span></code></pre></div>
+<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="functions-in-r.html#cb236-1" aria-hidden="true" tabindex="-1"></a>nameOfFunction <span class="ot">&lt;-</span> <span class="cf">function</span>(argument1, argument2, ...) {expression}</span></code></pre></div>
 <p>The first thing to note is that we’ve used the function <code>function()</code> to create a new function called <code>nameOfFunction</code>. To walk through the above code; we’re creating a function called <code>nameOfFunction</code>. Within the round brackets we specify what information (i.e. arguments) the function requires to run (as many or as few as needed). These arguments are then passed to the expression part of the function. The expression can be any valid R command or set of R commands and is usually contained between a pair of braces <code>{ }</code> (if a function is only one line long you can omit the braces). Once you run the above code, you can then use your new function by typing:</p>
-<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="functions-in-r.html#cb374-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nameOfFunction</span>(argument1, argument2)</span></code></pre></div>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="functions-in-r.html#cb237-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nameOfFunction</span>(argument1, argument2)</span></code></pre></div>
 <p>Confused? Let’s work through an example to help clear things up.</p>
 <p>First we are going to create a data frame called <code>city</code>, where columns <code>porto</code>, <code>aberdeen</code>, <code>nairobi</code>, and <code>genoa</code> are filled with 100 random values drawn from a bag (using the <code>rnorm()</code> function to draw random values from a Normal distribution with mean 0 and standard deviation of 1). We also include a “problem”, for us to solve later, by including 10 <code>NA</code> values within the <code>nairobi</code> column (using <code>rep(NA, 10)</code>).</p>
-<div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb375-1"><a href="functions-in-r.html#cb375-1" aria-hidden="true" tabindex="-1"></a>city <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb375-2"><a href="functions-in-r.html#cb375-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">porto =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>),</span>
-<span id="cb375-3"><a href="functions-in-r.html#cb375-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">aberdeen =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>),</span>
-<span id="cb375-4"><a href="functions-in-r.html#cb375-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">nairobi =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="cn">NA</span>, <span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">90</span>)),</span>
-<span id="cb375-5"><a href="functions-in-r.html#cb375-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">genoa =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb375-6"><a href="functions-in-r.html#cb375-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="functions-in-r.html#cb238-1" aria-hidden="true" tabindex="-1"></a>city <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb238-2"><a href="functions-in-r.html#cb238-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">porto =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>),</span>
+<span id="cb238-3"><a href="functions-in-r.html#cb238-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">aberdeen =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>),</span>
+<span id="cb238-4"><a href="functions-in-r.html#cb238-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">nairobi =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="cn">NA</span>, <span class="dv">10</span>), <span class="fu">rnorm</span>(<span class="dv">90</span>)),</span>
+<span id="cb238-5"><a href="functions-in-r.html#cb238-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">genoa =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb238-6"><a href="functions-in-r.html#cb238-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <p>Let’s say that you want to multiply the values in the variables <code>Porto</code> and <code>Aberdeen</code> and create a new object called <code>porto_aberdeen</code>. We can do this “by hand” using:</p>
-<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="functions-in-r.html#cb376-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span></code></pre></div>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="functions-in-r.html#cb239-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span></code></pre></div>
 <p>We’ve now created an object called <code>porto_aberdeen</code> by multiplying the vectors <code>city$porto</code> and <code>city$aberdeen</code>. Simple. If this was all we needed to do, we can stop here. R works with vectors, so doing these kinds of operations in R is actually much simpler than other programming languages, where this type of code might require loops (we say that R is a vectorised language). Something to keep in mind for later is that doing these kinds of operations with loops can be much slower compared to vectorisation.</p>
 <p>But what if we want to repeat this multiplication many times? Let’s say we wanted to multiply columns <code>porto</code> and <code>aberdeen</code>, <code>aberdeen</code> and <code>genoa</code>, and <code>nairobi</code> and <code>genoa</code>. In this case we could copy and paste the code, replacing the relevant information.</p>
-<div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb377-1"><a href="functions-in-r.html#cb377-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span>
-<span id="cb377-2"><a href="functions-in-r.html#cb377-2" aria-hidden="true" tabindex="-1"></a>aberdeen_genoa <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span>
-<span id="cb377-3"><a href="functions-in-r.html#cb377-3" aria-hidden="true" tabindex="-1"></a>nairobi_genoa <span class="ot">&lt;-</span> city<span class="sc">$</span>nairobi <span class="sc">*</span> city<span class="sc">$</span>genoa</span></code></pre></div>
+<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="functions-in-r.html#cb240-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span>
+<span id="cb240-2"><a href="functions-in-r.html#cb240-2" aria-hidden="true" tabindex="-1"></a>aberdeen_genoa <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen <span class="sc">*</span> city<span class="sc">$</span>aberdeen</span>
+<span id="cb240-3"><a href="functions-in-r.html#cb240-3" aria-hidden="true" tabindex="-1"></a>nairobi_genoa <span class="ot">&lt;-</span> city<span class="sc">$</span>nairobi <span class="sc">*</span> city<span class="sc">$</span>genoa</span></code></pre></div>
 <p>While this approach works, it’s easy to make mistakes. In fact, here we’ve “forgotten” to change <code>aberdeen</code> to <code>genoa</code> in the second line of code when copying and pasting. This is where writing a function comes in handy. If we were to write this as a function, there is only one source of potential error (within the function itself) instead of many copy-pasted lines of code (which we also cut down on by using a function).</p>
 <p>In this case, we’re using some fairly trivial code where it’s maybe hard to make a genuine mistake. But what if we increased the complexity?</p>
-<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="functions-in-r.html#cb378-1" aria-hidden="true" tabindex="-1"></a>city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen <span class="sc">/</span> city<span class="sc">$</span>porto <span class="sc">+</span> (city<span class="sc">$</span>porto <span class="sc">*</span> <span class="dv">10</span><span class="sc">^</span>(city<span class="sc">$</span>aberdeen)) </span>
-<span id="cb378-2"><a href="functions-in-r.html#cb378-2" aria-hidden="true" tabindex="-1"></a>                  <span class="sc">-</span> city<span class="sc">$</span>aberdeen <span class="sc">-</span> (city<span class="sc">$</span>porto <span class="sc">*</span> <span class="fu">sqrt</span>(city<span class="sc">$</span>aberdeen <span class="sc">+</span> <span class="dv">10</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="functions-in-r.html#cb241-1" aria-hidden="true" tabindex="-1"></a>city<span class="sc">$</span>porto <span class="sc">*</span> city<span class="sc">$</span>aberdeen <span class="sc">/</span> city<span class="sc">$</span>porto <span class="sc">+</span> (city<span class="sc">$</span>porto <span class="sc">*</span> <span class="dv">10</span><span class="sc">^</span>(city<span class="sc">$</span>aberdeen)) </span>
+<span id="cb241-2"><a href="functions-in-r.html#cb241-2" aria-hidden="true" tabindex="-1"></a>                  <span class="sc">-</span> city<span class="sc">$</span>aberdeen <span class="sc">-</span> (city<span class="sc">$</span>porto <span class="sc">*</span> <span class="fu">sqrt</span>(city<span class="sc">$</span>aberdeen <span class="sc">+</span> <span class="dv">10</span>))</span></code></pre></div>
 <p>Now imagine having to copy and paste this three times, and in each case having to change the <code>porto</code> and <code>aberdeen</code> variables (especially if we had to do it more than three times).</p>
 <p>What we could do instead is generalise our code for <code>x</code> and <code>y</code> columns instead of naming specific cities. If we did this, we could recycle the <code>x * y</code> code. Whenever we wanted to multiple columns together, we assign a city to either <code>x</code> or <code>y</code>. We’ll assign the multiplication to the objects <code>porto_aberdeen</code> and <code>aberdeen_nairobi</code> so we can come back to them later.</p>
-<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="functions-in-r.html#cb379-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign x and y values</span></span>
-<span id="cb379-2"><a href="functions-in-r.html#cb379-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> city<span class="sc">$</span>porto</span>
-<span id="cb379-3"><a href="functions-in-r.html#cb379-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen</span>
-<span id="cb379-4"><a href="functions-in-r.html#cb379-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb379-5"><a href="functions-in-r.html#cb379-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Use multiplication code</span></span>
-<span id="cb379-6"><a href="functions-in-r.html#cb379-6" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span>
-<span id="cb379-7"><a href="functions-in-r.html#cb379-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb379-8"><a href="functions-in-r.html#cb379-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign new x and y values</span></span>
-<span id="cb379-9"><a href="functions-in-r.html#cb379-9" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen</span>
-<span id="cb379-10"><a href="functions-in-r.html#cb379-10" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> city<span class="sc">$</span>nairobi</span>
-<span id="cb379-11"><a href="functions-in-r.html#cb379-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb379-12"><a href="functions-in-r.html#cb379-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Reuse multiplication code</span></span>
-<span id="cb379-13"><a href="functions-in-r.html#cb379-13" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span></code></pre></div>
+<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="functions-in-r.html#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign x and y values</span></span>
+<span id="cb242-2"><a href="functions-in-r.html#cb242-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> city<span class="sc">$</span>porto</span>
+<span id="cb242-3"><a href="functions-in-r.html#cb242-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen</span>
+<span id="cb242-4"><a href="functions-in-r.html#cb242-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb242-5"><a href="functions-in-r.html#cb242-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Use multiplication code</span></span>
+<span id="cb242-6"><a href="functions-in-r.html#cb242-6" aria-hidden="true" tabindex="-1"></a>porto_aberdeen <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span>
+<span id="cb242-7"><a href="functions-in-r.html#cb242-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb242-8"><a href="functions-in-r.html#cb242-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign new x and y values</span></span>
+<span id="cb242-9"><a href="functions-in-r.html#cb242-9" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> city<span class="sc">$</span>aberdeen</span>
+<span id="cb242-10"><a href="functions-in-r.html#cb242-10" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> city<span class="sc">$</span>nairobi</span>
+<span id="cb242-11"><a href="functions-in-r.html#cb242-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb242-12"><a href="functions-in-r.html#cb242-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Reuse multiplication code</span></span>
+<span id="cb242-13"><a href="functions-in-r.html#cb242-13" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span></code></pre></div>
 <p>This is essentially what a function does. OK down to business, let’s call our new function <code>multiply_columns()</code> and define it with two arguments, <code>x</code> and <code>y</code>. In the function code we simply return the value of <code>x * y</code> using the <code>return()</code> function. Using the <code>return()</code> function is not strictly necessary in this example as R will automatically return the value of the last line of code in our function. We include it here to make this explicit.</p>
-<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="functions-in-r.html#cb380-1" aria-hidden="true" tabindex="-1"></a>multiply_columns <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb380-2"><a href="functions-in-r.html#cb380-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x <span class="sc">*</span> y)</span>
-<span id="cb380-3"><a href="functions-in-r.html#cb380-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="functions-in-r.html#cb243-1" aria-hidden="true" tabindex="-1"></a>multiply_columns <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb243-2"><a href="functions-in-r.html#cb243-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x <span class="sc">*</span> y)</span>
+<span id="cb243-3"><a href="functions-in-r.html#cb243-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Now that we’ve defined our function we can use it. Let’s use the function to multiple the columns <code>city$porto</code> and <code>city$aberdeen</code> and assign the result to a new object called <code>porto_aberdeen_func</code></p>
-<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="functions-in-r.html#cb381-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(<span class="at">x =</span> city<span class="sc">$</span>porto, <span class="at">y =</span> city<span class="sc">$</span>aberdeen)</span>
-<span id="cb381-2"><a href="functions-in-r.html#cb381-2" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func</span>
-<span id="cb381-3"><a href="functions-in-r.html#cb381-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1]  0.0023892875 -0.0021058793  0.1450781716 -2.5383944472 -1.7477526537</span></span>
-<span id="cb381-4"><a href="functions-in-r.html#cb381-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6]  0.8990019834  0.1812371171 -1.0864347728 -0.7597957333 -1.5076670919</span></span>
-<span id="cb381-5"><a href="functions-in-r.html#cb381-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11] -1.9378451993 -0.0364426596  0.0725440190  0.1964230004 -0.0133576752</span></span>
-<span id="cb381-6"><a href="functions-in-r.html#cb381-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16] -0.3700190329 -0.1412155346 -0.4801330392  0.5530621726  0.3980198065</span></span>
-<span id="cb381-7"><a href="functions-in-r.html#cb381-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21]  0.3443275706  0.2179686357  0.7195869959 -0.0811638668  1.0898352208</span></span>
-<span id="cb381-8"><a href="functions-in-r.html#cb381-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26] -0.5010285286  0.1637914236 -0.1366081820  0.1414313773 -0.7777789730</span></span>
-<span id="cb381-9"><a href="functions-in-r.html#cb381-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31] -0.0004645020  0.1100052578 -0.2541731473 -1.0884448868 -0.0443121137</span></span>
-<span id="cb381-10"><a href="functions-in-r.html#cb381-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36] -0.0006642258  0.0544251300  0.9669150821 -0.3800491634  0.3578915296</span></span>
-<span id="cb381-11"><a href="functions-in-r.html#cb381-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.2536178434  0.2458136231  3.2818100503  0.1083965350 -0.4720488733</span></span>
-<span id="cb381-12"><a href="functions-in-r.html#cb381-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46] -0.1995245203 -0.7269924518  0.2253476823 -0.1214527019 -0.5321689789</span></span>
-<span id="cb381-13"><a href="functions-in-r.html#cb381-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51]  0.0189333380 -0.1979272558 -0.1255142455  0.6907034213 -0.0884053306</span></span>
-<span id="cb381-14"><a href="functions-in-r.html#cb381-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56]  0.6750234699 -0.0169724314  1.5517439058  0.1610841569 -0.0085629257</span></span>
-<span id="cb381-15"><a href="functions-in-r.html#cb381-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61] -0.6194932306 -0.0652532031  1.3324748305 -0.3531733975  0.9841389345</span></span>
-<span id="cb381-16"><a href="functions-in-r.html#cb381-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66] -0.0280544290  0.1475743978 -0.5280340053 -0.7166330492 -0.2691110172</span></span>
-<span id="cb381-17"><a href="functions-in-r.html#cb381-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71]  0.1391211140  0.6688442824 -0.8342632648  0.3718725283  0.0131482725</span></span>
-<span id="cb381-18"><a href="functions-in-r.html#cb381-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -0.7038763300 -0.0128774583  0.8867011634 -0.7801330583 -0.7599247969</span></span>
-<span id="cb381-19"><a href="functions-in-r.html#cb381-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  0.0141076741 -0.0998345480 -1.7900596916  2.2602960804 -0.6037770276</span></span>
-<span id="cb381-20"><a href="functions-in-r.html#cb381-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86]  0.4309151675 -1.4793917324  0.6445991265 -0.8210268140  0.0332113283</span></span>
-<span id="cb381-21"><a href="functions-in-r.html#cb381-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91]  0.2634687507 -0.2216913767  3.8027548515  0.0120428714  0.1201474009</span></span>
-<span id="cb381-22"><a href="functions-in-r.html#cb381-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -0.0191281880 -0.0501824559 -0.8248429116  0.5388214157  0.3184259893</span></span></code></pre></div>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="functions-in-r.html#cb244-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(<span class="at">x =</span> city<span class="sc">$</span>porto, <span class="at">y =</span> city<span class="sc">$</span>aberdeen)</span>
+<span id="cb244-2"><a href="functions-in-r.html#cb244-2" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func</span>
+<span id="cb244-3"><a href="functions-in-r.html#cb244-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1] -0.0069869249  0.0133575390  0.8117691322  2.4336569705 -0.9921025868</span></span>
+<span id="cb244-4"><a href="functions-in-r.html#cb244-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6] -0.0827685760 -0.2355042809  0.0008625431 -0.8994889539 -0.3918504658</span></span>
+<span id="cb244-5"><a href="functions-in-r.html#cb244-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11]  0.0383183152 -0.3936249669  0.5580520711  0.0784963321 -1.2786372726</span></span>
+<span id="cb244-6"><a href="functions-in-r.html#cb244-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16] -0.1494221409 -0.0116654179 -0.1112963527  0.0161616056 -0.0744085444</span></span>
+<span id="cb244-7"><a href="functions-in-r.html#cb244-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21]  0.4565502976 -0.1250795250 -0.2569220602 -0.1228180151 -0.6007848984</span></span>
+<span id="cb244-8"><a href="functions-in-r.html#cb244-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26]  0.6382816433  2.2790843567  0.3370840382 -0.6969707464  0.1026553327</span></span>
+<span id="cb244-9"><a href="functions-in-r.html#cb244-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31]  0.2473754390  6.5247591287 -0.2292189347  0.0068014272  0.8086870339</span></span>
+<span id="cb244-10"><a href="functions-in-r.html#cb244-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36]  0.6698331846  0.0013251489  0.0059951902  0.6615199196  0.0911165928</span></span>
+<span id="cb244-11"><a href="functions-in-r.html#cb244-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.1831041646 -1.9498840908  3.0436532092 -0.3867406458 -1.0390154562</span></span>
+<span id="cb244-12"><a href="functions-in-r.html#cb244-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46]  0.3743739007 -0.7786118439  0.7041351397  0.1099342471  0.2947474676</span></span>
+<span id="cb244-13"><a href="functions-in-r.html#cb244-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51] -1.7758736419 -0.3360211469  0.7866107301  0.0063554200 -1.4897465579</span></span>
+<span id="cb244-14"><a href="functions-in-r.html#cb244-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.0030908707 -0.0914717720 -0.4837852003  0.6690074565  0.5658792269</span></span>
+<span id="cb244-15"><a href="functions-in-r.html#cb244-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61]  1.7057421185  0.0971554511 -2.5956309798  0.2316326690  0.6666148760</span></span>
+<span id="cb244-16"><a href="functions-in-r.html#cb244-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66]  0.0170990343 -0.0369242577  0.3935677742  0.0422583515 -0.0088931792</span></span>
+<span id="cb244-17"><a href="functions-in-r.html#cb244-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71] -0.9189934699  0.1357929490  1.4339501078 -0.0781717883 -0.0071613002</span></span>
+<span id="cb244-18"><a href="functions-in-r.html#cb244-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -0.0870501104 -0.3226816020  0.2225220318  0.0482957656  2.0850485111</span></span>
+<span id="cb244-19"><a href="functions-in-r.html#cb244-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81] -0.2237118362  0.2270405704  0.0737514253  0.0828394745  0.3032840248</span></span>
+<span id="cb244-20"><a href="functions-in-r.html#cb244-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86] -0.0921154077  2.0053363265 -0.5603361802 -1.2873255929  0.0495352876</span></span>
+<span id="cb244-21"><a href="functions-in-r.html#cb244-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91] -0.0303525114 -0.4957093247 -0.3616258366  0.1407846108  0.0476930297</span></span>
+<span id="cb244-22"><a href="functions-in-r.html#cb244-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -1.6192950296 -0.4198982650 -1.2831335187 -0.5104099728 -0.2675840071</span></span></code></pre></div>
 <p>If we’re only interested in multiplying <code>city$porto</code> and <code>city$aberdeen</code>, it would be overkill to create a function to do something once. However, the benefit of creating a function is that we now have that function added to our environment which we can use as often as we like. We also have the code to create the function, meaning we can use it in completely new projects, reducing the amount of code that has to be written (and retested) from scratch each time. As a rule of thumb, you should consider writing a function whenever you’ve copied and pasted a block of code more than twice.</p>
 <p>To satisfy ourselves that the function has worked properly, we can compare the <code>porto_aberdeen</code> variable with our new variable <code>porto_aberdeen_func</code> using the <code>identical()</code> function. The <code>identical()</code> function tests whether two objects are <em>exactly</em> identical and returns either a <code>TRUE</code> or <code>FALSE</code> value. Use <code>?identical</code> if you want to know more about this function.</p>
-<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="functions-in-r.html#cb382-1" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(porto_aberdeen, porto_aberdeen_func)</span>
-<span id="cb382-2"><a href="functions-in-r.html#cb382-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="functions-in-r.html#cb245-1" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(porto_aberdeen, porto_aberdeen_func)</span>
+<span id="cb245-2"><a href="functions-in-r.html#cb245-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] TRUE</span></span></code></pre></div>
 <p>And we confirm that the function has produced the same result as when we do the calculation manually. We recommend getting into a habit of checking that the function you’ve created works the way you think it has.</p>
 <p>Now let’s use our <code>multiply_columns()</code> function to multiply columns <code>aberdeen</code> and <code>nairobi</code>. Notice now that argument <code>x</code> is given the value <code>city$aberdeen</code>and <code>y</code> the value <code>city$nairobi</code>.</p>
-<div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="functions-in-r.html#cb383-1" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(<span class="at">x =</span> city<span class="sc">$</span>aberdeen, <span class="at">y =</span> city<span class="sc">$</span>nairobi)</span>
-<span id="cb383-2"><a href="functions-in-r.html#cb383-2" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func</span>
-<span id="cb383-3"><a href="functions-in-r.html#cb383-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1]            NA            NA            NA            NA            NA</span></span>
-<span id="cb383-4"><a href="functions-in-r.html#cb383-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6]            NA            NA            NA            NA            NA</span></span>
-<span id="cb383-5"><a href="functions-in-r.html#cb383-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11] -1.0619050424 -0.0955979788 -0.5306177217  0.0032118966 -0.0205870613</span></span>
-<span id="cb383-6"><a href="functions-in-r.html#cb383-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16]  0.2676883384  0.3945723111 -0.1989608428 -0.3260528338  1.1544685302</span></span>
-<span id="cb383-7"><a href="functions-in-r.html#cb383-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21] -1.3302629410 -0.3291703223 -0.0741011111 -0.0537370114  0.8089725626</span></span>
-<span id="cb383-8"><a href="functions-in-r.html#cb383-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26] -0.1949602678 -0.4143208852  0.1285296141  0.5221154876  1.0035435590</span></span>
-<span id="cb383-9"><a href="functions-in-r.html#cb383-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31] -0.0398094833 -0.1903955071  0.0288902519  1.4480635215 -0.0773482738</span></span>
-<span id="cb383-10"><a href="functions-in-r.html#cb383-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36] -0.0177863755  0.0035543459  0.7532561286  0.2386674696 -0.8238021211</span></span>
-<span id="cb383-11"><a href="functions-in-r.html#cb383-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.7496642818 -3.1054419193 -2.8750716520 -0.3006372635 -0.0003421089</span></span>
-<span id="cb383-12"><a href="functions-in-r.html#cb383-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46] -2.2061853014  0.0372398832 -0.2791502872  2.3981839839 -2.0516709350</span></span>
-<span id="cb383-13"><a href="functions-in-r.html#cb383-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51]  0.2019233988 -0.7063206875 -0.2104041793  3.0322864946 -0.4076716614</span></span>
-<span id="cb383-14"><a href="functions-in-r.html#cb383-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.9447084846 -0.0362439696  0.9499361061  0.1754767284  0.9911470832</span></span>
-<span id="cb383-15"><a href="functions-in-r.html#cb383-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61]  0.2952209936 -0.0501951316  1.0201669158 -1.7555715914 -0.5068639189</span></span>
-<span id="cb383-16"><a href="functions-in-r.html#cb383-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66]  0.0275045289  0.0230178641  0.0547277505 -0.1317475870  0.3666489630</span></span>
-<span id="cb383-17"><a href="functions-in-r.html#cb383-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71]  0.5440567288 -0.3963676485 -0.0336610393 -0.5220452804  0.0055776971</span></span>
-<span id="cb383-18"><a href="functions-in-r.html#cb383-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -1.2778943044 -0.5706846828  0.3924285030 -2.0818936970 -0.1500328786</span></span>
-<span id="cb383-19"><a href="functions-in-r.html#cb383-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  0.0079099993  0.0321052403 -1.2790829902 -0.1537317352 -0.1685183650</span></span>
-<span id="cb383-20"><a href="functions-in-r.html#cb383-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86]  0.1205916721 -0.8158537848 -0.4055370999 -1.3485607085  0.2044158248</span></span>
-<span id="cb383-21"><a href="functions-in-r.html#cb383-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91] -0.3193424821  0.7709372963 -1.9167604581 -0.1767496612 -0.2148805026</span></span>
-<span id="cb383-22"><a href="functions-in-r.html#cb383-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -0.0096290178 -0.1093935609  0.6919071738 -0.1622096435 -0.5594592909</span></span></code></pre></div>
+<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="functions-in-r.html#cb246-1" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(<span class="at">x =</span> city<span class="sc">$</span>aberdeen, <span class="at">y =</span> city<span class="sc">$</span>nairobi)</span>
+<span id="cb246-2"><a href="functions-in-r.html#cb246-2" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func</span>
+<span id="cb246-3"><a href="functions-in-r.html#cb246-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1]           NA           NA           NA           NA           NA</span></span>
+<span id="cb246-4"><a href="functions-in-r.html#cb246-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6]           NA           NA           NA           NA           NA</span></span>
+<span id="cb246-5"><a href="functions-in-r.html#cb246-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11]  0.047496952  1.594203662 -0.917843992  0.267044813 -0.543613944</span></span>
+<span id="cb246-6"><a href="functions-in-r.html#cb246-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16]  0.153725192  0.005056861 -0.220518519  0.041034098  0.016362457</span></span>
+<span id="cb246-7"><a href="functions-in-r.html#cb246-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21]  2.199478382  0.114149484 -0.310636532 -0.220865008 -0.502879055</span></span>
+<span id="cb246-8"><a href="functions-in-r.html#cb246-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26] -0.766059997  1.259676967 -0.465667581  0.336395324  0.139440702</span></span>
+<span id="cb246-9"><a href="functions-in-r.html#cb246-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31] -0.693650953  5.687751028 -0.141295700  0.001397049 -0.740026320</span></span>
+<span id="cb246-10"><a href="functions-in-r.html#cb246-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36] -0.006150555  0.416272182 -0.171894657 -0.679584511  1.290586130</span></span>
+<span id="cb246-11"><a href="functions-in-r.html#cb246-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.048202267 -1.860720188  0.858132647  0.879994912  2.186448286</span></span>
+<span id="cb246-12"><a href="functions-in-r.html#cb246-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46]  0.223982624 -1.876269178  0.660589803  0.007734275  0.736490246</span></span>
+<span id="cb246-13"><a href="functions-in-r.html#cb246-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51]  0.061333922  0.181883820  2.059025525  0.017338577  0.674742174</span></span>
+<span id="cb246-14"><a href="functions-in-r.html#cb246-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.036140043 -0.350477824  0.422185650  0.344874719  0.133451923</span></span>
+<span id="cb246-15"><a href="functions-in-r.html#cb246-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61] -0.459658789  0.024740752  0.229400255  0.184154365 -0.266504957</span></span>
+<span id="cb246-16"><a href="functions-in-r.html#cb246-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66] -0.023038590 -0.147235571  1.885497392 -0.218282423 -0.214444800</span></span>
+<span id="cb246-17"><a href="functions-in-r.html#cb246-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71] -1.246998581  0.134974915 -2.091601996  0.099929385  0.673080809</span></span>
+<span id="cb246-18"><a href="functions-in-r.html#cb246-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -0.178598533 -0.183321862 -0.155467649  0.108474663  2.104417386</span></span>
+<span id="cb246-19"><a href="functions-in-r.html#cb246-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  0.021018130  0.193067199  0.022748402 -0.336889655 -1.166844125</span></span>
+<span id="cb246-20"><a href="functions-in-r.html#cb246-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86] -0.113777151  1.034039543  0.518497322 -2.193324512 -0.107152006</span></span>
+<span id="cb246-21"><a href="functions-in-r.html#cb246-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91]  0.005731051  0.778684010 -0.091995889 -0.436561219 -0.413979084</span></span>
+<span id="cb246-22"><a href="functions-in-r.html#cb246-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -1.414823571 -0.438401571 -0.219374721  1.297489606 -0.435592675</span></span></code></pre></div>
 <p>So far so good. All we’ve really done is wrapped the code <code>x * y</code> into a function, where we ask the user to specify what their <code>x</code> and <code>y</code> variables are.</p>
 <p>Now let’s add a little complexity. If you look at the output of <code>nairobi_genoa</code> some of the calculations have produced <code>NA</code> values. This is because of those <code>NA</code> values we included in <code>nairobi</code> when we created the <code>city</code> data frame. Despite these <code>NA</code> values, the function appeared to have worked but it gave us no indication that there might be a problem. In such cases we may prefer if it had warned us that something was wrong. How can we get the function to let us know when <code>NA</code> values are produced? Here’s one way.</p>
-<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="functions-in-r.html#cb384-1" aria-hidden="true" tabindex="-1"></a>multiply_columns <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb384-2"><a href="functions-in-r.html#cb384-2" aria-hidden="true" tabindex="-1"></a>  temp_var <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span>
-<span id="cb384-3"><a href="functions-in-r.html#cb384-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(<span class="fu">is.na</span>(temp_var))) {</span>
-<span id="cb384-4"><a href="functions-in-r.html#cb384-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">warning</span>(<span class="st">&quot;The function has produced NAs&quot;</span>)</span>
-<span id="cb384-5"><a href="functions-in-r.html#cb384-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(temp_var)</span>
-<span id="cb384-6"><a href="functions-in-r.html#cb384-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb384-7"><a href="functions-in-r.html#cb384-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(temp_var)</span>
-<span id="cb384-8"><a href="functions-in-r.html#cb384-8" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb384-9"><a href="functions-in-r.html#cb384-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb384-10"><a href="functions-in-r.html#cb384-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb384-11"><a href="functions-in-r.html#cb384-11" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(city<span class="sc">$</span>aberdeen, city<span class="sc">$</span>nairobi)</span>
-<span id="cb384-12"><a href="functions-in-r.html#cb384-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Warning in multiply_columns(city$aberdeen, city$nairobi): The function has</span></span>
-<span id="cb384-13"><a href="functions-in-r.html#cb384-13" aria-hidden="true" tabindex="-1"></a><span class="do">## produced NAs</span></span>
-<span id="cb384-14"><a href="functions-in-r.html#cb384-14" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(city<span class="sc">$</span>porto, city<span class="sc">$</span>aberdeen)</span></code></pre></div>
+<div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="functions-in-r.html#cb247-1" aria-hidden="true" tabindex="-1"></a>multiply_columns <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb247-2"><a href="functions-in-r.html#cb247-2" aria-hidden="true" tabindex="-1"></a>  temp_var <span class="ot">&lt;-</span> x <span class="sc">*</span> y</span>
+<span id="cb247-3"><a href="functions-in-r.html#cb247-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(<span class="fu">is.na</span>(temp_var))) {</span>
+<span id="cb247-4"><a href="functions-in-r.html#cb247-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">warning</span>(<span class="st">&quot;The function has produced NAs&quot;</span>)</span>
+<span id="cb247-5"><a href="functions-in-r.html#cb247-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(temp_var)</span>
+<span id="cb247-6"><a href="functions-in-r.html#cb247-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb247-7"><a href="functions-in-r.html#cb247-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(temp_var)</span>
+<span id="cb247-8"><a href="functions-in-r.html#cb247-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb247-9"><a href="functions-in-r.html#cb247-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb247-10"><a href="functions-in-r.html#cb247-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb247-11"><a href="functions-in-r.html#cb247-11" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(city<span class="sc">$</span>aberdeen, city<span class="sc">$</span>nairobi)</span>
+<span id="cb247-12"><a href="functions-in-r.html#cb247-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Warning in multiply_columns(city$aberdeen, city$nairobi): The function has</span></span>
+<span id="cb247-13"><a href="functions-in-r.html#cb247-13" aria-hidden="true" tabindex="-1"></a><span class="do">## produced NAs</span></span>
+<span id="cb247-14"><a href="functions-in-r.html#cb247-14" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(city<span class="sc">$</span>porto, city<span class="sc">$</span>aberdeen)</span></code></pre></div>
 <p>The core of our function is still the same. We still have <code>x * y</code>, but we’ve now got an extra six lines of code. Namely, we’ve included some conditional statements, <code>if</code> and <code>else</code>, to test whether any <code>NA</code>s have been produced and if they have we display a warning message to the user. The next section of this Chapter will explain how these work and how to use them.</p>
 </div>
             </section>
@@ -568,7 +544,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/alexd106/Rbook/edit/master/07-programming.Rmd",
+"link": "https://github.com/alexd106/Rbook/edit/master/06-programming.Rmd",
 "text": "Suggest an edit"
 },
 "history": {

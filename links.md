@@ -188,6 +188,7 @@
 [r4ds]: https://r4ds.had.co.nz/
 
 <!--Misc Links-->
+[nola-str]: https://www.nola.gov/short-term-rentals/
 [r4stats]: http://r4stats.com/articles/popularity/
 [open-sci]: https://en.wikipedia.org/wiki/Open_science
 [open-sci2]: http://openscience.org/what-exactly-is-open-science/
