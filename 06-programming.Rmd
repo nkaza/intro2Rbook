@@ -6,23 +6,23 @@ But there are already a vast number of R packages available, surely more than en
 
 In this Chapter we'll explore the basics of the programming side of R. Even if you never create your own function, you will at the very least use functions on a daily basis. Pulling back the curtain and showing the nitty-gritty of how these work will hopefully, in the worst case, help your confidence and in the best case, provide a starting point for doing some clever coding.
 
-## Looking behind the curtain
+<!-- ## Looking behind the curtain -->
 
-A good way to start learning to program in R is to see what others have done. We can start by briefly peeking behind the curtain. In [Chapter 5](#graphics_r) we made use of the `theme_classic()` function when customising our `ggplot` figures. With many functions in R, if you want to have a quick glance at the machinery behind the scenes, we can simply write the function name but without the `()`. This is the same trick we used in [Chapter 5](#graphics_r) to alter the `theme_classic()` style of `ggplot2`\index{ggplot2 package} to make `theme_rbook()`\index{theme\_rbook()}.
+<!-- A good way to start learning to program in R is to see what others have done. We can start by briefly peeking behind the curtain. In [Chapter 5](#graphics_r) we made use of the `theme_classic()` function when customising our `ggplot` figures. With many functions in R, if you want to have a quick glance at the machinery behind the scenes, we can simply write the function name but without the `()`. This is the same trick we used in [Chapter 5](#graphics_r) to alter the `theme_classic()` style of `ggplot2`\index{ggplot2 package} to make `theme_rbook()`\index{theme\_rbook()}. -->
 
-Note that to view the source code of base R packages (those that come with R) requires some additional steps which we won't cover here (see this [link][show-code] if you're interested), but for most other packages that you install yourself, generally entering the function name without `()` will show the source code of the function.
+<!-- Note that to view the source code of base R packages (those that come with R) requires some additional steps which we won't cover here (see this [link][show-code] if you're interested), but for most other packages that you install yourself, generally entering the function name without `()` will show the source code of the function. -->
 
-```{r libraries, echo = FALSE, message=FALSE, warning=FALSE}
-library(ggplot2)
-```
+<!-- ```{r libraries, echo = FALSE, message=FALSE, warning=FALSE} -->
+<!-- library(ggplot2) -->
+<!-- ``` -->
 
-```{r theme_function, collapse=TRUE}
-theme_classic
-```
+<!-- ```{r theme_function, collapse=TRUE} -->
+<!-- theme_classic -->
+<!-- ``` -->
 
-What we see above is the underlying code for this particular function. As we did in [Chapter 5](#graphics_r), we could copy and paste this into our own script and make any changes we deemed necessary. This approach isn't limited to `ggplot2` functions and can be used for other functions as well, although tread carefully and test the changes you've made.
+<!-- What we see above is the underlying code for this particular function. As we did in [Chapter 5](#graphics_r), we could copy and paste this into our own script and make any changes we deemed necessary. This approach isn't limited to `ggplot2` functions and can be used for other functions as well, although tread carefully and test the changes you've made. -->
 
-Don't worry overly if most of the code contained in functions doesn't make sense immediately. This will be especially true if you are new to R, in which case it seems incredibly intimidating. To help with that, we'll begin by making our own functions in R in the next section.
+<!-- Don't worry overly if most of the code contained in functions doesn't make sense immediately. This will be especially true if you are new to R, in which case it seems incredibly intimidating. To help with that, we'll begin by making our own functions in R in the next section. -->
 
 ## Functions in R
 
@@ -210,7 +210,7 @@ n.milk
 
 And just like the joke, our R code has missed that the condition was to determine whether or not to buy eggs, not more milk (this is actually a loose example of the [Winograd Scheme][winograd], designed to test the *intelligence* of artificial intelligence by whether it can reason what the intended referent of a sentence is).
 
-We could code the exact same egg-milk joke conditional statement using an `ifelse()`\index{ifelse()} function.
+We could code the exact same egg-milk joke conditional statement using an `ifelse()`\index{ifelse()} or `if_else` (tidyverse) function.
 
 ```{r ifelse, collapse=TRUE}
 eggs <- TRUE
@@ -461,57 +461,57 @@ There is another, very rarely used type of loop; the `repeat` loop. The `repeat`
 
 Loops are fairly commonly used, though sometimes a little overused in our opinion. Equivalent tasks can be performed with functions, which are often more efficient than loops. Though this raises the question when should you use a loop?
 
-In general loops are implemented inefficiently in R and should be avoided when better alternatives exist, especially when you're working with large datasets. However, loop are sometimes the only way to achieve the result we want. 
+In general loops are implemented inefficiently in R and should be avoided when better alternatives exist (e.g. vectorised functions), especially when you're working with large datasets. However, loop are sometimes the only way to achieve the result we want.
 
 **Some examples of when using loops can be appropriate:**
 
- - Some simulations (e.g. the Ricker model can, in part, be built using loops)
+ - Some simulations.
 
  - Recursive relationships (a relationship which depends on the value of the previous relationship ["to understand recursion, you must understand recursion"])
 
- - More complex problems (e.g., how long since the last badger was seen at site $j$, given a pine marten was seen at time $t$, at the same location $j$ as the badger, where the pine marten was detected in a specific 6 hour period, but exclude badgers seen 30 minutes before the pine marten arrival, repeated for all pine marten detections)
+ - More complex problems that are not easily amenable to functions. 
 
  - While loops (keep jumping until you've reached the moon)
 
 
 ### If not loops, then what?
 
-In short, use the apply family of functions; `apply()`\index{apply()}, `lapply()`\index{lapply()}, `tapply()`\index{tapply()}, `sapply()`\index{sapply()}, `vapply()`, and `mapply()`. The apply functions can often do the tasks of most "home-brewed" loops, sometimes faster (though that won't really be an issue for most people) but more importantly with a much lower risk of error. A strategy to have in the back of your mind which may be useful is; for every loop you make, try to remake it using an apply function (often `lapply` or `sapply` will work). If you can, use the apply version. There's nothing worse than realising there was a small, tiny, seemingly meaningless mistake in a loop which weeks, months or years down the line has propagated into a huge mess. We strongly recommend trying to use the apply functions whenever possible.  
+The pattern of looping over a vector, doing something to each element and saving the results is so common that the `purrr` package (part of tidyverse) provides a family of functions to do it for you.  These are `map_*` functions.
 
-#### lapply {-}
+For example, column wise summaries of cities data can be created as
 
-Your go to apply function will often be `lapply()` at least in the beginning. The way that `lapply()` works, and the reason it is often a good alternative to for loops, is that it will go through each element in a list and perform a task (i.e. run a function). It has the added benefit that it will output the results as a list - something you'd have to otherwise code yourself into a loop.
+```{r, eval = TRUE}
 
-An `lapply()` has the following structure:
+map_dfr(city, function(x){summary(x)})
+
+```
+
+
+Note that data frame is just a list, where columns are elements. To see this, use the `[[` function on the list.
 
 ```{r, eval = FALSE}
-lapply(X, FUN)
+city[["porto"]]
 ```
 
-Here `X` is the vector which we want to do *something* to. `FUN` stands for how much fun this is (just kidding!). It's also short for "function".
+`summary` is operating on each element of the list and creates a vector (more specifically with named number) as requested by `map`. The `dfr` is a call to return a data frame created by row-binding. This require dplyr to be installed.
 
-Let's start with a simple demonstration first. Let's use the `lapply()` function create a sequence from 1 to 5 and add 1 to each observation (just like we did when we used a for loop):
+You could have done the same thing with
 
-```{r, collapse=TRUE}
-lapply(0:4, function(a) {a + 1})
+```{r, eval = TRUE}
+
+temp <- NULL # Initialise a null data frame.
+
+for(i in seq_along(city)){
+	temp[[i]] <- summary(city[,i]) %>% t() # Need the transpose (t) to convert a vector into a row in a data frame.
+}
+
+plyr::ldply(temp) #Shortcut to use rowbinding and filling missing columns.
+
 ```
 
-Notice that we need to specify our sequence as `0:4` to get the output `1 ,2 ,3 ,4 , 5` as we are adding `1` to each element of the sequence. See what happens if you use `1:5` instead.
+There is no real speed advantage of using `map` functions over `for` loops. It just makes the code more readable. A strategy to have in the back of your mind which may be useful is; for every loop you make, try to remake it using an `map` function (or `lapply` or `sapply` in base R will work). There's nothing worse than realising there was a small, tiny, seemingly meaningless mistake in a loop which weeks, months or years down the line has propagated into a huge mess. We strongly recommend trying to use the apply functions whenever possible.  
 
-Equivalently, we could have defined the function first and then used the function in `lapply()`
 
-```{r, collapse=TRUE}
-add_fun <- function(a) {a + 1}
-lapply(0:4, add_fun)
-```
-
-The `sapply()` function does the same thing as  `lapply()` but instead of storing the results as a list, it stores them as a vector.
-
-```{r, collapse=TRUE}
-sapply(0:4, function(a) {a + 1})
-```
-
-As you can see, in both cases, we get exactly the same results as when we used the for loop. 
 
 ## Exercise 7
 

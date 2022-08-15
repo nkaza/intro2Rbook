@@ -18,7 +18,7 @@ fontsize: 12pt
 # linestretch: 1.15
 github-repo: "nkaza/intro2Rbook"
 description: "A practical introduction to using R for data analysis"
-url: 'https\://alexd106.github.io/Rbook/'
+url: 'https\://nkaza.github.io/intro2Rbook/'
 cover-image: "images/cover_v4.png"
 ---
 

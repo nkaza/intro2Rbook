@@ -1,6 +1,6 @@
-An Introduction to R
+An Introduction to R: A Prerequisite for Urban Analytics Course
 
-Rendered book : https://intro2r.com
+Rendered book : https://nkaza.github.io/intro2Rbook
 
 To build this book you will first need to clone this repository to your local computer (hit the green 'code' button above to reveal the repository URL). You will also need to install the following packages into R or Rstudio on your computer: 
 
