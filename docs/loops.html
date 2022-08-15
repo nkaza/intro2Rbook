@@ -507,12 +507,12 @@ The most basic example of a <code>for</code> loop is:</p>
 <p>For example, column wise summaries of cities data can be created as</p>
 <div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="loops.html#cb228-1" aria-hidden="true" tabindex="-1"></a><span class="fu">map_dfr</span>(city, <span class="cf">function</span>(x){<span class="fu">summary</span>(x)})</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 7
-##   Min.      `1st Qu.`  Median     Mean        `3rd Qu.` Max.     `NA&#39;s` 
-##   &lt;table&gt;   &lt;table&gt;    &lt;table&gt;    &lt;table&gt;     &lt;table&gt;   &lt;table&gt;  &lt;table&gt;
-## 1 -1.946857 -0.6329175  0.2156104  0.09927675 0.7336616 2.566132 NA     
-## 2 -3.130404 -0.6495791 -0.0385112 -0.06212733 0.7841612 2.174400 NA     
-## 3 -2.608536 -0.7072295  0.1598252  0.02562051 0.7039409 2.659993 10     
-## 4 -3.061582 -0.7372018  0.1051239 -0.03955272 0.6684064 2.329379 NA</code></pre>
+##   Min.      `1st Qu.`  Median      Mean        `3rd Qu.` Max.     `NA&#39;s` 
+##   &lt;table&gt;   &lt;table&gt;    &lt;table&gt;     &lt;table&gt;     &lt;table&gt;   &lt;table&gt;  &lt;table&gt;
+## 1 -2.752452 -0.6433482 -0.02876045 -0.05746404 0.5319205 2.523092 NA     
+## 2 -2.639565 -0.5800104 -0.07768732 -0.01807956 0.5946126 2.571228 NA     
+## 3 -2.888125 -0.5362045  0.05241167  0.07273985 0.8735880 2.658677 10     
+## 4 -2.712151 -0.8705119 -0.09958096 -0.11956562 0.6861292 2.127910 NA</code></pre>
 <p>Note that data frame is just a list, where columns are elements. To see this, use the <code>[[</code> function on the list.</p>
 <div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="loops.html#cb230-1" aria-hidden="true" tabindex="-1"></a>city[[<span class="st">&quot;porto&quot;</span>]]</span></code></pre></div>
 <p><code>summary</code> is operating on each element of the list and creates a vector (more specifically with named number) as requested by <code>map</code>. The <code>dfr</code> is a call to return a data frame created by row-binding. This require dplyr to be installed.</p>
@@ -524,11 +524,11 @@ The most basic example of a <code>for</code> loop is:</p>
 <span id="cb231-5"><a href="loops.html#cb231-5" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb231-6"><a href="loops.html#cb231-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb231-7"><a href="loops.html#cb231-7" aria-hidden="true" tabindex="-1"></a>plyr<span class="sc">::</span><span class="fu">ldply</span>(temp) <span class="co">#Shortcut to use rowbinding and filling missing columns.</span></span></code></pre></div>
-<pre><code>##        Min.    1st Qu.     Median        Mean   3rd Qu.     Max. NA&#39;s
-## 1 -1.946857 -0.6329175  0.2156104  0.09927675 0.7336616 2.566132   NA
-## 2 -3.130404 -0.6495791 -0.0385112 -0.06212733 0.7841612 2.174400   NA
-## 3 -2.608536 -0.7072295  0.1598252  0.02562051 0.7039409 2.659993   10
-## 4 -3.061582 -0.7372018  0.1051239 -0.03955272 0.6684064 2.329379   NA</code></pre>
+<pre><code>##        Min.    1st Qu.      Median        Mean   3rd Qu.     Max. NA&#39;s
+## 1 -2.752452 -0.6433482 -0.02876045 -0.05746404 0.5319205 2.523092   NA
+## 2 -2.639565 -0.5800104 -0.07768732 -0.01807956 0.5946126 2.571228   NA
+## 3 -2.888125 -0.5362045  0.05241167  0.07273985 0.8735880 2.658677   10
+## 4 -2.712151 -0.8705119 -0.09958096 -0.11956562 0.6861292 2.127910   NA</code></pre>
 <p>There is no real speed advantage of using <code>map</code> functions over <code>for</code> loops. It just makes the code more readable. A strategy to have in the back of your mind which may be useful is; for every loop you make, try to remake it using an <code>map</code> function (or <code>lapply</code> or <code>sapply</code> in base R will work). There’s nothing worse than realising there was a small, tiny, seemingly meaningless mistake in a loop which weeks, months or years down the line has propagated into a huge mess. We strongly recommend trying to use the apply functions whenever possible.</p>
 </div>
 </div>
@@ -559,7 +559,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/nkaza/Rbook/edit/master/06-programming.Rmd",
+"link": "https://github.com/nkaza/intro2Rbook/edit/master/06-programming.Rmd",
 "text": "Suggest an edit"
 },
 "history": {

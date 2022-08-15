@@ -428,26 +428,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Now that we’ve defined our function we can use it. Let’s use the function to multiple the columns <code>city$porto</code> and <code>city$aberdeen</code> and assign the result to a new object called <code>porto_aberdeen_func</code></p>
 <div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="functions-in-r.html#cb202-1" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func <span class="ot">&lt;-</span> <span class="fu">multiply_columns</span>(<span class="at">x =</span> city<span class="sc">$</span>porto, <span class="at">y =</span> city<span class="sc">$</span>aberdeen)</span>
 <span id="cb202-2"><a href="functions-in-r.html#cb202-2" aria-hidden="true" tabindex="-1"></a>porto_aberdeen_func</span>
-<span id="cb202-3"><a href="functions-in-r.html#cb202-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1]  2.014775753 -0.214643852  0.064526211 -0.364868085  0.189715381</span></span>
-<span id="cb202-4"><a href="functions-in-r.html#cb202-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6]  0.230155248 -0.946177021 -2.076763784 -0.011926905 -0.164806538</span></span>
-<span id="cb202-5"><a href="functions-in-r.html#cb202-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11]  0.456505725  0.265234400  0.183556884 -0.109417901 -0.032833469</span></span>
-<span id="cb202-6"><a href="functions-in-r.html#cb202-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16]  0.353118991 -0.008308851 -2.266191815 -0.060788315 -0.655985461</span></span>
-<span id="cb202-7"><a href="functions-in-r.html#cb202-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21]  0.004570005 -0.348861110  2.362654981 -0.052790956 -0.189948635</span></span>
-<span id="cb202-8"><a href="functions-in-r.html#cb202-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26]  0.018223890  0.600415745  0.161684039  1.338422603  2.105337260</span></span>
-<span id="cb202-9"><a href="functions-in-r.html#cb202-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31]  0.029015008  0.018490343 -0.008989044  0.496063477 -1.049500353</span></span>
-<span id="cb202-10"><a href="functions-in-r.html#cb202-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36] -0.099676161 -0.009950193 -0.846804905  0.178881351 -0.870224390</span></span>
-<span id="cb202-11"><a href="functions-in-r.html#cb202-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41] -0.068288558  1.107149140  2.026549181  2.333359585 -0.044117723</span></span>
-<span id="cb202-12"><a href="functions-in-r.html#cb202-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46]  0.691236808 -0.094459268 -0.447501605 -0.712808485 -0.282856803</span></span>
-<span id="cb202-13"><a href="functions-in-r.html#cb202-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51] -0.006295179 -0.065775852  0.073980139  0.059625507  0.008330714</span></span>
-<span id="cb202-14"><a href="functions-in-r.html#cb202-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.400188817 -0.103590122 -0.069726858  0.418343089  0.015726273</span></span>
-<span id="cb202-15"><a href="functions-in-r.html#cb202-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61]  0.632639508  0.572703046  0.033988331  0.031266531 -0.046795834</span></span>
-<span id="cb202-16"><a href="functions-in-r.html#cb202-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66] -0.163599859  0.273460368 -0.513353466 -0.904413372  0.020220148</span></span>
-<span id="cb202-17"><a href="functions-in-r.html#cb202-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71]  1.071875208 -0.234864455 -0.127298428 -0.010741430  0.092755585</span></span>
-<span id="cb202-18"><a href="functions-in-r.html#cb202-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -0.647530577  0.319741799  0.530479481  0.183272455  0.468062985</span></span>
-<span id="cb202-19"><a href="functions-in-r.html#cb202-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  1.757284024  2.692255396  2.091557581 -0.981259101  0.053847058</span></span>
-<span id="cb202-20"><a href="functions-in-r.html#cb202-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86]  0.218234162 -0.007762945 -0.331544644  0.291523018 -0.249918177</span></span>
-<span id="cb202-21"><a href="functions-in-r.html#cb202-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91]  0.077816392 -1.470354349  0.195233747  0.078158163 -0.475288154</span></span>
-<span id="cb202-22"><a href="functions-in-r.html#cb202-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -1.016708727 -0.449465461 -0.060039231 -1.723164611  0.023728339</span></span></code></pre></div>
+<span id="cb202-3"><a href="functions-in-r.html#cb202-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1] -0.085947552  0.498474519  0.226182657 -0.173625206  0.061388020</span></span>
+<span id="cb202-4"><a href="functions-in-r.html#cb202-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6] -0.118467621 -0.058342350 -0.748472348  1.303797813  0.055684062</span></span>
+<span id="cb202-5"><a href="functions-in-r.html#cb202-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11]  0.582847799  0.967253736  0.158426320 -0.781127114 -0.479409088</span></span>
+<span id="cb202-6"><a href="functions-in-r.html#cb202-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16] -0.677394129 -0.592267986 -0.150827188 -0.306508942 -0.436083287</span></span>
+<span id="cb202-7"><a href="functions-in-r.html#cb202-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21]  0.059957923  0.321062340 -1.570852814 -0.643210423 -0.920549285</span></span>
+<span id="cb202-8"><a href="functions-in-r.html#cb202-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26] -0.347656668  2.119315010  1.465382909  0.015208098 -0.468656537</span></span>
+<span id="cb202-9"><a href="functions-in-r.html#cb202-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31]  0.633897029  0.042164628 -0.038905451 -4.415396038 -0.315096514</span></span>
+<span id="cb202-10"><a href="functions-in-r.html#cb202-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36]  0.218571046  0.218806943 -0.023432720 -0.154404878 -0.876854993</span></span>
+<span id="cb202-11"><a href="functions-in-r.html#cb202-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.292162721 -0.640721076  0.286584676  0.105368813  0.159924299</span></span>
+<span id="cb202-12"><a href="functions-in-r.html#cb202-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46] -0.236638324  0.741250440  0.131532168  0.137285208 -0.299308407</span></span>
+<span id="cb202-13"><a href="functions-in-r.html#cb202-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51] -0.332620190  0.073131216 -0.364690968  0.059217978  0.403905163</span></span>
+<span id="cb202-14"><a href="functions-in-r.html#cb202-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.740475977  0.061085175 -0.568814739 -2.083744891 -0.062335006</span></span>
+<span id="cb202-15"><a href="functions-in-r.html#cb202-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61] -0.186453954  0.826180184 -0.689605851 -2.451078675 -0.008237659</span></span>
+<span id="cb202-16"><a href="functions-in-r.html#cb202-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66] -0.418392692 -0.401753726 -1.275874391 -0.778579189 -0.471236281</span></span>
+<span id="cb202-17"><a href="functions-in-r.html#cb202-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71] -0.005444629 -0.139273711 -0.085034845  2.137474707  0.091994774</span></span>
+<span id="cb202-18"><a href="functions-in-r.html#cb202-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76]  0.020793423 -2.409867911 -0.360462486 -5.389381622  1.950395456</span></span>
+<span id="cb202-19"><a href="functions-in-r.html#cb202-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81] -0.182530107  0.024138901 -0.074686289  0.306776334 -2.026417284</span></span>
+<span id="cb202-20"><a href="functions-in-r.html#cb202-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86]  0.054242519 -1.058827861 -0.076654147  0.688134902 -3.496740087</span></span>
+<span id="cb202-21"><a href="functions-in-r.html#cb202-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91] -0.218697208 -0.643449994 -0.275945356 -0.553492563 -1.568269421</span></span>
+<span id="cb202-22"><a href="functions-in-r.html#cb202-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -0.084752842  0.311590022  0.031595817 -0.087091390 -0.068548519</span></span></code></pre></div>
 <p>If we’re only interested in multiplying <code>city$porto</code> and <code>city$aberdeen</code>, it would be overkill to create a function to do something once. However, the benefit of creating a function is that we now have that function added to our environment which we can use as often as we like. We also have the code to create the function, meaning we can use it in completely new projects, reducing the amount of code that has to be written (and retested) from scratch each time. As a rule of thumb, you should consider writing a function whenever you’ve copied and pasted a block of code more than twice.</p>
 <p>To satisfy ourselves that the function has worked properly, we can compare the <code>porto_aberdeen</code> variable with our new variable <code>porto_aberdeen_func</code> using the <code>identical()</code> function. The <code>identical()</code> function tests whether two objects are <em>exactly</em> identical and returns either a <code>TRUE</code> or <code>FALSE</code> value. Use <code>?identical</code> if you want to know more about this function.</p>
 <div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="functions-in-r.html#cb203-1" aria-hidden="true" tabindex="-1"></a><span class="fu">identical</span>(porto_aberdeen, porto_aberdeen_func)</span>
@@ -458,24 +458,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb204-2"><a href="functions-in-r.html#cb204-2" aria-hidden="true" tabindex="-1"></a>aberdeen_nairobi_func</span>
 <span id="cb204-3"><a href="functions-in-r.html#cb204-3" aria-hidden="true" tabindex="-1"></a><span class="do">##   [1]           NA           NA           NA           NA           NA</span></span>
 <span id="cb204-4"><a href="functions-in-r.html#cb204-4" aria-hidden="true" tabindex="-1"></a><span class="do">##   [6]           NA           NA           NA           NA           NA</span></span>
-<span id="cb204-5"><a href="functions-in-r.html#cb204-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11] -0.327930628 -0.006675684  0.016084501 -0.020447877 -0.750971257</span></span>
-<span id="cb204-6"><a href="functions-in-r.html#cb204-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16]  1.053473157 -0.047561977  0.030566223 -0.721774741  1.526734681</span></span>
-<span id="cb204-7"><a href="functions-in-r.html#cb204-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21] -0.020321899  0.138323535  0.396316082 -0.377321259 -1.416796857</span></span>
-<span id="cb204-8"><a href="functions-in-r.html#cb204-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26]  0.421509177 -0.960764597  0.246396618 -0.892996009  1.628281711</span></span>
-<span id="cb204-9"><a href="functions-in-r.html#cb204-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31]  0.197311230 -0.165814208 -0.016217755 -0.410555609  0.126801955</span></span>
-<span id="cb204-10"><a href="functions-in-r.html#cb204-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36]  0.447870841  0.041583087  1.675926956 -0.114021642 -0.517884935</span></span>
-<span id="cb204-11"><a href="functions-in-r.html#cb204-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41]  0.124125311 -1.711380424 -1.204040363 -0.148087607 -0.323875825</span></span>
-<span id="cb204-12"><a href="functions-in-r.html#cb204-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46]  0.130025643  0.112195384 -0.366027897  0.123232534 -0.050941004</span></span>
-<span id="cb204-13"><a href="functions-in-r.html#cb204-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51]  0.013334356 -1.215822185 -0.024575282  0.155964172 -0.003916522</span></span>
-<span id="cb204-14"><a href="functions-in-r.html#cb204-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56] -0.200191062 -0.785340311  0.019765701 -0.657274374  0.072670509</span></span>
-<span id="cb204-15"><a href="functions-in-r.html#cb204-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61]  1.004395088  0.531225339  0.149717699 -0.025978100  0.019261158</span></span>
-<span id="cb204-16"><a href="functions-in-r.html#cb204-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66]  0.104483938  0.373671149  1.476141078 -0.062903431 -0.816000629</span></span>
-<span id="cb204-17"><a href="functions-in-r.html#cb204-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71]  0.232401505 -3.213628762 -0.959309583  0.294404765  0.370605254</span></span>
-<span id="cb204-18"><a href="functions-in-r.html#cb204-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76] -0.288520517  1.865934780  0.337924670  0.269179189 -1.139838523</span></span>
-<span id="cb204-19"><a href="functions-in-r.html#cb204-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  0.550745535  1.017238403  1.493642866 -0.220884295  0.321709249</span></span>
-<span id="cb204-20"><a href="functions-in-r.html#cb204-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86] -0.227897353  0.092948566 -0.032018879 -0.731282753  0.044517601</span></span>
-<span id="cb204-21"><a href="functions-in-r.html#cb204-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91]  1.456603782  1.157032367  0.291379342 -0.547792055 -0.426711455</span></span>
-<span id="cb204-22"><a href="functions-in-r.html#cb204-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96]  0.332218256  0.465901778  0.136577509 -2.055270701  0.049633804</span></span></code></pre></div>
+<span id="cb204-5"><a href="functions-in-r.html#cb204-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  [11] -0.075552927  0.858063971 -0.392648271 -1.072051190  0.257440655</span></span>
+<span id="cb204-6"><a href="functions-in-r.html#cb204-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  [16] -0.124294704  0.210313115  0.061049647  1.658098963  0.255670804</span></span>
+<span id="cb204-7"><a href="functions-in-r.html#cb204-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  [21] -0.139019146 -0.026431906  1.377472307 -1.899152644  0.054515573</span></span>
+<span id="cb204-8"><a href="functions-in-r.html#cb204-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  [26] -0.307846331 -0.710170030  0.248922649  0.073275828  0.508507522</span></span>
+<span id="cb204-9"><a href="functions-in-r.html#cb204-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  [31]  0.244460745  0.528301301  0.116485620  1.724907895  3.436547332</span></span>
+<span id="cb204-10"><a href="functions-in-r.html#cb204-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  [36] -0.068065949 -0.100481033  0.040083458  0.003737784  2.294814964</span></span>
+<span id="cb204-11"><a href="functions-in-r.html#cb204-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  [41] -2.735615877 -0.778574287  0.181921691 -0.242136618  0.015684910</span></span>
+<span id="cb204-12"><a href="functions-in-r.html#cb204-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  [46]  1.463480341 -0.232136306 -0.473599750  0.467009856 -1.453079348</span></span>
+<span id="cb204-13"><a href="functions-in-r.html#cb204-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  [51]  0.130218335 -0.022665544 -0.987879220 -0.161253793  0.040356678</span></span>
+<span id="cb204-14"><a href="functions-in-r.html#cb204-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  [56]  0.429038650  0.381512583  0.358170387 -0.432218239 -0.534323592</span></span>
+<span id="cb204-15"><a href="functions-in-r.html#cb204-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  [61] -0.218416160  0.705776809 -0.055010787 -0.512099534 -0.599465326</span></span>
+<span id="cb204-16"><a href="functions-in-r.html#cb204-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  [66] -0.600393860  0.276884438 -1.394630124 -0.526778874  1.642804684</span></span>
+<span id="cb204-17"><a href="functions-in-r.html#cb204-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  [71]  0.091457703 -0.100959897  0.015405039 -0.794401156 -0.433474453</span></span>
+<span id="cb204-18"><a href="functions-in-r.html#cb204-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  [76]  0.014638462  0.213416561 -0.536400958 -0.468215207  1.346170981</span></span>
+<span id="cb204-19"><a href="functions-in-r.html#cb204-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  [81]  1.654431559 -0.018656854  0.263786258  0.112875746 -5.104343613</span></span>
+<span id="cb204-20"><a href="functions-in-r.html#cb204-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  [86] -0.013844649 -0.414476090  0.176397558 -1.305998484 -0.810683304</span></span>
+<span id="cb204-21"><a href="functions-in-r.html#cb204-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  [91]  0.018132266  0.114300898  0.080744289  1.017427583  0.035341341</span></span>
+<span id="cb204-22"><a href="functions-in-r.html#cb204-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  [96] -0.145104232  0.811264214  0.104145416 -0.158009704 -0.028556680</span></span></code></pre></div>
 <p>So far so good. All we’ve really done is wrapped the code <code>x * y</code> into a function, where we ask the user to specify what their <code>x</code> and <code>y</code> variables are.</p>
 <p>Now let’s add a little complexity. If you look at the output of <code>nairobi_genoa</code> some of the calculations have produced <code>NA</code> values. This is because of those <code>NA</code> values we included in <code>nairobi</code> when we created the <code>city</code> data frame. Despite these <code>NA</code> values, the function appeared to have worked but it gave us no indication that there might be a problem. In such cases we may prefer if it had warned us that something was wrong. How can we get the function to let us know when <code>NA</code> values are produced? Here’s one way.</p>
 <div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb205-1"><a href="functions-in-r.html#cb205-1" aria-hidden="true" tabindex="-1"></a>multiply_columns <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
@@ -521,7 +521,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/nkaza/Rbook/edit/master/06-programming.Rmd",
+"link": "https://github.com/nkaza/intro2Rbook/edit/master/06-programming.Rmd",
 "text": "Suggest an edit"
 },
 "history": {
