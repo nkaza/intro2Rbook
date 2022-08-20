@@ -1,4 +1,5 @@
 book_filename: "Rbook"
+rmd_subdir: ["exercises"]
 language:
   ui:
     chapter_name: "Chapter "

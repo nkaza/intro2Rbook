@@ -97,7 +97,7 @@ Here we have created an object called `my_obj2` and assigned it a value of `R is
 
 ```{r, echo=TRUE, eval=FALSE}
 my_obj2 <- R is cool
-Error: unexpected symbol in "my_obj2 <- R is"
+## Error: unexpected symbol in "my_obj2 <- R is"
 ```
 
 Our workspace now contains both objects we've created so far with `my_obj2` listed as type character.  
@@ -685,6 +685,6 @@ load(file = "name_of_file.RData")
 Congratulations, you've reached the end of Chapter 2! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise2]. If you want to see our solutions for this exercise you can find them [here][exercise2-sol] (don't peek at them too soon though!).   
 ```
 
-```{r links, child="links.md"}
+```{r, child="links.md"}
 ```
 

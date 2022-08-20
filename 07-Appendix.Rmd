@@ -52,7 +52,7 @@ With the rmarkdown package, RStudio/Pandoc, and LaTeX, you should be able to com
 
 \  
 
-```{r links, child="links.md"}
+```{r, child="links.md"}
 ```
 
 

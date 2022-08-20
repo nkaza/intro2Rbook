@@ -1,7 +1,7 @@
 # Graphics with ggplot {#graphics_r}
 
 ```{r setup-gg, echo=FALSE}
-# knitr::opts_chunk$set(message=FALSE, tidy.opts=list(width.cutoff=80), tidy=TRUE) 
+# knitr::opts_chunk$set(message=FALSE, tidy.opts=list(width.cutoff=80), tidy=TRUE)
 ```
 
 For many people, using R to create informative and pretty figures is one of the more rewarding aspects of using R. These can either take the form of a rough and ready plot to get a feel for what's going on in your data, or a fancier, more complex figure to use in a publication or a report. This process is often as close as many scientists get to having a professional creative side (at least that's true for us), and it's a source of pride for some folk.
@@ -44,23 +44,24 @@ So what's the figure we're going to make together?
 
 ```{r final-figure-start, echo = FALSE, out.width = "75%", fig.align = "center", warning = FALSE, message=FALSE}
 nola_str_tib <- read_csv("data/NOLA_STR.csv",
-												 	col_types = cols(
-												 	`Permit Number` = col_character(),
-												 	`Address` = col_character(),
-												 	`Permit Type` = col_factor(),
-												 	`Current Status` = col_factor(),
-												 	`Application Date` = col_date(format = "%m/%d/%y"),
-												 	`Issue_Date` = col_date(format = "%m/%d/%y")
-												 )) 
-	
+  col_types = cols(
+    `Permit Number` = col_character(),
+    `Address` = col_character(),
+    `Permit Type` = col_factor(),
+    `Current Status` = col_factor(),
+    `Application Date` = col_date(format = "%m/%d/%y"),
+    `Issue_Date` = col_date(format = "%m/%d/%y")
+  )
+)
+
 
 library(ggplot2)
 
 df <- nola_str_tib %>% filter(`Current Status` != "Duplicate")
 
 
-theme_deon <- function(base_size = 15, base_family = "", base_line_size = base_size / 22, 
-                        base_rect_size = base_size / 22) {
+theme_deon <- function(base_size = 15, base_family = "", base_line_size = base_size / 22,
+                       base_rect_size = base_size / 22) {
   theme(
     axis.title = element_text(size = 15),
     axis.text.x = element_text(size = 10),
@@ -72,22 +73,26 @@ theme_deon <- function(base_size = 15, base_family = "", base_line_size = base_s
     panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
     strip.text = element_text(colour = "black"),
     legend.key = element_blank(),
-    legend.position = 'bottom'
+    legend.position = "bottom"
   )
 }
 
 final_figure <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								labs(shape = "Permit\nType", 
-  										colour = "Permit\nType") +
-									scale_colour_manual(
-    									values = c("#5C1AAE", "#AE5C1A", "#1AAE5C")) +
-  								theme_deon()
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  labs(
+    shape = "Permit\nType",
+    colour = "Permit\nType"
+  ) +
+  scale_colour_manual(
+    values = c("#5C1AAE", "#AE5C1A", "#1AAE5C")
+  ) +
+  theme_deon()
 
 final_figure
 ```
@@ -125,23 +130,22 @@ We'll keep using the `nola_str_tib` dataset that you've used in [Chapter 3](#dat
 
 ```{r str-of-flower, collapse=TRUE}
 nola_str_tib <- read_csv("data/NOLA_STR.csv",
-												 	col_types = cols(
-												 	`Permit Number` = col_character(),
-												 	`Address` = col_character(),
-												 	`Permit Type` = col_factor(),
-												 	`Current Status` = col_factor(),
-												 	`Application Date` = col_date(format = "%m/%d/%y"),
-												 	`Issue_Date` = col_date(format = "%m/%d/%y")
-												 )) 
-	
+  col_types = cols(
+    `Permit Number` = col_character(),
+    `Address` = col_character(),
+    `Permit Type` = col_factor(),
+    `Current Status` = col_factor(),
+    `Application Date` = col_date(format = "%m/%d/%y"),
+    `Issue_Date` = col_date(format = "%m/%d/%y")
+  )
+)
+
 
 library(ggplot2)
 
 str(nola_str_tib)
 
 df <- nola_str_tib %>% filter(`Current Status` != "Duplicate")
-
-
 ```
 
 We know from the "final figure" that we want the variable `Bedroom Limit` on the y axis (response/dependent variable) and `Guest Occupancy Limit` on the x axis (explanatory/independent variable). To do this in `ggplot2` we need to make use of the `aes()`\index{aes()} function and also add a `data =` argument. `aes` is short for aesthetics, and it's the function we use to specify what we want displayed in the figure.
@@ -176,8 +180,8 @@ knitr::include_graphics(path = "images/geoms.png")
 ```
 
 ```{r ggplot-with-geom_point, out.width = "75%", fig.align = "center", message=FALSE}
-ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df)  +
-		geom_jitter()     # Adding a geom to display data as point data
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df) +
+  geom_jitter() # Adding a geom to display data as point data
 ```
 
  
@@ -211,9 +215,9 @@ knitr::include_graphics(path = "images/geoms.png")
 ```
 
 ```{r geom_line, out.width="75%", fig.align="center", message=FALSE}
-ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df)  +
-		geom_jitter()  + 
-	  geom_smooth(method = 'lm') # Add geom_line
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df) +
+  geom_jitter() +
+  geom_smooth(method = "lm") # Add geom_line
 ```
 
  
@@ -233,9 +237,9 @@ knitr::include_graphics(path = "images/mapping_scales.png")
 ```
 
 ```{r geom_smooth-colour-lm, out.width = "75%", fig.align = "center", message=FALSE}
-ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df)  +
-		geom_jitter(aes(color = `Permit Type`))  + 
-	  geom_smooth(method = 'lm')
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), data = df) +
+  geom_jitter(aes(color = `Permit Type`)) +
+  geom_smooth(method = "lm")
 ```
 
  
@@ -248,10 +252,11 @@ knitr::include_graphics(path = "images/data_mapping.png")
 
 ```{r universal-vrs-geom, out.width="75%", fig.align="center", message=FALSE}
 ggplot() +
-	# Moved aes() and data into geoms
+  # Moved aes() and data into geoms
   geom_jitter(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-  geom_smooth(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`), 
-  						data = df, method = "lm")
+  geom_smooth(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`),
+    data = df, method = "lm"
+  )
 ```
 
  
@@ -267,9 +272,9 @@ knitr::include_graphics(path = "images/data_mapping.png")
 ```{r universal-colours, out.width = "75%", fig.align = "center", message=FALSE}
 
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	# Moved aes() and data into ggplot
+  # Moved aes() and data into ggplot
   geom_jitter(data = df) +
-  geom_smooth( method = "lm")
+  geom_smooth(method = "lm")
 ```
 
  
@@ -292,9 +297,9 @@ knitr::include_graphics(path = "images/facets.png")
 
 ```{r facet_wrap, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter() +
-									geom_smooth(method = 'lm')+
-	                facet_wrap( ~`Residential Subtype`)
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_wrap(~`Residential Subtype`)
 ```
 
  
@@ -309,9 +314,9 @@ knitr::include_graphics(path = "images/facets.png")
 
 ```{r facet_wrap-formula, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter() +
-									geom_smooth(method = 'lm')+
-	                facet_wrap(~`Current Status` +`Residential Subtype`)
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_wrap(~ `Current Status` + `Residential Subtype`)
 ```
 
  
@@ -329,10 +334,10 @@ knitr::include_graphics(path = "images/facets.png")
 ```
 
 ```{r facet_grid, out.width = "75%", fig.align = "center", message=FALSE}
- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter() +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`)
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`)
 ```
 
  
@@ -372,10 +377,10 @@ We'll now assign the code we wrote when creating our previous plot to an object 
 
 ```{r naming-figure, out.width = "75%", fig.align = "center", message=FALSE}
 # Naming our figure object
-rbook_figure <-  ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter() +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`)
+rbook_figure <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`)
 ```
 
  
@@ -420,10 +425,10 @@ Let's include it in the `geom_jitter` geom
  
 
 ```{r change-size, out.width = "75%", fig.align = "center", message=FALSE}
- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( size = 2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`)
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter(size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`)
 ```
 
  
@@ -437,10 +442,10 @@ knitr::include_graphics(path = "images/scales_mapping.png")
 ```
 
 ```{r change-shape, out.width = "75%", fig.align = "center", message=FALSE}
- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter(aes(shape = `Current Status`), size = 3) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`)
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter(aes(shape = `Current Status`), size = 3) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`)
 ```
 
  
@@ -452,10 +457,10 @@ We're edging our way closer to our "final figure". Another thing we may want to 
  
 
 ```{r change-alpha, out.width = "75%", fig.align = "center", message=FALSE}
- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`)
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter(alpha = 0.6) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`)
 ```
 
  
@@ -463,11 +468,12 @@ We're edging our way closer to our "final figure". Another thing we may want to 
 To get the facet labels to wrap correctly we need to use a labeller function within `facet_grid`.
 
 ```{r add_labeller, out.width = "75%", fig.align = "center", message=FALSE}
- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`,
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) 
+ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
+  geom_jitter(alpha = 0.6) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  )
 ```
 
 We can also include user defined labels for the x and y axis. There are a couple of ways to do this, but a more familiar way may be to use the same syntax as used in base R figures; using `xlab()`\index{xlab()} and `ylab()`\index{ylab()}. We'll specify that these belong to the `ggplot` by using the `+` symbol.
@@ -476,12 +482,13 @@ We can also include user defined labels for the x and y axis. There are a couple
 
 ```{r axis-labels, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms")
 ```
 
  
@@ -492,13 +499,14 @@ I want to introduce a line break in Colour label in `Permit Type`. `\\n` is newl
 
 ```{r other-labels, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								labs(colour = "Permit\nType")
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  labs(colour = "Permit\nType")
 ```
 
  
@@ -517,53 +525,57 @@ knitr::include_graphics(path = "images/theme.png")
 
 ```{r testing-themes, out.width = "85%", fig.align = "center", message=FALSE}
 classic <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								guides(color = "none") +
-	# Classic theme
-	theme_classic()
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  guides(color = "none") +
+  # Classic theme
+  theme_classic()
 
 bw <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								guides(color = "none") +
-	# Black and white theme
-	theme_bw()
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  guides(color = "none") +
+  # Black and white theme
+  theme_bw()
 
 minimal <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								guides(color = "none")+
-	
-	# Minimal theme
-	theme_minimal()
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  guides(color = "none") +
+
+  # Minimal theme
+  theme_minimal()
 
 light <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								guides(color = "none")+
-	
-	# Light theme
-	theme_light()
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  guides(color = "none") +
+
+  # Light theme
+  theme_light()
 
 (classic | bw) /
-	(minimal | light)
+  (minimal | light)
 ```
 
  
@@ -599,22 +611,21 @@ knitr::include_graphics(path = "images/theme.png")
 ```
 
 ```{r rbook-theme, message=FALSE}
-theme_rbook <- function(base_size = 13, base_family = "", base_line_size = base_size/22, 
-                         base_rect_size = base_size/22) {         
-  theme( 
-    axis.title = element_text(size = 13),                               
-    axis.text.x = element_text(size = 10),                              
-    axis.text.y = element_text(size = 10),                              
-    plot.caption = element_text(size = 10, face = "italic"),            
-    panel.background = element_rect(fill="white"),                      
+theme_rbook <- function(base_size = 13, base_family = "", base_line_size = base_size / 22,
+                        base_rect_size = base_size / 22) {
+  theme(
+    axis.title = element_text(size = 13),
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 10),
+    plot.caption = element_text(size = 10, face = "italic"),
+    panel.background = element_rect(fill = "white"),
     axis.line = element_line(size = 1, colour = "black"),
-    strip.background =element_rect(fill = "#cddcdd"),
-    panel.border = element_rect(colour = "black", fill=NA, size=0.5),
-		strip.text = element_text(colour = "black"),
-		legend.key=element_blank(),
-		legend.position = "bottom"
-		)
- 
+    strip.background = element_rect(fill = "#cddcdd"),
+    panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+    strip.text = element_text(colour = "black"),
+    legend.key = element_blank(),
+    legend.position = "bottom"
+  )
 }
 ```
 
@@ -628,15 +639,16 @@ knitr::include_graphics(path = "images/theme.png")
 
 ```{r rbook-figure, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								labs(colour = "Permit\nType") +
-	# Updated theme to our theme_rbook
-	theme_rbook()   # use our new theme
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  labs(colour = "Permit\nType") +
+  # Updated theme to our theme_rbook
+  theme_rbook() # use our new theme
 ```
 
  
@@ -650,8 +662,8 @@ Let's remind ourselves of what that "final figure" looked like. Remember, since 
  
 
 ```{r final-figure-reminder, out.width = "75%", fig.align = "center", message=FALSE}
-final_figure + 
-	labs(title = "Reminder of the final figure")
+final_figure +
+  labs(title = "Reminder of the final figure")
 ```
 
  
@@ -668,17 +680,18 @@ knitr::include_graphics(path = "images/scales.png")
 
 ```{r scale-manual, out.width = "75%", fig.align = "center", message=FALSE}
 final_figure <- ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
-	                geom_jitter( alpha=0.6, size =2) +
-									geom_smooth(method = 'lm')+
-	                facet_grid(`Current Status` ~`Residential Subtype`, 
-	                					 labeller = labeller(`Residential Subtype` = label_wrap_gen(10))) +
-									xlab("Max. Guests") +
-									ylab("Max. Bedrooms")+
-  								labs(colour = "Permit\nType") +
-									scale_colour_manual(
-    									values = c("#5C1AAE", "#AE5C1A", "#1AAE5C")) +
-  								theme_rbook() 
-	
+  geom_jitter(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm") +
+  facet_grid(`Current Status` ~ `Residential Subtype`,
+    labeller = labeller(`Residential Subtype` = label_wrap_gen(10))
+  ) +
+  xlab("Max. Guests") +
+  ylab("Max. Bedrooms") +
+  labs(colour = "Permit\nType") +
+  scale_colour_manual(
+    values = c("#5C1AAE", "#AE5C1A", "#1AAE5C")
+  ) +
+  theme_rbook()
 ```
 
  
@@ -692,9 +705,11 @@ This is the point when having assigned the code to the object named `rbook_figur
 Other important arguments to take note of are: `device =` which tells `ggplot2` what format we want to save the figure (in this case a pdf) though `ggplot2` is often smart enough to guess this based on the extension we give our file name, so it is often redundant; `units =` which specifies the units used in `width =` and `height =`; `width =` and `height =` specify the width and height of figure (in this case in mm as specified using `units =`); `dpi =` which controls the resolution of the saved figure; and `limitsize =` which prevents accidentally saving a massive figure of 1 km x 1 km!
 
 ```{r ggsave, eval = FALSE, message=FALSE}
-ggsave(filename = "maxbedrooms_occupancylimit_facet.pdf", plot = final_figure, device = "pdf", 
-			 path = "output", width = 250, height = 150, units = "mm", 
-			 dpi = 500, limitsize = TRUE)
+ggsave(
+  filename = "maxbedrooms_occupancylimit_facet.pdf", plot = final_figure, device = "pdf",
+  path = "output", width = 250, height = 150, units = "mm",
+  dpi = 500, limitsize = TRUE
+)
 ```
 
 This concludes the worked example to reproduce our final figure. While absolutely not an exhaustive list of what you can do with `ggplot2`, this will hopefully help when you're making your own from scratch or, perhaps likely when starting, copying `ggplots` made by other people (in which case hopefully this will help you understand what they've done).
@@ -736,7 +751,7 @@ knitr::include_graphics(path = "images/statistics.png")
 ```{r stat_smooth-lm, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
   geom_jitter() +
-	# using stat_smooth instead of geom_smooth
+  # using stat_smooth instead of geom_smooth
   stat_smooth(geom = "smooth", method = "lm", se = FALSE)
 ```
 
@@ -755,10 +770,10 @@ knitr::include_graphics(path = "images/coords.png")
 ```{r axis-limits, out.width = "75%", fig.align = "center", warning=FALSE, message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
   geom_jitter() +
-  geom_smooth(method = "lm", se = FALSE)+
-	# New x and y limits
-	xlim(c(4, 8)) +
-	ylim(c(2, 4))
+  geom_smooth(method = "lm", se = FALSE) +
+  # New x and y limits
+  xlim(c(4, 8)) +
+  ylim(c(2, 4))
 ```
 
  
@@ -772,9 +787,9 @@ knitr::include_graphics(path = "images/coords.png")
 ```{r coord_cartesian, out.width = "75%", fig.align = "center", message=FALSE}
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Permit Type`), data = df) +
   geom_jitter() +
-  geom_smooth(method = "lm", se = FALSE)+
-	# Zooming in rather than chopping out
-	coord_cartesian(xlim = c(4, 8),	ylim = c(2, 4))
+  geom_smooth(method = "lm", se = FALSE) +
+  # Zooming in rather than chopping out
+  coord_cartesian(xlim = c(4, 8), ylim = c(2, 4))
 ```
 
  
@@ -799,9 +814,8 @@ knitr::include_graphics(path = "images/scales.png")
 
 ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Bedroom Limit`), data = df) +
   geom_jitter() +
-  	# Adding scale_colour_gradient
-	scale_colour_gradient(low = "#9F00FF", high = "#FF9F00") 
-
+  # Adding scale_colour_gradient
+  scale_colour_gradient(low = "#9F00FF", high = "#FF9F00")
 ```
 
 ## Exercise 5
@@ -810,5 +824,6 @@ ggplot(aes(x = `Guest Occupancy Limit`, y = `Bedroom Limit`, color = `Bedroom Li
 Congratulations, you've reached the end of Chapter 5! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise4]. If you want to see our solutions for this exercise you can find them [here][exercise5-sol] (don't peek at them too soon though!).   
 ```
 
-```{r links, child="links.md"}
+```{r, child="links.md"}
+
 ```

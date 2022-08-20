@@ -138,5 +138,5 @@ license terms.
   
 - **NonCommercial**---You may not use the material for commercial purposes.
 
-```{r links, child="links.md"}
+```{r, child="links.md"}
 ```

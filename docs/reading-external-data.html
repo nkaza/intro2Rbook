@@ -23,7 +23,7 @@
 <meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-08-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.4.3</b> When to use a loop?</a></li>
 <li class="chapter" data-level="6.4.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.4.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 7</a></li>
+<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -377,16 +377,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="reading-external-data" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Reading external data<a href="reading-external-data.html#reading-external-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><code>readr</code> package, part of tidyverse reads flat files.
-Most of readr’s functions are concerned with turning flat files into tibbles. In particular,
-* <code>read_csv</code> reads comma delimited files
-* <code>read_csv2</code> reads semicolon separated files (common in countries where , is used as the decimal place)
-* <code>read_tsv</code> reads tab delimited files
-* <code>read_delim</code> reads in files with any delimiter.</p>
+<p><code>readr</code> package, part of tidyverse reads flat files. Most of readr’s
+functions are concerned with turning flat files into tibbles. In
+particular, * <code>read_csv</code> reads comma delimited files * <code>read_csv2</code>
+reads semicolon separated files (common in countries where , is used as
+the decimal place) * <code>read_tsv</code> reads tab delimited files *
+<code>read_delim</code> reads in files with any delimiter.</p>
 <p>Notice the <code>_</code> in the functions compared to <code>.</code> in base R.</p>
+<p>You can <a href="https://github.com/nkaza/intro2Rbook/blob/master/data/NOLA_STR.csv">download the data</a> used in the rest of the chapter</p>
 <div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="reading-external-data.html#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb154-2"><a href="reading-external-data.html#cb154-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb154-3"><a href="reading-external-data.html#cb154-3" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&#39;data/NOLA_STR.csv&#39;</span>)</span>
+<span id="cb154-3"><a href="reading-external-data.html#cb154-3" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/NOLA_STR.csv&quot;</span>)</span>
 <span id="cb154-4"><a href="reading-external-data.html#cb154-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Rows: 89 Columns: 12</span></span>
 <span id="cb154-5"><a href="reading-external-data.html#cb154-5" aria-hidden="true" tabindex="-1"></a><span class="do">## ── Column specification ────────────────────────────────────────────────────────</span></span>
 <span id="cb154-6"><a href="reading-external-data.html#cb154-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Delimiter: &quot;,&quot;</span></span>
@@ -414,50 +415,60 @@ Most of readr’s functions are concerned with turning flat files into tibbles. 
 <span id="cb154-28"><a href="reading-external-data.html#cb154-28" aria-hidden="true" tabindex="-1"></a><span class="do">## #   `Bedroom Limit` &lt;dbl&gt;, `Guest Occupancy Limit` &lt;dbl&gt;,</span></span>
 <span id="cb154-29"><a href="reading-external-data.html#cb154-29" aria-hidden="true" tabindex="-1"></a><span class="do">## #   `Operator Name` &lt;chr&gt;, `License Holder Name` &lt;chr&gt;,</span></span>
 <span id="cb154-30"><a href="reading-external-data.html#cb154-30" aria-hidden="true" tabindex="-1"></a><span class="do">## #   `Application Date` &lt;chr&gt;, Issue_Date &lt;chr&gt;</span></span></code></pre></div>
-<p>Sometimes there are a few lines of metadata at the top of the file. You can use <code>skip = n</code> to skip the first n lines; or use <code>comment = "#"</code> to drop all lines that start with (e.g.) #.</p>
-<p>By default, <code>read_csv</code> assumes that the first line is a header. If this is not the case, use <code>col_names = FALSE</code> or pass a character vector to <code>col_names</code></p>
-<p><code>readr</code> uses a heuristic to figure out the type of each column: it reads the first 1000 rows and uses some (moderately conservative) heuristics to figure out the type of each column. In large data files the first 1000 rows may not sufficiently general, so you might have to specify the <code>col_types</code>.</p>
+<p>Sometimes there are a few lines of metadata at the top of the file. You
+can use <code>skip = n</code> to skip the first n lines; or use <code>comment = "#"</code> to
+drop all lines that start with (e.g.) #.</p>
+<p>By default, <code>read_csv</code> assumes that the first line is a header. If this
+is not the case, use <code>col_names = FALSE</code> or pass a character vector to
+<code>col_names</code></p>
+<p><code>readr</code> uses a heuristic to figure out the type of each column: it reads
+the first 1000 rows and uses some (moderately conservative) heuristics
+to figure out the type of each column. In large data files the first
+1000 rows may not sufficiently general, so you might have to specify the
+<code>col_types</code>.</p>
 <div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="reading-external-data.html#cb155-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb155-2"><a href="reading-external-data.html#cb155-2" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&#39;data/NOLA_STR.csv&#39;</span>,</span>
-<span id="cb155-3"><a href="reading-external-data.html#cb155-3" aria-hidden="true" tabindex="-1"></a>                                                 <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
-<span id="cb155-4"><a href="reading-external-data.html#cb155-4" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">`</span><span class="at">Permit Number</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_character</span>(),</span>
-<span id="cb155-5"><a href="reading-external-data.html#cb155-5" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">`</span><span class="at">Address</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_character</span>(),</span>
-<span id="cb155-6"><a href="reading-external-data.html#cb155-6" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_factor</span>(),</span>
-<span id="cb155-7"><a href="reading-external-data.html#cb155-7" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">&quot;%m/%d/%y&quot;</span>),</span>
-<span id="cb155-8"><a href="reading-external-data.html#cb155-8" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">`</span><span class="at">Issue_Date</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">&quot;%m/%d/%y&quot;</span>)</span>
-<span id="cb155-9"><a href="reading-external-data.html#cb155-9" aria-hidden="true" tabindex="-1"></a>                                                 ))</span>
-<span id="cb155-10"><a href="reading-external-data.html#cb155-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb155-11"><a href="reading-external-data.html#cb155-11" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(nola_str_tib)</span>
-<span id="cb155-12"><a href="reading-external-data.html#cb155-12" aria-hidden="true" tabindex="-1"></a><span class="do">## spec_tbl_df [89 × 12] (S3: spec_tbl_df/tbl_df/tbl/data.frame)</span></span>
-<span id="cb155-13"><a href="reading-external-data.html#cb155-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Permit Number        : chr [1:89] NA NA NA NA ...</span></span>
-<span id="cb155-14"><a href="reading-external-data.html#cb155-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Address              : chr [1:89] &quot;1717 Robert C Blakes, SR Dr&quot; &quot;1006 Race St&quot; &quot;2634 Louisiana Ave&quot; &quot;3323 Rosalie Aly&quot; ...</span></span>
-<span id="cb155-15"><a href="reading-external-data.html#cb155-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Permit Type          : Factor w/ 3 levels &quot;Short Term Rental Commercial Owner&quot;,..: 1 1 1 2 2 2 3 2 2 2 ...</span></span>
-<span id="cb155-16"><a href="reading-external-data.html#cb155-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Residential Subtype  : chr [1:89] &quot;N/A&quot; &quot;N/A&quot; &quot;N/A&quot; &quot;Residential Partial Unit&quot; ...</span></span>
-<span id="cb155-17"><a href="reading-external-data.html#cb155-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Current Status       : chr [1:89] &quot;Pending&quot; &quot;Pending&quot; &quot;Pending&quot; &quot;Pending&quot; ...</span></span>
-<span id="cb155-18"><a href="reading-external-data.html#cb155-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Expiration Date      : chr [1:89] NA NA NA NA ...</span></span>
-<span id="cb155-19"><a href="reading-external-data.html#cb155-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Bedroom Limit        : num [1:89] 5 5 3 1 3 1 2 2 1 2 ...</span></span>
-<span id="cb155-20"><a href="reading-external-data.html#cb155-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Guest Occupancy Limit: num [1:89] 10 10 6 2 6 2 4 4 2 4 ...</span></span>
-<span id="cb155-21"><a href="reading-external-data.html#cb155-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Operator Name        : chr [1:89] &quot;Melissa Taranto&quot; &quot;Michael Heyne&quot; &quot;Michael Heyne&quot; &quot;Caroline Stas&quot; ...</span></span>
-<span id="cb155-22"><a href="reading-external-data.html#cb155-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ License Holder Name  : chr [1:89] &quot;Scott Taranto&quot; &quot;Boutique Hospitality&quot; &quot;Resonance Home LLC&quot; &quot;Caroline Stas&quot; ...</span></span>
-<span id="cb155-23"><a href="reading-external-data.html#cb155-23" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Application Date     : Date[1:89], format: &quot;2022-08-09&quot; &quot;2022-08-09&quot; ...</span></span>
-<span id="cb155-24"><a href="reading-external-data.html#cb155-24" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Issue_Date           : Date[1:89], format: NA NA ...</span></span>
-<span id="cb155-25"><a href="reading-external-data.html#cb155-25" aria-hidden="true" tabindex="-1"></a><span class="do">##  - attr(*, &quot;spec&quot;)=</span></span>
-<span id="cb155-26"><a href="reading-external-data.html#cb155-26" aria-hidden="true" tabindex="-1"></a><span class="do">##   .. cols(</span></span>
-<span id="cb155-27"><a href="reading-external-data.html#cb155-27" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Permit Number` = col_character(),</span></span>
-<span id="cb155-28"><a href="reading-external-data.html#cb155-28" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   Address = col_character(),</span></span>
-<span id="cb155-29"><a href="reading-external-data.html#cb155-29" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Permit Type` = col_factor(levels = NULL, ordered = FALSE, include_na = FALSE),</span></span>
-<span id="cb155-30"><a href="reading-external-data.html#cb155-30" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Residential Subtype` = col_character(),</span></span>
-<span id="cb155-31"><a href="reading-external-data.html#cb155-31" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Current Status` = col_character(),</span></span>
-<span id="cb155-32"><a href="reading-external-data.html#cb155-32" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Expiration Date` = col_character(),</span></span>
-<span id="cb155-33"><a href="reading-external-data.html#cb155-33" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Bedroom Limit` = col_double(),</span></span>
-<span id="cb155-34"><a href="reading-external-data.html#cb155-34" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Guest Occupancy Limit` = col_double(),</span></span>
-<span id="cb155-35"><a href="reading-external-data.html#cb155-35" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Operator Name` = col_character(),</span></span>
-<span id="cb155-36"><a href="reading-external-data.html#cb155-36" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `License Holder Name` = col_character(),</span></span>
-<span id="cb155-37"><a href="reading-external-data.html#cb155-37" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Application Date` = col_date(format = &quot;%m/%d/%y&quot;),</span></span>
-<span id="cb155-38"><a href="reading-external-data.html#cb155-38" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   Issue_Date = col_date(format = &quot;%m/%d/%y&quot;)</span></span>
-<span id="cb155-39"><a href="reading-external-data.html#cb155-39" aria-hidden="true" tabindex="-1"></a><span class="do">##   .. )</span></span>
-<span id="cb155-40"><a href="reading-external-data.html#cb155-40" aria-hidden="true" tabindex="-1"></a><span class="do">##  - attr(*, &quot;problems&quot;)=&lt;externalptr&gt;</span></span></code></pre></div>
-<p>Notice how <code>Permit Type</code> is now read in as a factor instead of a character.</p>
+<span id="cb155-2"><a href="reading-external-data.html#cb155-2" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/NOLA_STR.csv&quot;</span>,</span>
+<span id="cb155-3"><a href="reading-external-data.html#cb155-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types =</span> <span class="fu">cols</span>(</span>
+<span id="cb155-4"><a href="reading-external-data.html#cb155-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Permit Number</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_character</span>(),</span>
+<span id="cb155-5"><a href="reading-external-data.html#cb155-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Address</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_character</span>(),</span>
+<span id="cb155-6"><a href="reading-external-data.html#cb155-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_factor</span>(),</span>
+<span id="cb155-7"><a href="reading-external-data.html#cb155-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">&quot;%m/%d/%y&quot;</span>),</span>
+<span id="cb155-8"><a href="reading-external-data.html#cb155-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Issue_Date</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">&quot;%m/%d/%y&quot;</span>)</span>
+<span id="cb155-9"><a href="reading-external-data.html#cb155-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb155-10"><a href="reading-external-data.html#cb155-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb155-11"><a href="reading-external-data.html#cb155-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb155-12"><a href="reading-external-data.html#cb155-12" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(nola_str_tib)</span>
+<span id="cb155-13"><a href="reading-external-data.html#cb155-13" aria-hidden="true" tabindex="-1"></a><span class="do">## spec_tbl_df [89 × 12] (S3: spec_tbl_df/tbl_df/tbl/data.frame)</span></span>
+<span id="cb155-14"><a href="reading-external-data.html#cb155-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Permit Number        : chr [1:89] NA NA NA NA ...</span></span>
+<span id="cb155-15"><a href="reading-external-data.html#cb155-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Address              : chr [1:89] &quot;1717 Robert C Blakes, SR Dr&quot; &quot;1006 Race St&quot; &quot;2634 Louisiana Ave&quot; &quot;3323 Rosalie Aly&quot; ...</span></span>
+<span id="cb155-16"><a href="reading-external-data.html#cb155-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Permit Type          : Factor w/ 3 levels &quot;Short Term Rental Commercial Owner&quot;,..: 1 1 1 2 2 2 3 2 2 2 ...</span></span>
+<span id="cb155-17"><a href="reading-external-data.html#cb155-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Residential Subtype  : chr [1:89] &quot;N/A&quot; &quot;N/A&quot; &quot;N/A&quot; &quot;Residential Partial Unit&quot; ...</span></span>
+<span id="cb155-18"><a href="reading-external-data.html#cb155-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Current Status       : chr [1:89] &quot;Pending&quot; &quot;Pending&quot; &quot;Pending&quot; &quot;Pending&quot; ...</span></span>
+<span id="cb155-19"><a href="reading-external-data.html#cb155-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Expiration Date      : chr [1:89] NA NA NA NA ...</span></span>
+<span id="cb155-20"><a href="reading-external-data.html#cb155-20" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Bedroom Limit        : num [1:89] 5 5 3 1 3 1 2 2 1 2 ...</span></span>
+<span id="cb155-21"><a href="reading-external-data.html#cb155-21" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Guest Occupancy Limit: num [1:89] 10 10 6 2 6 2 4 4 2 4 ...</span></span>
+<span id="cb155-22"><a href="reading-external-data.html#cb155-22" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Operator Name        : chr [1:89] &quot;Melissa Taranto&quot; &quot;Michael Heyne&quot; &quot;Michael Heyne&quot; &quot;Caroline Stas&quot; ...</span></span>
+<span id="cb155-23"><a href="reading-external-data.html#cb155-23" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ License Holder Name  : chr [1:89] &quot;Scott Taranto&quot; &quot;Boutique Hospitality&quot; &quot;Resonance Home LLC&quot; &quot;Caroline Stas&quot; ...</span></span>
+<span id="cb155-24"><a href="reading-external-data.html#cb155-24" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Application Date     : Date[1:89], format: &quot;2022-08-09&quot; &quot;2022-08-09&quot; ...</span></span>
+<span id="cb155-25"><a href="reading-external-data.html#cb155-25" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ Issue_Date           : Date[1:89], format: NA NA ...</span></span>
+<span id="cb155-26"><a href="reading-external-data.html#cb155-26" aria-hidden="true" tabindex="-1"></a><span class="do">##  - attr(*, &quot;spec&quot;)=</span></span>
+<span id="cb155-27"><a href="reading-external-data.html#cb155-27" aria-hidden="true" tabindex="-1"></a><span class="do">##   .. cols(</span></span>
+<span id="cb155-28"><a href="reading-external-data.html#cb155-28" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Permit Number` = col_character(),</span></span>
+<span id="cb155-29"><a href="reading-external-data.html#cb155-29" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   Address = col_character(),</span></span>
+<span id="cb155-30"><a href="reading-external-data.html#cb155-30" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Permit Type` = col_factor(levels = NULL, ordered = FALSE, include_na = FALSE),</span></span>
+<span id="cb155-31"><a href="reading-external-data.html#cb155-31" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Residential Subtype` = col_character(),</span></span>
+<span id="cb155-32"><a href="reading-external-data.html#cb155-32" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Current Status` = col_character(),</span></span>
+<span id="cb155-33"><a href="reading-external-data.html#cb155-33" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Expiration Date` = col_character(),</span></span>
+<span id="cb155-34"><a href="reading-external-data.html#cb155-34" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Bedroom Limit` = col_double(),</span></span>
+<span id="cb155-35"><a href="reading-external-data.html#cb155-35" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Guest Occupancy Limit` = col_double(),</span></span>
+<span id="cb155-36"><a href="reading-external-data.html#cb155-36" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Operator Name` = col_character(),</span></span>
+<span id="cb155-37"><a href="reading-external-data.html#cb155-37" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `License Holder Name` = col_character(),</span></span>
+<span id="cb155-38"><a href="reading-external-data.html#cb155-38" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   `Application Date` = col_date(format = &quot;%m/%d/%y&quot;),</span></span>
+<span id="cb155-39"><a href="reading-external-data.html#cb155-39" aria-hidden="true" tabindex="-1"></a><span class="do">##   ..   Issue_Date = col_date(format = &quot;%m/%d/%y&quot;)</span></span>
+<span id="cb155-40"><a href="reading-external-data.html#cb155-40" aria-hidden="true" tabindex="-1"></a><span class="do">##   .. )</span></span>
+<span id="cb155-41"><a href="reading-external-data.html#cb155-41" aria-hidden="true" tabindex="-1"></a><span class="do">##  - attr(*, &quot;problems&quot;)=&lt;externalptr&gt;</span></span></code></pre></div>
+<p>Notice how <code>Permit Type</code> is now read in as a factor instead of a
+character.</p>
 </div>
             </section>
 
@@ -510,6 +521,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

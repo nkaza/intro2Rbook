@@ -1,0 +1,156 @@
+
+
+```{r , echo=FALSE, purl = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, eval = FALSE, cache = FALSE)
+```
+\  
+
+# Exercise 4: Manipulating data with tidyverse {.unlisted .unnumbered}
+
+\  
+
+In this exercise you'll learn how to import your data into R as a tibble object, how to usefully summarise and manipulate dataframes and finally how to export data from R. All of this material is covered in [Chapter 4](https://nkaza.github.io/intro2Rbook/data_tidyverse.html) of the Introduction to R book.
+\  
+
+1. As in previous exercises, either create a new R script or continue with your previous R script in your RStudio Project. Again, make sure you include any metadata you feel is appropriate (title, description of task, date of creation etc) and  don't forget to comment out your metadata with a `#` at the beginning of the line. 
+
+\  
+
+2. Download the data file *‘NC_AQI_data.csv’* from the **[<i class="fa fa-download"></i> Data](https://github.com/nkaza/intro2Rbook/tree/master/data)** link and save it to the `data` directory inside your RStudio project directory.
+
+3. Time for a quick description of the dataset to get your bearings. PurpleAir is a community system of PM (10, 2.5, 1.0) low-cost sensors measuring particulate matter. The PurpleAir system is composed of many sensors that are installed, controlled and maintained by members of the community.PurpleAir sensors measure airborne particulate matter (PM). Particulate matter describes solid particles suspended in air; this includes dust, smoke, and other organic and inorganic particles. PurpleAir sensors use laser particle counters to count the number of particles by particle sizes 0.3, 0.5, 1, 2.5, 5, and 10 $\mu$m, and use the count data to calculate mass concentrations of PM1.0, PM2.5, and PM10.The PM concentration can be calculated into Air quality index (AQI), which is used for reporting daily air quality ranging from 0-500. If AQI value is higher than 100, we may suppose that the local area is polluted. Other than PM concentration, PurpleAir sensors also measure the other meteorological factors like temperature and humidity.
+
+In this sample dataset, we use the records of 144 PurpleAir sensors in North Carolina generated during 2022/02/20 to 2022/03/20. Within this dataset, the sensor_ID variable represents the ID of each PurpleAir sensor, the "date_2020"and "dateu" represent the date we the record collected. The "PM2.5_daily" variable represents the daily highest value of AQI index calculated by the PM2.5 concentration. The temperature variable measures the air temperature of the time when the sensor collected the highest AQI value.    
+\  
+
+4. Please review the section [Section 3.4.2 Import functions](https://nkaza.github.io/intro2Rbook/importing-data.html#import_fnc) of the Introduction to R book or watch this [video](https://alexd106.github.io/intro2R/howto.html#import-vid) if you need any further information. Then import the "NC_AQI_data.csv"data.You may install tidyverse package at first and then apply the "read_csv" function to load the dataset. Please review the [Section 4.1 Data Frames & Tibbles](https://nkaza.github.io/intro2Rbook/data-frames-tibbles.html) for the tidyverse package as well as the [Section 4.2 Reading external data](https://nkaza.github.io/intro2Rbook/reading-external-data.html)
+
+```{r 4.Q4}
+NC_AQI_data <- read_csv("NC_AQI_data.csv")
+```
+\ 
+
+5. Once you have imported your data file, to examine the contents of the tibble you may replicate the `str()` function to display the structure of the dataset and a neat summary of your variables. How many observations does this dataset have? How many variables are in this dataset? What type of variables are `ID` and `dateu` and `date_2020`? You can also use `glimpse()` to get a sense of the actual values in the dataset.
+\ 
+
+```{r 4.Q5}
+head(NC_AQI_data) # display the first 5 rows
+names(NC_AQI_data) # display the variable names
+str(NC_AQI_data) # display the structure of the dataframe NC_AQI_data
+```
+
+6. You may review the `summary()` function. This will provide you with some useful summary statistics for each variable. Notice how the type of output depends on whether the variable is a factor or a number. Another useful feature of the `summary()` function is that it will also count the number of missing values in each variable. Besides, for the numeric variables, you can also apply the `summary()` function to identify the distribution pattern of each variable, like finding potential outliers or exterme values. Which variables have missing values and how many? Besides, which variable potentially have outliers we need to remove in the data preprocessing session?   
+\  
+
+```{r 4.Q6}
+summary(NC_AQI_data)
+```
+
+7. We can revisit [Section 3.2.1](https://nkaza.github.io/intro2Rbook/complicated-data-types.html) and refresh our understanding of date and time in R. Notice that `date_2020` and `dateu` are stored as character and numeric and we want to convert them into dates. Also notice that the formats are different. One is mm/dd/yy and other is yyyy-mm-dd. Using functions such as `mdy()` and `ymd()` from `lubridate` package confirm that `date_2020` and `dateu` represent the same data. 
+
+```{r 4.Q7}
+
+all.equal(NC_AQI_data$date_2020, NC_AQI_data$dateu)
+
+library(lubridate)
+library(magrittr) ## Need this pacakge for a different pipe function than we are used to.
+
+NC_AQI_data %<>% # This pipe function is needed to mutate in place reusing the same variable names.
+  mutate(
+    dateu = ymd(dateu),
+    date_2020 = mdy(dateu)
+  )
+
+all.equal(NC_AQI_data$date_2020, NC_AQI_data$dateu)
+```
+
+
+8. We will apply review the section [Section 4.3 Wrangling Data](https://nkaza.github.io/intro2Rbook/wrangling-data.html) and select the variables from this dataset. For instance, the variable "date_2020" and "dateu" are duplicate, we may only keep one. So please use the `select`function to select ID, dateu, PM2.5_daily, and temperature variables and store it into a different object.
+
+```{r 4.Q8}
+AQI <- NC_AQI_data %>%
+  select(ID, dateu, PM2.5_daily, temperature)
+```
+
+\  
+
+9. You may find the variable names in this dataset are not very clear and descriptive, given that, we could apply the `rename()` function in the tidyverse package to rename them. We may rename the "PM2.5_daily" as "AQI", rename the "dateu" as "date_collected"; and rename "ID" as "sensor_ID". 
+
+```{r 4.Q9}
+AQI <- AQI %>%
+  rename(
+    AQI = PM2.5_daily,
+    date_collected = dateu,
+    sensor_ID = ID
+  )
+```
+\  
+
+10. You may find there are some NA records in the "temperature" variable, we need to remove those records in our following analysis. There are many ways to remove the NA rows for a specific column. Generally, there are three options. The first option is to `df[!is.na(df$col_name),]`, the second is way is to use subset method, `subset(df, !is.na(col_name))`. The third method is to use dplyr method `df %>% drop_na(col_name)`. Now please try the three methods to remove the NA records on temperature. Please report how many row remained after removing the NA records.
+
+```{r 4.Q10}
+#### Option 1
+AQI[!is.na(AQI$temperature), ]
+##### Option 2
+AQI2 <- subset(AQI, !is.na(temperature))
+###### Option 3
+AQI3 <- AQI %>%
+  drop_na(temperature)
+```
+
+\  
+
+11. Other than the NA records in temperature, you may find there are also some extreme values in the temperature variable like "-227F"  now we suppose the air temperature values higher than 120F or below 0F would be extreme values, please refer to the [Section 4.3 Wrangling Data](https://nkaza.github.io/intro2Rbook/wrangling-data.html), and use the `filter` function to remove those extreme temperature values. Now, how many variables remained? Now, for the AQI variable, there are also some outliers existing as 0, please replicate the `filter` function and remove those outliers? How many records remain? 
+
+```{r 4.Q11}
+AQI_refined <- AQI %>%
+  filter(temperature < 120) %>%
+  filter(temperature > 0) %>%
+  filter(AQI > 0)
+```
+\ 
+
+12. The "lubridate" package is very useful in manipulating date variables. It can pick out the year,month,day,hour...values from the date column You may refer to this [instruction](https://lubridate.tidyverse.org/) for more information. Now, please use the `month()` function to pick up the month information from the "date_collected" variable. Then remove all records in February and only keep the records in March. How many records remain this time? 
+\ 
+
+```{r 4.Q12}
+library(lubridate)
+
+AQI_refined_March <- AQI_refined %>%
+  filter(month(date_collected) != 2)
+```
+
+13. `mutate()` function is used to create new variables based on the operations on the existing variables.Please refer to the code in this [Section 4.3 Wrangling Data](https://nkaza.github.io/intro2Rbook/wrangling-data.html) and use the mutate function to create another variable representing the pollution levels based on the AQI value. If the AQI is higher than 100, we define it as "Polluted", otherwise, we may define it "Normal". How many records are identified as "Polluted"? 
+\ 
+
+```{r 4.Q13}
+AQI_PL <- AQI_refined_March %>%
+  mutate(Pollution_Level = if_else((AQI > 100), "Polluted", "Normal")) %>%
+  filter(Pollution_Level == "Polluted")
+```
+
+14. [Section 4.4 Relational Data](https://nkaza.github.io/intro2Rbook/relational-data.html) introduces how to join multiple tables together. Commonly, the `left_join()`can be used to join two datasets and keep all rows in the first dataset. 
+
+To do this,  load the csv table called "NC_county". In this table, firstly the "sensor_ID" variable represents for the PurpleAir sensor's ID, the "County" variable represents the county where the sensor locates in."stcofips" represents each county's  FIPS code (an unique identifier for each County in the US). For the rest variables, NC counties are categorised based on the Office of Management and Budget ("omb") (urban center, urban outlying and non urban),unemployment rate ("unemp") (high/medium/low), median income ("medinc") (high/medium low) and location ("pz") (NorthCentral, Piedmont etc.).
+
+Please use the dataset we generated for question #11 as the first dataset, to left join the NC_county data table by `left_join`function and "sensor_ID" variable. This table will be used for Exercise 5. Besides, based on the joint table, please filter to the "Durham" county by`filter(County=="Durham")`and report the county's location, unemployment rate, office of management and budget. Besides, how many records generated in Durham during 2022/03? 
+
+```{r 4.Q14}
+
+NC_county <- read_csv("NC_county.csv")
+
+AQI_March_Joint <- left_join(AQI_refined_March, NC_county, by = c("sensor_ID" = "sensor_ID"))
+
+AQI_March_Durham <- AQI_March_Joint %>%
+  filter(County == "Durham")
+```
+\ 
+
+15. Before the end of the exercise, let's write the data table generated in Q14 into an csv file and save it for our Exercise 5 by [Section 3.7 Exporting data](https://nkaza.github.io/intro2Rbook/exporting-data.html#exporting-data) section. Here we name the output file as "AQI_March_Joint.csv"
+\ 
+
+```{r 4.Q15}
+write_csv(AQI_March_Joint, "AQI_March_Joint.csv")
+```
+
+End of Exercise 4.

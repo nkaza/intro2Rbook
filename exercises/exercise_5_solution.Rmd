@@ -1,0 +1,167 @@
+
+
+```{r echo=FALSE, purl = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, eval = FALSE, cache = FALSE)
+```
+\  
+
+# Exercise 5: Graphics with ggplot {.unlisted .unnumbered}
+
+\  
+
+In this exercise you'll learn how to use ggplot2 package to visualize the variable we are interested in [Chapter 5](https://nkaza.github.io/intro2Rbook/graphics_r.html) of the Introduction to R book.
+\  
+
+1. As in previous exercises, either create a new R script or continue with your previous R script in your RStudio Project. Again, make sure you include any metadata you feel is appropriate (title, description of task, date of creation etc) and  don't forget to comment out your metadata with a `#` at the beginning of the line. 
+
+\  
+
+2. Download the data file *‘AQI_March_Joint.csv’*  we generated in Exercise 4's Q15 from the **[<i class="fa fa-download"></i> Data](https://github.com/nkaza/intro2Rbook/tree/master/data)** link and save it to the `data` directory inside your RStudio project directory.
+
+\
+
+3. Time for a quick description of the dataset to get your bearings. PurpleAir is a community system of PM (10, 2.5, 1.0) low-cost sensors measuring particulate matter. The PurpleAir system is composed of many sensors that are installed, controlled and maintained by members of the community.PurpleAir sensors measure airborne particulate matter (PM). Particulate matter describes solid particles suspended in air; this includes dust, smoke, and other organic and inorganic particles. PurpleAir sensors use laser particle counters to count the number of particles by particle sizes 0.3, 0.5, 1, 2.5, 5, and 10 $\mu$m, and use the count data to calculate mass concentrations of PM1.0, PM2.5, and PM10.The PM concentration can be calculated into Air quality index (AQI), which is used for reporting daily air quality ranging from 0-500. If a  AQI value is higher than 100, we may suppose that the local area is polluted. Other than PM concentration, PurpleAir sensors also measure the other meteorological factors like temperature and humidity.
+
+In this sample dataset, we use the records of 144 PurpleAir sensors in North Carolina generating during 2022/03/01 to 2022/03/20. The dataset is cleaned by removing the NA records or outliers in AQI and temperature. In addition, we already joined the information about the county in which the sensor is located. Those categorical variables include: Office of Management and Budget's classification of urbanness ("omb") (urban center, urban outlaying and non urban),unemployment rate ("unemp") (high/medium/low), median income ("medinc") (high/medium low) and location ("pz") (NorthCentral, Piedmont etc.).    
+
+\  
+
+4. Please review the section [Section 3.4.2 Import functions](https://nkaza.github.io/intro2Rbook/importing-data.html#import_fnc) of the Introduction to R book or watch this [video](https://alexd106.github.io/intro2R/howto.html#import-vid) if you need any further information. Then import the "NC_AQI_data.csv" data.You may install tidyverse package at first and then apply the `read_csv()` function to load the dataset. Please review the [Section 4.1 Data Frames & Tibbles](https://nkaza.github.io/intro2Rbook/data-frames-tibbles.html) for the tidyverse package as well as the [Section 4.2 Reading external data](https://nkaza.github.io/intro2Rbook/reading-external-data.html)
+
+\ 
+
+
+```{r 5.Q4}
+library(tidyverse)
+AQI_March_Joint <- read_csv("AQI_March_joint.csv")
+```
+
+5. Once you have imported your data file, to examine the contents of the dataframe you may replicate the `str()` function to display the structure of the dataset and a neat summary of your variables. How many observations does this dataset have? How many variables are in this dataset? What type of variables are `ID` and `date_collected`?
+
+\ 
+
+```{r 5.Q5}
+head(AQI_March_Joint) # display the first 5 rows
+names(AQI_March_Joint) # display the variable names
+str(AQI_March_Joint) # display the structure of the dataframe NC_AQI_data
+```
+
+6. You may review the `summary()` function. This will provide you with some useful summary statistics for each variable. Notice how the type of output depends on whether the variable is a factor or a number. Another useful feature of the `summary()` function is that it will also count the number of missing values in each variable. Besides, for the numeric variables, you can also apply the `summary()` function to identify the distribution pattern of each variable, like finding potential outliers or exterme values. Which variables have missing values and how many? Besides, which variable potentially have outliers we need to remove in the data preprocessing session?   
+
+\
+
+```{r 5.Q6}
+summary(AQI_March_Joint)
+```
+
+7. Firstly,please review the [Section 4.3 Wrangling Data](https://nkaza.github.io/intro2Rbook/wrangling-data.html) and filter the Durham county's record to make our first graph. So please use the `filter`function and apply the code `filter(County=="Durham")` to define a subset. How many records remained for Durham county?
+
+\  
+
+```{r 5.Q7}
+library(ggplot2)
+Durham_AQI_March <- AQI_March_Joint %>%
+  filter(County == "Durham")
+```
+
+8. As we want to make a graph between the day number of year 2022 and AQI in Durham.  You may refer to this [instruction](https://lubridate.tidyverse.org/) of the "lubridate" package and apply the function `yday` within the `mutate`function to generate a new variable representing the day number of year 2022. 
+\
+
+```{r 5.Q8}
+library(lubridate)
+Durham_AQI_March_day <- Durham_AQI_March %>%
+  mutate(day_number = yday(date_collected))
+```
+\
+
+9. Next we will make a scatter plot between the day number of year and AQI in Durham. As Durham has multiple sensors, we may also use different colors to differentiate the sensors' records. Besides, we can also add a trend line between the two variables Please refer to the sample code in the [5.2.2 Wrapping Grids](https://nkaza.github.io/intro2Rbook/the-start-of-the-end.html#wrapping-grids). In this case, if we want to treat "sensor_ID" as a character instead of a number,please refer to the [Section 3.6 Summarising data frames](https://nkaza.github.io/intro2Rbook/summarising-data-frames.html#summarising-data-frames).
+
+```{r 5.Q9}
+
+library(magrittr)
+
+Durham_AQI_March_day %<>% mutate(sensor_ID = as.character(sensor_ID))
+
+ggplot(aes(x = `day_number`, y = `AQI`), data = Durham_AQI_March_day) +
+  geom_jitter(aes(color = `sensor_ID`)) +
+  geom_smooth(method = "lm")
+```
+\  
+
+10. Now we are going to visualize the temperature and AQI on all counties' records in NC. As the dataset is relatively large, our main figure can be split the "omb" (representing the office management and budget) variable and the "medinc" (representing the medium income level) variable by applying the `facet_grid` function according to the [5.2.2 Wrapping Grids](https://nkaza.github.io/intro2Rbook/the-start-of-the-end.html#wrapping-grids) section. 
+
+\  
+
+```{r 5.Q10}
+ggplot(aes(x = `temperature`, y = `AQI`), data = AQI_March_Joint) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`omb` ~ `medinc`)
+```
+
+11\. Now we want to generate two sets of figures both faceting on the "omb" and "medinc" variables. The first one illustrates the day number of 2022 and temperature, and the second one illustrates the day number of 2022 and AQI. We also use different colors to differentiate the levels of "unemp" varaible representing the unemployment. [Section 5.2.3 Plotting multiple ggplots](https://nkaza.github.io/intro2Rbook/the-start-of-the-end.html#plotting-multiple-ggplots), install and library the "patchwork" packages; then generate the two faceting grid graphs first and apply the `g_1/g_2`fucntion to combine them. 
+
+\ 
+
+```{r 5.Q11}
+library(patchwork)
+AQI_March_Joint <- AQI_March_Joint %>%
+  mutate(day_number = yday(date_collected))
+g_temperature <- ggplot(aes(x = `day_number`, y = `temperature`, color = `unemp`), data = AQI_March_Joint) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`omb` ~ `medinc`)
+g_temperature
+g_AQI <- ggplot(aes(x = `day_number`, y = `AQI`, color = `unemp`), data = AQI_March_Joint) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`omb` ~ `medinc`)
+g_AQI
+g_temperature_AQI <- g_temperature / g_AQI
+g_temperature_AQI
+```
+
+12. Now let's polish this figure by applying the "theme_rbook" theme defined in the  [5.2.5 Setting the theme](https://nkaza.github.io/intro2Rbook/the-start-of-the-end.html#setting-the-theme) for more information.You may apply the "theme_rbook" theme to the two faceting grid graphs one by one, then combine the two polished graphs.
+
+\ 
+
+```{r 5.Q12}
+theme_rbook <- function(base_size = 28, base_family = "", base_line_size = base_size / 22,
+                        base_rect_size = base_size / 22) {
+  theme(
+    axis.title = element_text(size = 14),
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 10),
+    plot.caption = element_text(size = 10, face = "italic"),
+    panel.background = element_rect(fill = "white"),
+    axis.line = element_line(size = 1, colour = "black"),
+    strip.background = element_rect(fill = "#cddcdd"),
+    panel.border = element_rect(colour = "black", fill = NA, size = 0.5),
+    strip.text = element_text(colour = "black"),
+    legend.key = element_blank(),
+    legend.position = "bottom"
+  )
+}
+
+g_temperature_polished <- g_temperature + theme_rbook()
+g_AQI_polished <- g_AQI + theme_rbook()
+g_temperature_AQI_polished <- g_temperature_polished / g_AQI_polished
+g_temperature_AQI_polished
+```
+
+
+13\. Finally, let's try to change the scale limit settings on the x-axis and y-axis.For instance, we just want to display the AQI records less than 200,please refer to the [Section 5.3.2 Axis limits and zooms](https://nkaza.github.io/intro2Rbook/tips.html#axis-limits-and-zooms) for more information and apply the `ylim(c(0, 200))` to change the faceting grid graph we generated just now between the day number of 2022 and AQI facetted on "omb" and "medinc" variables and different the "unemp" by different colors.You may also use the defined "theme_rbook" to polish it. 
+
+\ 
+
+```{r 5.Q13}
+g_AQI_zoomed <- ggplot(aes(x = `day_number`, y = `AQI`, color = `unemp`), data = AQI_March_Joint) +
+  geom_jitter() +
+  geom_smooth(method = "lm") +
+  facet_grid(`omb` ~ `medinc`) +
+  ylim(c(0, 200))
+g_AQI_zoomed + theme_rbook()
+```
+
+
+End of Exercise 5.

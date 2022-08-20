@@ -23,7 +23,7 @@
 <meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-08-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.4.3</b> When to use a loop?</a></li>
 <li class="chapter" data-level="6.4.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.4.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 7</a></li>
+<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -377,7 +377,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="wrangling-data" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Wrangling Data<a href="wrangling-data.html#wrangling-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><code>dplyr</code> is the workhorse package for exploratory data analysis. In particular, <code>select</code>, <code>filter</code> and <code>mutate</code> are useful.</p>
+<p><code>dplyr</code> is the workhorse package for exploratory data analysis. In
+particular, <code>select</code>, <code>filter</code> and <code>mutate</code> are useful.</p>
 <ul>
 <li><code>select</code> is used to select on columns.</li>
 <li><code>filter</code> is used to select on rows.</li>
@@ -387,7 +388,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb156-2"><a href="wrangling-data.html#cb156-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-3"><a href="wrangling-data.html#cb156-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-4"><a href="wrangling-data.html#cb156-4" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="sc">%&gt;%</span></span>
-<span id="cb156-5"><a href="wrangling-data.html#cb156-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="fu">c</span>(<span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span>, <span class="st">`</span><span class="at">Residential Subtype</span><span class="st">`</span>))</span>
+<span id="cb156-5"><a href="wrangling-data.html#cb156-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">c</span>(<span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span>, <span class="st">`</span><span class="at">Residential Subtype</span><span class="st">`</span>))</span>
 <span id="cb156-6"><a href="wrangling-data.html#cb156-6" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 89 × 2</span></span>
 <span id="cb156-7"><a href="wrangling-data.html#cb156-7" aria-hidden="true" tabindex="-1"></a><span class="do">##    `Permit Type`                       `Residential Subtype`   </span></span>
 <span id="cb156-8"><a href="wrangling-data.html#cb156-8" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;fct&gt;                               &lt;chr&gt;                   </span></span>
@@ -405,7 +406,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb156-20"><a href="wrangling-data.html#cb156-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-21"><a href="wrangling-data.html#cb156-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-22"><a href="wrangling-data.html#cb156-22" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="sc">%&gt;%</span></span>
-<span id="cb156-23"><a href="wrangling-data.html#cb156-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span> <span class="sc">==</span> <span class="st">&quot;Short Term Rental Residential Owner&quot;</span>)</span>
+<span id="cb156-23"><a href="wrangling-data.html#cb156-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span> <span class="sc">==</span> <span class="st">&quot;Short Term Rental Residential Owner&quot;</span>)</span>
 <span id="cb156-24"><a href="wrangling-data.html#cb156-24" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 53 × 12</span></span>
 <span id="cb156-25"><a href="wrangling-data.html#cb156-25" aria-hidden="true" tabindex="-1"></a><span class="do">##    `Permit Number` Address       `Permit Type` `Residential S…` `Current Status`</span></span>
 <span id="cb156-26"><a href="wrangling-data.html#cb156-26" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;           &lt;chr&gt;         &lt;fct&gt;         &lt;chr&gt;            &lt;chr&gt;           </span></span>
@@ -428,33 +429,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb156-43"><a href="wrangling-data.html#cb156-43" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
 <span id="cb156-44"><a href="wrangling-data.html#cb156-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-45"><a href="wrangling-data.html#cb156-45" aria-hidden="true" tabindex="-1"></a>nola_str_tib <span class="sc">%&gt;%</span></span>
-<span id="cb156-46"><a href="wrangling-data.html#cb156-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Backlogged =</span> <span class="fu">if_else</span>( </span>
-<span id="cb156-47"><a href="wrangling-data.html#cb156-47" aria-hidden="true" tabindex="-1"></a>                                                            (<span class="fu">today</span>() <span class="sc">-</span> <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span> <span class="sc">&gt;=</span><span class="dv">15</span>) <span class="sc">&amp;</span> <span class="fu">is.na</span>(Issue_Date), </span>
-<span id="cb156-48"><a href="wrangling-data.html#cb156-48" aria-hidden="true" tabindex="-1"></a>                                                                T, F)</span>
-<span id="cb156-49"><a href="wrangling-data.html#cb156-49" aria-hidden="true" tabindex="-1"></a>                                                            ) <span class="sc">%&gt;%</span></span>
-<span id="cb156-50"><a href="wrangling-data.html#cb156-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Backlogged <span class="sc">==</span> T) <span class="sc">%&gt;%</span></span>
-<span id="cb156-51"><a href="wrangling-data.html#cb156-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="st">`</span><span class="at">Address</span><span class="st">`</span>, <span class="st">`</span><span class="at">Operator Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">License Holder Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span>)</span>
-<span id="cb156-52"><a href="wrangling-data.html#cb156-52" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 25 × 4</span></span>
-<span id="cb156-53"><a href="wrangling-data.html#cb156-53" aria-hidden="true" tabindex="-1"></a><span class="do">##    Address               `Operator Name`  `License Holder Name` `Application D…`</span></span>
-<span id="cb156-54"><a href="wrangling-data.html#cb156-54" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;                 &lt;chr&gt;            &lt;chr&gt;                 &lt;date&gt;          </span></span>
-<span id="cb156-55"><a href="wrangling-data.html#cb156-55" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 11416 Prentiss Ave    April Jenkins    April Jenkins         2022-07-30      </span></span>
-<span id="cb156-56"><a href="wrangling-data.html#cb156-56" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 1029 Montegut St      Bettina Reutter  Bywaterbeauty guest … 2022-07-30      </span></span>
-<span id="cb156-57"><a href="wrangling-data.html#cb156-57" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 1743 N Rocheblave St  Danielle Wright  Danielle D Wright     2022-07-29      </span></span>
-<span id="cb156-58"><a href="wrangling-data.html#cb156-58" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 862 Tchoupitoulas St  Carter Kronlage  Tchoup N Block LLC    2022-07-29      </span></span>
-<span id="cb156-59"><a href="wrangling-data.html#cb156-59" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 813 Jackson Ave       Michael Springer 813 Jackson Ave       2022-07-29      </span></span>
-<span id="cb156-60"><a href="wrangling-data.html#cb156-60" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 2312 St Louis St      Michael Springer P Rubenstein William  2022-07-28      </span></span>
-<span id="cb156-61"><a href="wrangling-data.html#cb156-61" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 734 Union St Unit 401 Devrim Hayes     Unique Union Condos … 2022-07-27      </span></span>
-<span id="cb156-62"><a href="wrangling-data.html#cb156-62" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 1028 Octavia St       Claire Stockton  Claire Stockton       2022-07-27      </span></span>
-<span id="cb156-63"><a href="wrangling-data.html#cb156-63" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 7810 Spruce St        Nancy Caddigan   Nancy Caddigan        2022-07-27      </span></span>
-<span id="cb156-64"><a href="wrangling-data.html#cb156-64" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 7645 Forum Blvd       AUSTIN LEVY      Austin Levy           2022-07-26      </span></span>
-<span id="cb156-65"><a href="wrangling-data.html#cb156-65" aria-hidden="true" tabindex="-1"></a><span class="do">## # … with 15 more rows</span></span></code></pre></div>
+<span id="cb156-46"><a href="wrangling-data.html#cb156-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Backlogged =</span> <span class="fu">if_else</span>(</span>
+<span id="cb156-47"><a href="wrangling-data.html#cb156-47" aria-hidden="true" tabindex="-1"></a>    (<span class="fu">today</span>() <span class="sc">-</span> <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span> <span class="sc">&gt;=</span> <span class="dv">15</span>) <span class="sc">&amp;</span> <span class="fu">is.na</span>(Issue_Date),</span>
+<span id="cb156-48"><a href="wrangling-data.html#cb156-48" aria-hidden="true" tabindex="-1"></a>    T, F</span>
+<span id="cb156-49"><a href="wrangling-data.html#cb156-49" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb156-50"><a href="wrangling-data.html#cb156-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Backlogged <span class="sc">==</span> T) <span class="sc">%&gt;%</span></span>
+<span id="cb156-51"><a href="wrangling-data.html#cb156-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="st">`</span><span class="at">Address</span><span class="st">`</span>, <span class="st">`</span><span class="at">Operator Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">License Holder Name</span><span class="st">`</span>, <span class="st">`</span><span class="at">Application Date</span><span class="st">`</span>)</span>
+<span id="cb156-52"><a href="wrangling-data.html#cb156-52" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 42 × 4</span></span>
+<span id="cb156-53"><a href="wrangling-data.html#cb156-53" aria-hidden="true" tabindex="-1"></a><span class="do">##    Address                   `Operator Name`   `License Holde…` `Application D…`</span></span>
+<span id="cb156-54"><a href="wrangling-data.html#cb156-54" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;                     &lt;chr&gt;             &lt;chr&gt;            &lt;date&gt;          </span></span>
+<span id="cb156-55"><a href="wrangling-data.html#cb156-55" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 3149 Chartres St          Bruce Michael Fe… Bruce Ferweda    2022-08-05      </span></span>
+<span id="cb156-56"><a href="wrangling-data.html#cb156-56" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 1952 Treasure St          Zedrick Price     Zedrick L Price  2022-08-05      </span></span>
+<span id="cb156-57"><a href="wrangling-data.html#cb156-57" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 4616 S Robertson St       Paul Macres       Paul Macres      2022-08-05      </span></span>
+<span id="cb156-58"><a href="wrangling-data.html#cb156-58" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 3043 St Philip St         Rachel Wellons    Rachel Wellons   2022-08-04      </span></span>
+<span id="cb156-59"><a href="wrangling-data.html#cb156-59" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 1727 Henriette Delille St Jane Chaisson     David Trocquet … 2022-08-04      </span></span>
+<span id="cb156-60"><a href="wrangling-data.html#cb156-60" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 1731 Third St 1B          Brenna White      Nicolette Jones  2022-08-04      </span></span>
+<span id="cb156-61"><a href="wrangling-data.html#cb156-61" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 4859 Tchoupitoulas St     Jane Chaisson     David Trocquet   2022-08-04      </span></span>
+<span id="cb156-62"><a href="wrangling-data.html#cb156-62" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 3826 Canal St             Jordan Jacobs     3828 Canal Stre… 2022-08-04      </span></span>
+<span id="cb156-63"><a href="wrangling-data.html#cb156-63" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 4632 Franklin Ave         Cornelious Celes… Cornelious Cele… 2022-08-03      </span></span>
+<span id="cb156-64"><a href="wrangling-data.html#cb156-64" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 621 Desire St             Angela Larson     Angela Rosetta … 2022-08-02      </span></span>
+<span id="cb156-65"><a href="wrangling-data.html#cb156-65" aria-hidden="true" tabindex="-1"></a><span class="do">## # … with 32 more rows</span></span></code></pre></div>
 <p>Few things to notice here.</p>
 <ul>
-<li><p>There is no need to specify the tibble using <code>$</code> to access the column names. <code>dplyr</code> assumes that you are working with the dataset that you specified earlier in the pipe. This makes the code cleaner.</p></li>
+<li><p>There is no need to specify the tibble using <code>$</code> to access the
+column names. <code>dplyr</code> assumes that you are working with the dataset
+that you specified earlier in the pipe. This makes the code cleaner.</p></li>
 <li><p>When there are no spaces in the column names you can omit the ticks.</p></li>
-<li><p>You can chain a number of functions as in <code>mutate</code>, <code>filter</code> and <code>select</code> to do complicated analyses in a simple way using pipe operator <code>%&gt;%</code>.</p></li>
-<li><p>We also used <code>if_else</code> to create a logical variable called <code>Backlogged</code>. Notice that mutate automatically creates and populates this new column. Also notice the date arithmetic as well as logical operator <code>&amp;</code>. Be careful to make sure that the new column is the same length as the rest of the dataset.</p></li>
-<li><p>Notice the use of <code>(today()...)</code>. They are used to improve readability of code but also to specify the order of operations.</p></li>
+<li><p>You can chain a number of functions as in <code>mutate</code>, <code>filter</code> and
+<code>select</code> to do complicated analyses in a simple way using pipe
+operator <code>%&gt;%</code>.</p></li>
+<li><p>We also used <code>if_else</code> to create a logical variable called
+<code>Backlogged</code>. Notice that mutate automatically creates and populates
+this new column. Also notice the date arithmetic as well as logical
+operator <code>&amp;</code>. Be careful to make sure that the new column is the
+same length as the rest of the dataset.</p></li>
+<li><p>Notice the use of <code>(today()...)</code>. They are used to improve
+readability of code but also to specify the order of operations.</p></li>
 </ul>
 </div>
             </section>
@@ -508,6 +518,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

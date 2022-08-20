@@ -1,3 +1,7 @@
+
+
+
+
 # Getting started with R and RStudio {#chap1}
 
 Although R is not new, it's popularity has increased rapidly over the last 10 years or so (see [here][r4stats] for some interesting data). It was originally created and developed by Ross Ihaka and Robert Gentleman during the 1990's with the first stable version released in 2000. Nowadays R is maintained by the [R Development Core Team][cran-core]. So, why has R become so popular and why should you learn how to use it? Some reasons include: 
@@ -239,7 +243,7 @@ See this [video][pack-vid] for step-by-step instruction on how to install, use a
 To install a package from CRAN you can use the `install.packages()`\index{install.packages()} function. For example if you want to install the `remotes`\index{remotes package} package enter the following code into the Console window of RStudio (note: you will need a working internet connection to do this)
 
 ```{r, echo = TRUE, eval=FALSE}
-install.packages('remotes', dependencies = TRUE)
+install.packages("remotes", dependencies = TRUE)
 ```
 
 You may be asked to select a CRAN mirror, just select '0-cloud' or a mirror near to your location. The `dependencies = TRUE` argument ensures that additional packages that are required will also be installed.
@@ -257,7 +261,7 @@ The `ask = FALSE` argument avoids having to confirm every package download which
 To install packages from Bioconductor the process is a [little different][bioc-install]. You first need to install the `BiocManager` package. You only need to do this once unless you subsequently reinstall or upgrade R
 
 ```{r, echo=TRUE, eval=FALSE}
-install.packages('BiocManager', dependencies = TRUE)
+install.packages("BiocManager", dependencies = TRUE)
 ```
 
 Once the BiocManager package has been installed you can either install all of the 'core' Bioconductor packages with 
@@ -285,7 +289,7 @@ Again, you can use the `ask = FALSE` argument to avoid having to confirm every p
 There are multiple options for installing packages hosted on GitHub. Perhaps the most efficient method is to use the `install_github()`\index{install\_github()} function from the `remotes` package (you installed this package [previously](#cran_packages)). Before you use the function you will need to know the GitHub username of the repository owner and also the name of the repository. For example, the development version of `dplyr` from Hadley Wickham is hosted on the tidyverse GitHub account and has the repository name 'dplyr' (just Google 'github dplyr'). To install this version from GitHub use
 
 ```{r, echo=TRUE, eval=FALSE}
-remotes::install_github('tidyverse/dplyr')
+remotes::install_github("tidyverse/dplyr")
 ```
 
 The safest way (that we know of) to update a package installed from GitHub is to just reinstall it using the above command.   
@@ -301,16 +305,16 @@ library(remotes)
 The `library()` function will also load any additional packages required and may print out additional package information. It is important to realise that every time you start a new R session (or restore a previously saved session) you need to load the packages you will be using. We tend to put all our `library()` statements required for our analysis near the top of our R scripts to make them easily accessible and easy to add to as our code develops. If you try to use a function without first loading the relevant R package you will receive an error message that R could not find the function. For example, if you try to use the `install_github()` function without loading the `remotes` package first you will receive the following error
 
 ```{r, echo=TRUE, eval=FALSE}
-install_github('tidyverse/dplyr')
+install_github("tidyverse/dplyr")
 
-# Error in install_github("tidyverse/dplyr") : 
+# Error in install_github("tidyverse/dplyr") :
 #  could not find function "install_github"
 ```
 
 Sometimes it can be useful to use a function without first using the `library()` function. If, for example, you will only be using one or two functions in your script and don't want to load all of the other functions in a package then you can access the function directly by specifying the package name followed by two colons and then the function name 
 
 ```{r, echo=TRUE, eval=FALSE}
-remotes::install_github('tidyverse/dplyr')
+remotes::install_github("tidyverse/dplyr")
 ```
 
 This is how we were able to use the `install()` and `install_github()` functions [above][Bioconductor packages] without first loading the packages `BiocManager` and `remotes`. Most of the time we recommend using the `library()` function.
@@ -421,14 +425,16 @@ In the example above, the working directory is a folder called 'first_project' w
 If you weren't using an RStudio Project then you would have to set your working directory using the `setwd()`\index{setwd()} function at the start of every R script (something we did for many years). 
 
 ```{r wd, echo=TRUE, eval=FALSE}
-setwd('/Users/nhy163/Documents/Alex/Teaching/first_project')
+setwd("/Users/nhy163/Documents/Alex/Teaching/first_project")
 ```
 
 However, the problem with `setwd()` is that it uses an *absolute* file path which is specific to the computer you are working on. If you want to send your script to someone else (or if you're working on a different computer) this absolute file path is not going to work on your friend/colleagues computer as their directory configuration will be different (you are unlikely to have a directory structure `/Users/nhy163/Documents/Alex/Teaching/` on your computer). This results in a project that is not self-contained and not easily portable. RStudio solves this problem by allowing you to use *relative* file paths  which are relative to the *Root* project directory. The Root project directory is just the directory that contains the `.Rproj` file (`first_project.Rproj` in our case). If you want to share your analysis with someone else, all you need to do is copy the entire project directory and send to your to your collaborator. They would then just need to open the project file and any R scripts that contain references to relative file paths will just work. For example, let's say that you've created a subdirectory called `raw_data` in your Root project directory that contains a tab delimited datafile called `mydata.txt` (we will cover directory structures [below](#dir_struct)). To import this datafile in an RStudio project using the `read.table()` function (don't worry about this now, we will cover this in much more detail in [Chapter 3](#data_r)) all you need to include in your R script is
 
 ```{r rel-fp1, echo=TRUE, eval=FALSE}
-dataf <- read.table('raw_data/mydata.txt', header = TRUE, 
-                      sep = '\t')
+dataf <- read.table("raw_data/mydata.txt",
+  header = TRUE,
+  sep = "\t"
+)
 ```
 
 Because the file path `raw_data/mydata.txt` is relative to the project directory it doesn't matter where you collaborator saves the project directory on their computer it will still work.
@@ -436,28 +442,30 @@ Because the file path `raw_data/mydata.txt` is relative to the project directory
 If you weren't using an RStudio project then you would have to use either of the options below neither of which would work on a different computer. 
 
 ```{r rel-fp2, echo=TRUE, eval=FALSE, tidy=TRUE}
-setwd('/Users/nhy163/Documents/Alex/Teaching/first_project/')
+setwd("/Users/nhy163/Documents/Alex/Teaching/first_project/")
 
-dataf <- read.table('raw_data/mydata.txt', header = TRUE, sep = '\t')
+dataf <- read.table("raw_data/mydata.txt", header = TRUE, sep = "\t")
 
 # or
 
-dataf <- read.table('/Users/nhy163/Documents/Alex/Teaching/first_project/raw_data/mydata.txt', header = TRUE, sep = '\t')
+dataf <- read.table("/Users/nhy163/Documents/Alex/Teaching/first_project/raw_data/mydata.txt", header = TRUE, sep = "\t")
 ```
 
 For those of you who want to take the notion of relative file paths a step further, take a look at the `here()` function in the `here` [package][here]. The `here()`\index{here()} function allows you to automagically build file paths for any file relative to the project root directory that are also operating system agnostic (works on a Mac, Windows or Linux machine). For example, to import our `mydata.txt` file from the `raw_data` directory just use  
 
 ```{r rel-fp23, echo=TRUE, eval=FALSE}
-library(here)  # you may need to install the here package first
-dataf <- read.table(here("raw_data", "mydata.txt"), 
-                     header = TRUE, sep = '\t',
-                    stringsAsFactors = TRUE)
+library(here) # you may need to install the here package first
+dataf <- read.table(here("raw_data", "mydata.txt"),
+  header = TRUE, sep = "\t",
+  stringsAsFactors = TRUE
+)
 
 # or without loading the here package
 
-dataf <- read.table(here::here("raw_data", "mydata.txt"), 
-                      header = TRUE, sep = '\t', 
-                      stringsAsFactors = TRUE)
+dataf <- read.table(here::here("raw_data", "mydata.txt"),
+  header = TRUE, sep = "\t",
+  stringsAsFactors = TRUE
+)
 ```
 
 ## Directory structure {#dir_struct}
@@ -502,10 +510,10 @@ An alternative approach is to use the `dir.create()`\index{dir.create()} and `li
 
 ```{r dir, echo=TRUE, eval=FALSE}
 # create directory called 'data'
-dir.create('data')
+dir.create("data")
 
 # create subdirectory raw_data in the data directory
-dir.create('data/raw_data')
+dir.create("data/raw_data")
 
 # list the files and directories
 list.files(recursive = TRUE, include.dirs = TRUE)
@@ -548,11 +556,11 @@ Here's an example of including meta-information at the start of an R script
 ```{r, echo=TRUE, eval=FALSE}
 # Title: Time series analysis of snouters
 
-# Purpose : This script performs a time series analyses on 
+# Purpose : This script performs a time series analyses on
 #           snouter count data.
-#           Data consists of counts of snouter species 
-#           collected from 18 islands in the Hy-yi-yi 
-#           archipelago between 1950 and 1957. 
+#           Data consists of counts of snouter species
+#           collected from 18 islands in the Hy-yi-yi
+#           archipelago between 1950 and 1957.
 #           For details of snouter biology see:
 #           https://en.wikipedia.org/wiki/Rhinogradentia
 
@@ -570,7 +578,7 @@ Here's an example of including meta-information at the start of an R script
 library(PopSnouter)
 library(ggplot2)
 
-print('put your lovely R code here')
+print("put your lovely R code here")
 
 # good practice to include session information
 
@@ -639,5 +647,6 @@ citation(package = "here")
 Congratulations, you've reached the end of Chapter 1! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise1]. If you want to see our solutions for this exercise you can find them [here][exercise1-sol] (don't peek at them too soon though!).   
 ```
   
-```{r links, child="links.md"}
+```{r, child="links.md"}
+
 ```

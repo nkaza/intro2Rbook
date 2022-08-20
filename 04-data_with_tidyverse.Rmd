@@ -1,170 +1,220 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Tidyverse {#data_tidyverse}
 
-The tidyverse is a collection of related R packages developed to streamline data management, munging and analysis in R. The core tidyverse packages include `ggplot2`, `dplyr`, `tidyr`, `lubridate`, `readr`, `purrr`, `tibble`, `stringr`, and `forcats`.  In this chapter, we will give an introduction to the philosophy of tidyverse packages to get you started. We will use these packages extensively though out the urban analytics course.
-
-
+The tidyverse is a collection of related R packages developed to
+streamline data management, munging and analysis in R. The core
+tidyverse packages include `ggplot2`, `dplyr`, `tidyr`, `lubridate`,
+`readr`, `purrr`, `tibble`, `stringr`, and `forcats`. In this chapter,
+we will give an introduction to the philosophy of tidyverse packages to
+get you started. We will use these packages extensively though out the
+urban analytics course.
 
 ## Data Frames & Tibbles
 
-We already saw how rectangular data is stored in data frames in the previous [Chapter](#data_r). In contrast, Tidyverse uses tibbles. 
+We already saw how rectangular data is stored in data frames in the
+previous [Chapter](#data_r). In contrast, Tidyverse uses tibbles.
 
-> A tibble, or tbl_df, is a modern reimagining of the data.frame, keeping what time has proven to be effective, and throwing out what is not. Tibbles are data.frames that are lazy and surly: they do less (i.e. they don’t change variable names or types, and don’t do partial matching) and complain more (e.g. when a variable does not exist). This forces you to confront problems earlier, typically leading to cleaner, more expressive code.
- `r tufte::quote_footer('--- http://tibble.tidyverse.org')`
- 
- 
+> A tibble, or tbl_df, is a modern reimagining of the data.frame,
+> keeping what time has proven to be effective, and throwing out what is
+> not. Tibbles are data.frames that are lazy and surly: they do less
+> (i.e. they don't change variable names or types, and don't do partial
+> matching) and complain more (e.g. when a variable does not exist).
+> This forces you to confront problems earlier, typically leading to
+> cleaner, more expressive code.
+> `r tufte::quote_footer('--- http://tibble.tidyverse.org')`
+
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
- 
+
 library(tidyverse)
 
-data_tib <- tibble(`alphabet soup` = letters,
-       `nums ints` = 1:26,
-      	`sample ints`  = sample(100, 26))
+data_tib <- tibble(
+  `alphabet soup` = letters,
+  `nums ints` = 1:26,
+  `sample ints` = sample(100, 26)
+)
 
-data_df <- data.frame(`alphabet soup` = letters,
-       `nums ints` = 1:26,
-      	`sample ints`  = sample(100, 26))
+data_df <- data.frame(
+  `alphabet soup` = letters,
+  `nums ints` = 1:26,
+  `sample ints` = sample(100, 26)
+)
 
-glimpse(data_tib) 
+glimpse(data_tib)
 glimpse(data_df)
 
-# Notice the use of glimpse instead of str. They are very similar functions. 
-       
+# Notice the use of glimpse instead of str. They are very similar functions.
 ```
 
-Notice how data.frame changes the names of the variables because it does not like spaces in the column names. One advantage of tibbles is that columns need not be valid R variable names as long as they are enclosed in ticks. 
+Notice how data.frame changes the names of the variables because it does
+not like spaces in the column names. One advantage of tibbles is that
+columns need not be valid R variable names as long as they are enclosed
+in ticks.
 
-
-You can use base R functions to work with tibbles, because tibble is indeed a data frame. However, functions based on tibbles may not work with data frames.
+You can use base R functions to work with tibbles, because tibble is
+indeed a data frame. However, functions based on tibbles may not work
+with data frames.
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
-data_tib[,3]
+data_tib[, 3]
 
-data_tib[2:4,1:3]
+data_tib[2:4, 1:3]
 ```
 
 ## Reading external data
 
-`readr` package, part of tidyverse reads flat files. 
-Most of readr’s functions are concerned with turning flat files into tibbles. In particular, 
-* `read_csv` reads comma delimited files
-* `read_csv2` reads semicolon separated files (common in countries where , is used as the decimal place)
-* `read_tsv` reads tab delimited files
-* `read_delim` reads in files with any delimiter.
+`readr` package, part of tidyverse reads flat files. Most of readr's
+functions are concerned with turning flat files into tibbles. In
+particular, \* `read_csv` reads comma delimited files \* `read_csv2`
+reads semicolon separated files (common in countries where , is used as
+the decimal place) \* `read_tsv` reads tab delimited files \*
+`read_delim` reads in files with any delimiter.
 
 Notice the `_` in the functions compared to `.` in base R.
+
+You can [download the data](https://github.com/nkaza/intro2Rbook/blob/master/data/NOLA_STR.csv) used in the rest of the chapter
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
 library(tidyverse)
 
-nola_str_tib <- read_csv('data/NOLA_STR.csv')
+nola_str_tib <- read_csv("data/NOLA_STR.csv")
 
 nola_str_tib
-
 ```
- 
 
-Sometimes there are a few lines of metadata at the top of the file. You can use `skip = n` to skip the first n lines; or use `comment = "#"` to drop all lines that start with (e.g.) #.
+Sometimes there are a few lines of metadata at the top of the file. You
+can use `skip = n` to skip the first n lines; or use `comment = "#"` to
+drop all lines that start with (e.g.) #.
 
-By default, `read_csv` assumes that the first line is a header. If this is not the case, use `col_names = FALSE` or pass a character vector to `col_names`
+By default, `read_csv` assumes that the first line is a header. If this
+is not the case, use `col_names = FALSE` or pass a character vector to
+`col_names`
 
-`readr` uses a heuristic to figure out the type of each column: it reads the first 1000 rows and uses some (moderately conservative) heuristics to figure out the type of each column. In large data files the first 1000 rows may not sufficiently general, so you might have to specify the `col_types`.
+`readr` uses a heuristic to figure out the type of each column: it reads
+the first 1000 rows and uses some (moderately conservative) heuristics
+to figure out the type of each column. In large data files the first
+1000 rows may not sufficiently general, so you might have to specify the
+`col_types`.
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
 
-nola_str_tib <- read_csv('data/NOLA_STR.csv',
-												 col_types = cols(
-												 	`Permit Number` = col_character(),
-												 	`Address` = col_character(),
-												 	`Permit Type` = col_factor(),
-												 	`Application Date` = col_date(format = "%m/%d/%y"),
-												 	`Issue_Date` = col_date(format = "%m/%d/%y")
-												 ))
+nola_str_tib <- read_csv("data/NOLA_STR.csv",
+  col_types = cols(
+    `Permit Number` = col_character(),
+    `Address` = col_character(),
+    `Permit Type` = col_factor(),
+    `Application Date` = col_date(format = "%m/%d/%y"),
+    `Issue_Date` = col_date(format = "%m/%d/%y")
+  )
+)
 
 str(nola_str_tib)
 ```
 
-Notice how `Permit Type` is now read in as a factor instead of a character.
-
+Notice how `Permit Type` is now read in as a factor instead of a
+character.
 
 ## Wrangling Data
 
-`dplyr` is the workhorse package for exploratory data analysis. In particular, `select`, `filter` and `mutate` are useful.
+`dplyr` is the workhorse package for exploratory data analysis. In
+particular, `select`, `filter` and `mutate` are useful.
 
-* `select` is used to select on columns. 
-* `filter` is used to select on rows.
-* `mutate` changes/adds columns
-
+-   `select` is used to select on columns.
+-   `filter` is used to select on rows.
+-   `mutate` changes/adds columns
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
 
 
 
 nola_str_tib %>%
-	select(c(`Permit Type`, `Residential Subtype`))
+  select(c(`Permit Type`, `Residential Subtype`))
 
 
 nola_str_tib %>%
-	filter(`Permit Type` == "Short Term Rental Residential Owner")
+  filter(`Permit Type` == "Short Term Rental Residential Owner")
 
 
 library(lubridate)
 
 nola_str_tib %>%
-	mutate(Backlogged = if_else( 
-															(today() - `Application Date` >=15) & is.na(Issue_Date), 
-																T, F)
-															) %>%
-	filter(Backlogged == T) %>%
-	select(`Address`, `Operator Name`, `License Holder Name`, `Application Date`)
+  mutate(Backlogged = if_else(
+    (today() - `Application Date` >= 15) & is.na(Issue_Date),
+    T, F
+  )) %>%
+  filter(Backlogged == T) %>%
+  select(`Address`, `Operator Name`, `License Holder Name`, `Application Date`)
 ```
 
 Few things to notice here.
 
-* There is no need to specify the tibble using `$` to access the column names. `dplyr` assumes that you are working with the dataset that you specified earlier in the pipe. This makes the code cleaner.
+-   There is no need to specify the tibble using `$` to access the
+    column names. `dplyr` assumes that you are working with the dataset
+    that you specified earlier in the pipe. This makes the code cleaner.
 
-* When there are no spaces in the column names you can omit the ticks.
+-   When there are no spaces in the column names you can omit the ticks.
 
-* You can chain a number of functions as in `mutate`, `filter` and `select` to do complicated analyses in a simple way using pipe operator `%>%`.
+-   You can chain a number of functions as in `mutate`, `filter` and
+    `select` to do complicated analyses in a simple way using pipe
+    operator `%>%`.
 
-* We also used `if_else` to create a logical variable called `Backlogged`. Notice that mutate automatically creates and populates this new column. Also notice the date arithmetic as well as logical operator `&`. Be careful to make sure that the new column is the same length as the rest of the dataset.
+-   We also used `if_else` to create a logical variable called
+    `Backlogged`. Notice that mutate automatically creates and populates
+    this new column. Also notice the date arithmetic as well as logical
+    operator `&`. Be careful to make sure that the new column is the
+    same length as the rest of the dataset.
 
-* Notice the use of `(today()...)`. They are used to improve readability of code but also to specify the order of operations.
+-   Notice the use of `(today()...)`. They are used to improve
+    readability of code but also to specify the order of operations.
 
 ## Relational Data
 
-It is rarely the case that we will be working with one table. Often we need to join multiple tables together because information is scattered in different databases. Typically the relationships are defined using at set of columns.
+It is rarely the case that we will be working with one table. Often we
+need to join multiple tables together because information is scattered
+in different databases. Typically the relationships are defined using at
+set of columns.
 
-Suppose there is a table that includes the license number of the operator and we want to include it into the tibble `nola_str_tib`.
-
+Suppose there is [a table](https://github.com/nkaza/intro2Rbook/blob/master/data/NOLA_STR_operators.csv) that includes the license number of the
+operator and we want to include it into the tibble `nola_str_tib`.
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
 
 nola_operators <- read_csv("data/NOLA_STR_operators.csv")
-
-
 ```
 
-First notice that `Operator Name` is the same between the tables. Presumably this is what we can use to join the tables.
+First notice that `Operator Name` is the same between the tables.
+Presumably this is what we can use to join the tables.
 
-Notice that there are only `r nrow(nola_operators)` operators in the table compared to `r nrow(nola_str_tib)` rows in `nola_str_tib`. Either there are duplicates in `nola_str_tib` or there are missing operators in `nola_operators`. It could also very well be the case that they are in different order than `nola_str_tib`. In any case, we cannot simply take the column from `nola_operators` and column bind it. We have to use `*_join()` type of functions to join the datasets together.
-
-
+Notice that there are only `r nrow(nola_operators)` operators in the
+table compared to `r nrow(nola_str_tib)` rows in `nola_str_tib`. Either
+there are duplicates in `nola_str_tib` or there are missing operators in
+`nola_operators`. It could also very well be the case that they are in
+different order than `nola_str_tib`. In any case, we cannot simply take
+the column from `nola_operators` and column bind it. We have to use
+`*_join()` type of functions to join the datasets together.
 
 ```{r, echo=TRUE, eval=TRUE, collapse=TRUE}
 
-nola_str_tib_join <- left_join(nola_str_tib, nola_operators, 
-															 by=c("Operator Name" = "Operator Name")
-															 )
+nola_str_tib_join <- left_join(nola_str_tib, nola_operators,
+  by = c("Operator Name" = "Operator Name")
+)
 
 str(nola_str_tib_join)
 ```
 
 Couple of things to notice here
 
-* `left_join` keeps all the rows in the first table. So `Operator Permit Number` should have the same length as the rest of the table even if some are NA.
+-   `left_join` keeps all the rows in the first table. So
+    `Operator Permit Number` should have the same length as the rest of
+    the table even if some are NA.
 
-* Notice the use "" in the `by` rather than \`\`. This is because the matching is based on strings rather than names. This is a subtle difference and would occasionally trip students up.
-
+-   Notice the use "" in the `by` rather than \`\`. This is because the
+    matching is based on strings rather than names. This is a subtle
+    difference and would occasionally trip students up.
 
 ## Exercise 4
 
@@ -172,6 +222,6 @@ Couple of things to notice here
 Congratulations, you've reached the end of Chapter 4! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise4]. If you want to see our solutions for this exercise you can find them [here][exercise4-sol] (don't peek at them too soon though!).   
 ```
 
-```{r links, child="links.md"}
-```
+```{r, child="links.md"}
 
+```

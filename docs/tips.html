@@ -23,7 +23,7 @@
 <meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-08-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.4.3</b> When to use a loop?</a></li>
 <li class="chapter" data-level="6.4.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.4.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 7</a></li>
+<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -394,7 +394,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/statistics.png" width="7.5%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="tips.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Guest Occupancy Limit</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Bedroom Limit</span><span class="st">`</span>, <span class="at">color =</span> <span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span>), <span class="at">data =</span> df) <span class="sc">+</span></span>
 <span id="cb190-2"><a href="tips.html#cb190-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb190-3"><a href="tips.html#cb190-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># using stat_smooth instead of geom_smooth</span></span>
+<span id="cb190-3"><a href="tips.html#cb190-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># using stat_smooth instead of geom_smooth</span></span>
 <span id="cb190-4"><a href="tips.html#cb190-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_smooth</span>(<span class="at">geom =</span> <span class="st">&quot;smooth&quot;</span>, <span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <p><img src="Rbook_files/figure-html/stat_smooth-lm-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p> </p>
@@ -406,19 +406,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/coords.png" width="7.5%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="tips.html#cb191-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Guest Occupancy Limit</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Bedroom Limit</span><span class="st">`</span>, <span class="at">color =</span> <span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span>), <span class="at">data =</span> df) <span class="sc">+</span></span>
 <span id="cb191-2"><a href="tips.html#cb191-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb191-3"><a href="tips.html#cb191-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)<span class="sc">+</span></span>
-<span id="cb191-4"><a href="tips.html#cb191-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># New x and y limits</span></span>
-<span id="cb191-5"><a href="tips.html#cb191-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>)) <span class="sc">+</span></span>
-<span id="cb191-6"><a href="tips.html#cb191-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylim</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span></code></pre></div>
+<span id="cb191-3"><a href="tips.html#cb191-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb191-4"><a href="tips.html#cb191-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># New x and y limits</span></span>
+<span id="cb191-5"><a href="tips.html#cb191-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>)) <span class="sc">+</span></span>
+<span id="cb191-6"><a href="tips.html#cb191-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span></code></pre></div>
 <p><img src="Rbook_files/figure-html/axis-limits-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p> </p>
 <p>A alternative method <code>coord_cartesian()</code>. However, there are pretty big differences.<code>coord_cartesian()</code> works in much the same way, but instead of chopping out data, it instead zooms in. Doing so means that the entire dataset is maintained (and any trends are maintained). In particular it matters of <code>geom_smooth</code> or <code>stat_*</code>.</p>
 <p><img src="images/coords.png" width="7.5%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="tips.html#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Guest Occupancy Limit</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Bedroom Limit</span><span class="st">`</span>, <span class="at">color =</span> <span class="st">`</span><span class="at">Permit Type</span><span class="st">`</span>), <span class="at">data =</span> df) <span class="sc">+</span></span>
 <span id="cb192-2"><a href="tips.html#cb192-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb192-3"><a href="tips.html#cb192-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>)<span class="sc">+</span></span>
-<span id="cb192-4"><a href="tips.html#cb192-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Zooming in rather than chopping out</span></span>
-<span id="cb192-5"><a href="tips.html#cb192-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span></code></pre></div>
+<span id="cb192-3"><a href="tips.html#cb192-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb192-4"><a href="tips.html#cb192-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Zooming in rather than chopping out</span></span>
+<span id="cb192-5"><a href="tips.html#cb192-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>))</span></code></pre></div>
 <p><img src="Rbook_files/figure-html/coord_cartesian-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p> </p>
 <p>Notice now that the trends are maintained (as the lines are being informed by data which are off-screen). We would generally advise using <code>coord_cartesian()</code> as it protects you against possible misinterpretations.</p>
@@ -434,8 +434,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/scales.png" width="7.5%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="tips.html#cb193-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">`</span><span class="at">Guest Occupancy Limit</span><span class="st">`</span>, <span class="at">y =</span> <span class="st">`</span><span class="at">Bedroom Limit</span><span class="st">`</span>, <span class="at">color =</span> <span class="st">`</span><span class="at">Bedroom Limit</span><span class="st">`</span>), <span class="at">data =</span> df) <span class="sc">+</span></span>
 <span id="cb193-2"><a href="tips.html#cb193-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>() <span class="sc">+</span></span>
-<span id="cb193-3"><a href="tips.html#cb193-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Adding scale_colour_gradient</span></span>
-<span id="cb193-4"><a href="tips.html#cb193-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_colour_gradient</span>(<span class="at">low =</span> <span class="st">&quot;#9F00FF&quot;</span>, <span class="at">high =</span> <span class="st">&quot;#FF9F00&quot;</span>) </span></code></pre></div>
+<span id="cb193-3"><a href="tips.html#cb193-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adding scale_colour_gradient</span></span>
+<span id="cb193-4"><a href="tips.html#cb193-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_gradient</span>(<span class="at">low =</span> <span class="st">&quot;#9F00FF&quot;</span>, <span class="at">high =</span> <span class="st">&quot;#FF9F00&quot;</span>)</span></code></pre></div>
 <p><img src="Rbook_files/figure-html/continuous-colour-1.png" width="75%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
@@ -490,6 +490,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

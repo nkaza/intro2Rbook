@@ -1,0 +1,198 @@
+
+
+```{r setup, echo=FALSE, purl = FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, eval = FALSE, cache = FALSE)
+```
+
+\  
+
+# Exercise 3: Importing and manipulating dataframes {.unlisted .unnumbered}
+
+\  
+
+In this exercise you'll learn how to import your data into R as a dataframe object, how to usefully summarise and manipulate dataframes and finally how to export data from R. All of this material is covered in [Chapter 3](https://nkaza.github.io/intro2Rbook/data_r.html) of the Introduction to R book.
+
+\  
+
+1\. As in previous exercises, either create a new R script or continue with your previous R script in your RStudio Project. Again, make sure you include any metadata you feel is appropriate (title, description of task, date of creation etc) and  don't forget to comment out your metadata with a `#` at the beginning of the line. 
+
+\  
+
+2\. Download the data file *‘chicago_benchmarking_data.csv’* from the **[<i class="fa fa-download"></i> Data](data.html)** link and save it to the `data` directory inside your RStudio project directory.
+
+3\. Time for a quick description of the dataset to get your bearings. Owners and managers of various buildings in many US cities submit energy consumption and other relevant data in a platform named Portfolio Manager in order to benchmark energy performance of buildings. City governments then aggregate, clean, and release such data in open data portals. The data we used here is a subset of such data from the city of Chicago. It contains information details of building such as use type, location, area, etc. as well as electricity and natural gas consumption. Columns are named so they are easily identified and understood. The structure of these data is known as a rectangular dataset (aka 'tidy' data by the cool kids) with no missing cells. Each row is an individual observation and each column a separate variable. The variable names are contained in the first row of the dataset (aka a header).
+
+\  
+
+4\. Now let's import the *‘chicago_benchmarking _data.csv'* file into R. To do this you will use the workhorse function of importing csv files,  `read.csv()`. Don't forget to include the appropriate arguments when using the `read.csv()` function (remember that header?) and assign it a variable with an appropriate name (such as `energy_df`). Take a look at [Section 3.4.2 Import functions](https://nkaza.github.io/intro2Rbook/importing-data.html#import_fnc) of the Introduction to R book or watch this [video](https://alexd106.github.io/intro2R/howto.html#import-vid) if you need any further information.
+
+```{r Q4}
+energy_df <- read.csv("chicago_benchmarking_data.csv",
+  header = TRUE,
+  stringsAsFactors = TRUE
+)
+```
+
+\  
+
+5\. Once you have imported your data file nothing much seems to happen (don't worry, this is normal). To examine the contents of the dataframe one option would be to just type the variable name (`energy_df`) into the console. This is probably not a good idea and doesn't really tell you anything about the dataframe other than there's alot of data (try it)! A slightly better option is to use the `head()` function to display the first 5 rows of your dataframe. Again, this is likely to just fill up your console. A better option would be to use the `names()` function which will return a vector of variable names from your dataset. However, all you get are the names of the variables but no other information. A much, much better option is to use the `str()` function to display the structure of the dataset and a neat summary of your variables. Another advantage is that you can copy this information from the console and paste it into your R script (making sure it's commented) for later reference. How many observations does this dataset have? How many variables are in this dataset? What type of variables are `zip_code` and `energy_star_score`?
+
+```{r Q5, results = 'asis'}
+head(energy_df) # display the first 5 rows
+names(energy_df) # display the variable names
+str(energy_df) # display the structure of the dataframe energy_df
+```
+
+\  
+
+6\. You can get another useful summary of your dataframe by using the `summary()` function. This will provide you with some useful summary statistics for each variable. Notice how the type of output depends on whether the variable is a factor or a number. Another useful feature of the `summary()` function is that it will also count the number of missing values in each variable. Which variables have missing values and how many? 
+
+```{r Q6, results = 'asis'}
+summary(energy_df)
+```
+
+\  
+
+7\. Summarising and manipulating dataframes is a key skill to acquire when learning R. Although there are many ways to do this, we will concentrate on using the square bracket `[ ]` notation which you used previously with vectors. The key thing to remember when using `[ ]` with dataframes is that dataframes have two dimensions (think rows and columns) so you always need to specify which rows and which columns you want inside the `[ ]` (see [Section 3.5.1 Positional indexes](https://nkaza.github.io/intro2Rbook/wrangling-data-frames.html#positional-indexes) and this [video](https://alexd106.github.io/intro2R/howto.html#dataw-vid) for some additional background information and a few examples). Let's practice. 
+
+a) Extract all the elements of the first 10 rows and the first 4 columns of the `energy_df` dataframe and assign to a new variable called `energy_sub`. 
+
+b) Next, extract all observations (remember - rows) from the `energy_df` dataframe and the columns `prop_name`, `zip_code` and `area` and assign to a variable called `energy_num`. 
+
+c) Now, extract the first 50 rows and all columns form the original dataframe and assign to a variable `energy_50` (there's a better way to do this with conditional statements - see below). 
+
+d) Finally, extract all rows except the first 10 rows and all columns except the last column. Remember, for some of these questions you can specify the columns you want either by position or by name. Practice both ways. Do you have a preference? If so why? 
+
+```{r Q7, results = 'asis'}
+# first 10 rows and first 4 columns
+energy_sub <- energy_df[1:10, 1:4]
+
+
+
+# all rows and columns 2, 3 and 5
+energy_num <- energy_df[, c(2, 3, 5)]
+# alternative way of indexing columns with named indexes
+energy_num <- energy_df[, c("prop_name", "zip_code", "area")]
+
+# first 50 rows and all columns
+energy_50 <- energy_df[1:50, ]
+
+# excluding first 4 rows and eighth column using negative indexing
+energy_last <- energy_df[-c(1:4), -8]
+
+# excluding last column
+energy_no_last_column <- energy_df[-c(ncol(energy_df))]
+```    
+\  
+
+8\. In addition to extracting rows and columns from your dataframe by position you can also use conditional statements to select particular rows based on some logical criteria. This is very useful but takes a bit of practice to get used to (see [Section 3.5 Wrangling data frames](https://nkaza.github.io/intro2Rbook/wrangling-data-frames.html#logical-indexes) for an introduction). Extract rows from your dataframe (all columns by default) based on the following criteria (note: you will need to assign the results of these statements to appropriately named variables, I'll leave it up to you to use informative names!): 
+
+a) buildings built after 1970
+b) energy star scores lesser than 50
+c) primary property type: Office
+d) Offices in Zip code 60654
+e) all observations from between latitudes 41.8 and 41.9 and longitudes -87.6 and -87.7
+f) all rows that are not Multifamily Housing
+      
+```{r Q8, tidy = TRUE}
+energy_post_1970 <- energy_df[energy_df$built_year > 1700, ]
+
+energy_50 <- energy_df[energy_df$energy_star_score < 50, ]
+
+energy_office <- energy_df[energy_df$primary_property_type == "Office", ]
+
+energy_60654 <- energy_df[energy_df$zip_code == "60654", ]
+
+energy_lat_long <- energy_df[energy_df$lat > 41.8 & energy_df$lat < 41.9 & energy_df$long > -87.7 & energy_df$long < -87.6, ]
+
+energy_no_multifamily <- energy_df[energy_df$primary_property_type != "Multifamily Housing", ]
+```    
+
+\  
+
+9\. A really neat feature of extracting rows based on conditional statements is that you can include R functions within the statement itself. To practice this, modify your answer to the gradient question in Q9b to use the `median()` function rather than hard coding the value 50.
+
+```{r Q9, tidy = TRUE}
+energy_subset <- energy_df[energy_df$energy_star_score < median(energy_df$energy_star_score), ]
+```
+
+\ 
+
+10\. Although you have concentrated on using the square bracket `[ ]` notation to extract rows and columns from your dataframe, there are of course many other approaches. One such approach is to use the `subset()` function (see `?subset` or search the Introduction to R book for the term 'subset'for more details). Use the `subset()` function to extract all rows representing Offices built after 1990. Also use `subset()` to extract "Multifamily Housing buildings in Zip code 60615  but only include the columns `id`, `year`, `zip_code` and `primary_property_type`.
+
+```{r Q10, tidy = TRUE}
+subset(energy_df, primary_property_type == "Office" & built_year > 1990)
+
+subset(energy_df, primary_property_type == "Multifamily Housing" & zip_code == "60615", select = c("id", "year", "zip_code", "primary_property_type"))
+```
+
+\  
+
+11\. Another useful way to manipulate your dataframes is to sort the rows based on the value of a variable (or combinations of variables). Rather counter-intuitively you should use the `order()` function to sort your dataframes, not the `sort()` function (see [Section 3.5 Wrangling data frames](https://nkaza.github.io/intro2Rbook/wrangling-data-frames.html) of the Introduction to R book for an explanation). Ordering dataframes uses the same logic you practised in Q14 in Exercise 2. Let's practice with a straight forward example. Use the `order()` function to sort all rows in the `energy_df` dataframe in ascending electricity consumption (lowest to highest). Store this sorted dataframe in a variable called `energy_electricity_sort `.
+
+```{r Q11}
+energy_electricity_sort <- energy_df[order(energy_df$electricity_use), ]
+```
+
+\  
+
+12\.	Now for something a little more complicated. Sort all rows in the `energy_df` dataframe by ascending order of electricity use within each year building were built. The trick here is to remember that you can order by more than one variable when using the `order()` function. Don't forget to assign your sorted dataframe to a new variable with a sensible name. Repeat the previous ordering but this time order by **decending** order of energy within each year the buldings were built. 
+
+```{r Q12, results = 'asis'}
+energy_df_sorted <- energy_df[order(energy_df$built_year, energy_df$electricity_use), ]
+
+# use '-' to reverse the order of depth
+energy_df_rev_sorted <- energy_df[order(energy_df$built_year, -energy_df$electricity_use), ]
+```    
+\    
+
+13\. Often, we would like to summarise variables by, for example, calculating a mean, median or counting the number of observations. To do this for a single variable it's fairly straight forward : 
+
+```{r Q13a}
+mean(energy_df$area) # mean time at station
+median(energy_df$electricity_use) # median depth
+length(energy_df$nat_gas_use) # number of observations
+```
+
+13\. (cont) Perhaps more interestingly, you might want summarise one variable conditional on the level of another factor variable. For example, write some R code to calculate the mean electricity use for each Zip code. (see [Section 3.6 Summarising data frames](https://nkaza.github.io/intro2Rbook/summarising-data-frames.html#summarising-data-frames) for a few hints).
+
+```{r Q13b, results = 'asis'}
+# use the na.rm argument to remove NAs
+tapply(energy_df$electricity_use, energy_df$zip_code, mean, na.rm = TRUE)
+
+# alternative method using the with() function. see ?with
+with(energy_df, tapply(electricity_use, zip_code, mean, na.rm = TRUE))
+```
+
+\  
+
+14\. Another useful function for summarising dataframes is `aggregate()`. Search in the R book for the function aggregate to see how to use this function (or see `?aggregate`). Use the `aggregate()` function to calculate the mean of natural gas use at each Zip code.
+
+```{r Q14, tidy = TRUE}
+mean_nat_energy_zip <- aggregate(nat_gas_use ~ zip_code, data = energy_df, mean)
+```    
+\  
+
+15\. Knowing how many observations are present for each factor level (or combinations of factor levels) is useful to determine whether you have an adequate sample size (for subsequent modelling for example). Use the `table()` function to determine the number of observations for each property use type (see [Section 3.6 Summarizing data frames](https://nkaza.github.io/intro2Rbook/summarising-data-frames.html#summarising-data-frames) for a few tips). Next use the same function to display the number of observations for each combination of Zip code and year built for the buildings. (Optional): The `xtabs()` function is very flexible for creating tables of counts for factor combinations (aka contingency tables). Take a look at the help file (or Google) to figure out how to use the `xtabs()` function to replicate your use of the `table()` function.  
+
+```{r Q15, results = 'asis'}
+# using table
+table(energy_df$primary_property_type)
+table(energy_df$zip_code, energy_df$built_year)
+
+# using xtabs
+xtabs(~primary_property_type, data = energy_df)
+xtabs(~ zip_code + built_year, data = energy_df)
+```
+
+\  
+
+16\. Ok, we have spent quite a bit of time (and energy--pun not intended) learning how to import and manipulate dataframes. The last thing we need to cover is how to export dataframes from R to an external file (see [Section 3.7 Exporting data](https://nkaza.github.io/intro2Rbook/exporting-data.html#exporting-data) of the book for more details). Let's say you want to export the dataframe `energy_num` you created previously (see Q8) to a file called 'energy_df_num.csv' in your `output` directory which you created in Exercise 1. To do this you will need to use the `write.csv()` function. You want to include the the variable names in the first row of the file, but you don't want to include the row names. Once you have create your file, try to open it in Microsoft Excel (or open source equivalent).
+
+```{r Q16, eval=FALSE, tidy = TRUE}
+write.csv(energy_num, "energy_num.csv", col.names = TRUE, row.names = FALSE)
+```
+
+\  
+
+End of Exercise 3

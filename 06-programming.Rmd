@@ -513,12 +513,12 @@ There is no real speed advantage of using `map` functions over `for` loops. It j
 
 
 
-## Exercise 7
+## Exercise 6
 
 ```{block2, note-text7, type='rmdtip'}
-Congratulations, you've reached the end of Chapter 7! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise7]. If you want to see our solutions for this exercise you can find them [here][exercise7-sol] (don't peek at them too soon though!).   
+Congratulations, you've reached the end of Chapter 6! Perhaps now's a good time to practice some of what you've learned. You can find an exercise we've prepared for you [here][exercise6]. If you want to see our solutions for this exercise you can find them [here][exercise6-sol] (don't peek at them too soon though!).   
 ```
 
-```{r links, child="links.md"}
+```{r, child="links.md"}
 ```
 

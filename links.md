@@ -39,20 +39,19 @@
 -->
 
 <!--Exercises Links intro2R-->
-[exercise1]: https://alexd106.github.io/intro2R/exercise_1.html
-[exercise1-sol]: https://alexd106.github.io/intro2R/exercise_1_solution.html
-[exercise2]: https://alexd106.github.io/intro2R/exercise_2.html
-[exercise2-sol]: https://alexd106.github.io/intro2R/exercise_2_solution.html
-[exercise3]: https://alexd106.github.io/intro2R/exercise_3.html
-[exercise3-sol]: https://alexd106.github.io/intro2R/exercise_3_solution.html
-[exercise4]: https://alexd106.github.io/intro2R/exercise_4.html
-[exercise4-sol]: https://alexd106.github.io/intro2R/exercise_4_solution.html
-[exercise5]: https://alexd106.github.io/intro2R/exercise_4.html
-[exercise5-sol]: https://alexd106.github.io/intro2R/exercise_4_ggplot_solution.html
-[exercise6]: https://alexd106.github.io/intro2R/exercise_5.html
-[exercise6-sol]:https://alexd106.github.io/intro2R/exercise_5_solution.html
-[exercise7]: https://alexd106.github.io/intro2R/exercise_6.html
-[exercise7-sol]: https://alexd106.github.io/intro2R/exercise_6_solution.html
+[exercise1]: ./exercise-1-getting-to-know-r-and-rstudio-1.html
+[exercise1-sol]: ./exercise-1-getting-to-know-r-and-rstudio.html
+[exercise2]: ./exercise-2-basic-r-operations-1.html
+[exercise2-sol]: ./exercise-2-basic-r-operations.html
+[exercise3]: ./exercise-3-importing-and-manipulating-dataframes-1.html
+[exercise3-sol]: ./exercise-3-importing-and-manipulating-dataframes.html
+[exercise4]: ./exercise-4-manipulating-data-with-tidyverse-1.html
+[exercise4-sol]: ./exercise-4-manipulating-data-with-tidyverse.html
+[exercise5]: ./exercise-5-graphics-with-ggplot-1.html
+[exercise5-sol]: ./exercise-5-graphics-with-ggplot.html
+[exercise6]: ./exercise-6-basic-programming-in-r-1.html
+[exercise6-sol]:./exercise-6-basic-programming-in-r.html
+
 
 <!--cran Links-->
 [cran]: https://cloud.r-project.org
@@ -221,6 +220,7 @@
 [francesinha]: https://en.wikipedia.org/wiki/Francesinha
 [scoping]: https://www.r-bloggers.com/dont-run-afoul-of-scoping-rules-in-r/
 [code-conduct]: https://www.contributor-covenant.org/version/2/0/code_of_conduct/
+[lodes-website]: https://lehd-ces-census-gov/data/lodes/LODES7/
 
 
 

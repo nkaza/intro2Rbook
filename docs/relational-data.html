@@ -23,7 +23,7 @@
 <meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-08-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.4.3</b> When to use a loop?</a></li>
 <li class="chapter" data-level="6.4.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.4.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 7</a></li>
+<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -377,8 +377,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="relational-data" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Relational Data<a href="relational-data.html#relational-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>It is rarely the case that we will be working with one table. Often we need to join multiple tables together because information is scattered in different databases. Typically the relationships are defined using at set of columns.</p>
-<p>Suppose there is a table that includes the license number of the operator and we want to include it into the tibble <code>nola_str_tib</code>.</p>
+<p>It is rarely the case that we will be working with one table. Often we
+need to join multiple tables together because information is scattered
+in different databases. Typically the relationships are defined using at
+set of columns.</p>
+<p>Suppose there is <a href="https://github.com/nkaza/intro2Rbook/blob/master/data/NOLA_STR_operators.csv">a table</a> that includes the license number of the
+operator and we want to include it into the tibble <code>nola_str_tib</code>.</p>
 <div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="relational-data.html#cb157-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb157-2"><a href="relational-data.html#cb157-2" aria-hidden="true" tabindex="-1"></a>nola_operators <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/NOLA_STR_operators.csv&quot;</span>)</span>
 <span id="cb157-3"><a href="relational-data.html#cb157-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Rows: 59 Columns: 2</span></span>
@@ -388,12 +392,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb157-7"><a href="relational-data.html#cb157-7" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
 <span id="cb157-8"><a href="relational-data.html#cb157-8" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Use `spec()` to retrieve the full column specification for this data.</span></span>
 <span id="cb157-9"><a href="relational-data.html#cb157-9" aria-hidden="true" tabindex="-1"></a><span class="do">## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</span></span></code></pre></div>
-<p>First notice that <code>Operator Name</code> is the same between the tables. Presumably this is what we can use to join the tables.</p>
-<p>Notice that there are only 59 operators in the table compared to 89 rows in <code>nola_str_tib</code>. Either there are duplicates in <code>nola_str_tib</code> or there are missing operators in <code>nola_operators</code>. It could also very well be the case that they are in different order than <code>nola_str_tib</code>. In any case, we cannot simply take the column from <code>nola_operators</code> and column bind it. We have to use <code>*_join()</code> type of functions to join the datasets together.</p>
+<p>First notice that <code>Operator Name</code> is the same between the tables.
+Presumably this is what we can use to join the tables.</p>
+<p>Notice that there are only 59 operators in the
+table compared to 89 rows in <code>nola_str_tib</code>. Either
+there are duplicates in <code>nola_str_tib</code> or there are missing operators in
+<code>nola_operators</code>. It could also very well be the case that they are in
+different order than <code>nola_str_tib</code>. In any case, we cannot simply take
+the column from <code>nola_operators</code> and column bind it. We have to use
+<code>*_join()</code> type of functions to join the datasets together.</p>
 <div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="relational-data.html#cb158-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb158-2"><a href="relational-data.html#cb158-2" aria-hidden="true" tabindex="-1"></a>nola_str_tib_join <span class="ot">&lt;-</span> <span class="fu">left_join</span>(nola_str_tib, nola_operators, </span>
-<span id="cb158-3"><a href="relational-data.html#cb158-3" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Operator Name&quot;</span> <span class="ot">=</span> <span class="st">&quot;Operator Name&quot;</span>)</span>
-<span id="cb158-4"><a href="relational-data.html#cb158-4" aria-hidden="true" tabindex="-1"></a>                                                             )</span>
+<span id="cb158-2"><a href="relational-data.html#cb158-2" aria-hidden="true" tabindex="-1"></a>nola_str_tib_join <span class="ot">&lt;-</span> <span class="fu">left_join</span>(nola_str_tib, nola_operators,</span>
+<span id="cb158-3"><a href="relational-data.html#cb158-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;Operator Name&quot;</span> <span class="ot">=</span> <span class="st">&quot;Operator Name&quot;</span>)</span>
+<span id="cb158-4"><a href="relational-data.html#cb158-4" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb158-5"><a href="relational-data.html#cb158-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb158-6"><a href="relational-data.html#cb158-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(nola_str_tib_join)</span>
 <span id="cb158-7"><a href="relational-data.html#cb158-7" aria-hidden="true" tabindex="-1"></a><span class="do">## spec_tbl_df [89 × 13] (S3: spec_tbl_df/tbl_df/tbl/data.frame)</span></span>
@@ -428,8 +439,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb158-36"><a href="relational-data.html#cb158-36" aria-hidden="true" tabindex="-1"></a><span class="do">##  - attr(*, &quot;problems&quot;)=&lt;externalptr&gt;</span></span></code></pre></div>
 <p>Couple of things to notice here</p>
 <ul>
-<li><p><code>left_join</code> keeps all the rows in the first table. So <code>Operator Permit Number</code> should have the same length as the rest of the table even if some are NA.</p></li>
-<li><p>Notice the use “” in the <code>by</code> rather than ``. This is because the matching is based on strings rather than names. This is a subtle difference and would occasionally trip students up.</p></li>
+<li><p><code>left_join</code> keeps all the rows in the first table. So
+<code>Operator Permit Number</code> should have the same length as the rest of
+the table even if some are NA.</p></li>
+<li><p>Notice the use “” in the <code>by</code> rather than ``. This is because the
+matching is based on strings rather than names. This is a subtle
+difference and would occasionally trip students up.</p></li>
 </ul>
 </div>
             </section>
@@ -483,6 +498,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

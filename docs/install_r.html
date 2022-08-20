@@ -23,7 +23,7 @@
 <meta name="author" content="Nikhil Kaza" />
 
 
-<meta name="date" content="2022-08-14" />
+<meta name="date" content="2022-08-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.4.3" data-path="loops.html"><a href="loops.html#when-to-use-a-loop"><i class="fa fa-check"></i><b>6.4.3</b> When to use a loop?</a></li>
 <li class="chapter" data-level="6.4.4" data-path="loops.html"><a href="loops.html#if-not-loops-then-what"><i class="fa fa-check"></i><b>6.4.4</b> If not loops, then what?</a></li>
 </ul></li>
-<li class="chapter" data-level="6.5" data-path="exercise-7.html"><a href="exercise-7.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 7</a></li>
+<li class="chapter" data-level="6.5" data-path="exercise-6.html"><a href="exercise-6.html"><i class="fa fa-check"></i><b>6.5</b> Exercise 6</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="install-rm.html"><a href="install-rm.html"><i class="fa fa-check"></i><b>A</b> Installing R Markdown</a>
@@ -405,7 +405,7 @@ sudo apt install r-base r-base-dev</code></pre>
 <h3><span class="header-section-number">1.1.4</span> Testing R<a href="install_r.html#testing-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Whichever operating system you’re using, once you have installed R you need to check its working properly. The easiest way to do this is to start R by double clicking on the R icon (Windows or Mac) or by typing <code>R</code> into the Console (Linux). You should see the R Console and you should be able to type R commands into the Console after the command prompt <code>&gt;</code>. Try typing the following R code and then press enter (don’t worry of you don’t understand this - we’re just checking if R works)</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="install_r.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span></code></pre></div>
-<p><img src="Rbook_files/figure-html/unnamed-chunk-6-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="Rbook_files/figure-html/unnamed-chunk-7-1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>A plot of the numbers 1 to 10 on both the x and y axes should appear. If you see this, you’re good to go. If not then we suggest you make a note of any errors produced and then use Google to troubleshoot.</p>
 <p> </p>
 </div>
@@ -461,6 +461,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

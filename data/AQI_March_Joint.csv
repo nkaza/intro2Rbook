@@ -1,0 +1,1544 @@
+"","...1","sensor_ID","date_collected","AQI","temperature","County","stcofips","omb","medinc","unemp","pz","day_number"
+"1",1,21267,2022-03-09,436.424,67.467,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",68
+"2",2,21267,2022-03-08,392.296,84,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",67
+"3",3,47595,2022-03-17,301.462,73,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",76
+"4",4,47595,2022-03-18,286.947,81.458,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",77
+"5",5,31261,2022-03-15,286.516,63.433,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",74
+"6",6,36451,2022-03-04,254.083,85.167,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",63
+"7",7,36451,2022-03-20,232.851,72.828,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",79
+"8",8,21267,2022-03-07,231.843,86.4,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",66
+"9",9,21267,2022-03-15,224.825,79.069,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",74
+"10",10,21267,2022-03-13,211.112,60.133,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",72
+"11",11,21267,2022-03-10,207.19,59.833,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",69
+"12",12,21267,2022-03-11,199.427,65.967,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",70
+"13",13,53383,2022-03-20,196.319,73.933,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",79
+"14",14,47465,2022-03-06,189.4,83.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"15",15,21267,2022-03-03,189.39,90.267,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",62
+"16",16,21267,2022-03-19,189.316,86.233,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",78
+"17",17,21267,2022-03-05,186.43,78.033,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",64
+"18",18,21267,2022-03-04,181.797,80.267,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",63
+"19",19,21267,2022-03-02,180.541,83.138,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",61
+"20",20,53383,2022-03-01,179.53,73.433,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",60
+"21",21,21267,2022-03-14,175.845,74.655,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",73
+"22",22,21267,2022-03-01,167.932,75.448,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",60
+"23",23,21267,2022-03-20,166.903,79.867,"Orange",37135,"Urban center","Higher income","Lower unemployment","North Central",79
+"24",24,47595,2022-03-15,159.787,73.5,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",74
+"25",25,31261,2022-03-14,155.377,61.033,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",73
+"26",26,53383,2022-03-02,147.912,82.033,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",61
+"27",27,52885,2022-03-05,146.683,78.833,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",64
+"28",28,38875,2022-03-04,144.333,77.1,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",63
+"29",29,47555,2022-03-03,118.928,87.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"30",30,55111,2022-03-05,115.485,75.286,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",64
+"31",31,12787,2022-03-18,115.083,92.067,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",77
+"32",32,2873,2022-03-06,110.632,89.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"33",33,6020,2022-03-07,108.924,77.067,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",66
+"34",34,12286,2022-03-04,106.908,70.267,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",63
+"35",35,4329,2022-03-03,101.242,88.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"36",36,55111,2022-03-03,100.539,85.767,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",62
+"37",37,36451,2022-03-11,99.05,76.667,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",70
+"38",38,12807,2022-03-09,94.313,70.423,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",68
+"39",39,53383,2022-03-19,88.837,85.6,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",78
+"40",40,55111,2022-03-02,86.733,78.148,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",61
+"41",41,38875,2022-03-05,86.69,85.3,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",64
+"42",42,6020,2022-03-03,83.494,86.267,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",62
+"43",43,38917,2022-03-14,83.157,70.8,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",73
+"44",44,4329,2022-03-05,79.086,78.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"45",45,48459,2022-03-03,78.43,85.167,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",62
+"46",46,4329,2022-03-06,77.293,87.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"47",47,20809,2022-03-06,77.159,84.6,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"48",48,47477,2022-03-06,74.832,87.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"49",49,55111,2022-03-04,74.477,71.533,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",63
+"50",50,2873,2022-03-19,73.833,87.1,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"51",51,47633,2022-03-16,73.657,77.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"52",52,12835,2022-03-15,73.418,75.633,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",74
+"53",53,47487,2022-03-06,72.747,84.767,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"54",54,11174,2022-03-06,72.567,86.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"55",55,6020,2022-03-09,72.181,62.231,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",68
+"56",56,39969,2022-03-05,72.103,78,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",64
+"57",57,11184,2022-03-06,71.586,90.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"58",58,6112,2022-03-05,69.823,85.467,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",64
+"59",59,55773,2022-03-06,69.429,83.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"60",60,52885,2022-03-04,68.016,72.433,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",63
+"61",61,47469,2022-03-06,67.361,84.793,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"62",62,47621,2022-03-06,65.957,84.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"63",63,47481,2022-03-06,65.334,85.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"64",64,47495,2022-03-06,65.109,90.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"65",65,1326,2022-03-06,64.93,80.7,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",65
+"66",66,6020,2022-03-18,64.867,74.767,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",77
+"67",67,11190,2022-03-06,64.734,84.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"68",68,757,2022-03-06,64.366,87.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"69",69,47617,2022-03-06,64.105,83.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"70",70,47459,2022-03-06,63.986,87.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"71",71,48745,2022-03-06,63.822,87.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"72",72,7906,2022-03-09,63.8,75.033,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",68
+"73",73,6006,2022-03-06,61.901,85.2,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",65
+"74",74,47505,2022-03-06,61.624,87.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"75",75,12689,2022-03-03,61.606,93.067,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",62
+"76",76,38917,2022-03-06,61.409,85.033,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",65
+"77",77,28145,2022-03-06,61.373,83.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"78",78,36451,2022-03-18,61.29,66.967,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",77
+"79",79,12835,2022-03-06,60.965,87.567,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",65
+"80",80,55111,2022-03-09,60.424,64,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",68
+"81",81,4329,2022-03-16,60.354,78.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"82",82,55111,2022-03-06,58.037,85.826,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",65
+"83",83,28147,2022-03-06,57.253,87.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"84",84,54093,2022-03-06,57.222,82.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"85",85,52885,2022-03-02,57.195,82.833,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",61
+"86",86,20809,2022-03-01,57.003,72.967,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"87",87,54095,2022-03-06,56.775,89.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"88",88,47633,2022-03-06,56.772,84.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"89",89,38875,2022-03-03,56.732,95.267,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",62
+"90",90,6022,2022-03-06,55.656,88.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"91",91,6020,2022-03-12,55.435,68.833,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",71
+"92",92,48459,2022-03-04,55.283,78.033,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",63
+"93",93,6022,2022-03-05,55.202,85.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"94",94,12703,2022-03-06,55.087,84.8,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"95",95,6028,2022-03-06,54.723,87.333,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"96",96,39969,2022-03-06,54.558,85,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",65
+"97",97,11644,2022-03-06,54.355,88.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"98",98,47615,2022-03-18,54.301,82.933,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",77
+"99",99,6028,2022-03-05,54.283,83.267,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"100",100,47481,2022-03-16,53.979,77.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"101",101,6020,2022-03-06,53.972,78.867,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",65
+"102",102,55111,2022-03-16,53.848,75.333,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",75
+"103",103,6112,2022-03-16,53.443,81.367,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",75
+"104",104,12689,2022-03-06,53.434,94.533,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",65
+"105",105,12835,2022-03-05,53.004,82.8,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",64
+"106",106,20521,2022-03-06,52.915,87.667,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"107",107,20809,2022-03-05,52.856,78.433,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"108",108,12286,2022-03-03,52.267,79,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",62
+"109",109,38871,2022-03-06,52.039,84.7,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",65
+"110",110,47555,2022-03-06,51.988,84.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"111",111,6020,2022-03-16,51.52,74.167,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",75
+"112",112,6006,2022-03-16,51.163,69.133,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",75
+"113",113,12697,2022-03-06,51.138,83,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",65
+"114",114,55773,2022-03-05,50.952,72.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"115",115,47499,2022-03-06,50.796,90.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"116",116,47555,2022-03-02,50.524,80.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"117",117,6022,2022-03-16,50.302,71.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"118",118,55773,2022-03-03,50.227,85.571,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"119",119,52885,2022-03-06,50.215,83.133,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",65
+"120",120,12807,2022-03-04,50.202,84.167,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",63
+"121",121,6028,2022-03-16,49.921,69.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"122",122,31261,2022-03-05,49.65,71.433,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",64
+"123",123,47493,2022-03-06,49.421,89.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"124",124,20521,2022-03-05,49.152,84.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"125",125,47457,2022-03-02,48.906,82.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"126",126,12807,2022-03-03,47.913,104.7,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",62
+"127",127,6006,2022-03-05,47.669,77.667,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",64
+"128",128,47481,2022-03-05,47.44,71.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"129",129,31261,2022-03-06,47.351,74.8,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",65
+"130",130,38917,2022-03-13,47.176,55.433,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",72
+"131",131,47477,2022-03-08,46.958,80.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"132",132,47465,2022-03-03,46.413,85,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"133",133,47493,2022-03-16,46.087,79.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"134",134,36451,2022-03-06,45.802,80.84,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",65
+"135",135,11174,2022-03-05,45.65,73.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"136",136,47555,2022-03-16,45.614,78,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"137",137,12835,2022-03-10,45.547,64.767,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",69
+"138",138,25561,2022-03-06,45.464,87.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"139",139,47487,2022-03-03,45.443,84.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"140",140,11184,2022-03-05,45.163,80.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"141",141,11644,2022-03-05,44.832,75.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"142",142,6008,2022-03-06,44.723,87.9,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",65
+"143",143,12823,2022-03-03,44.575,99.433,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",62
+"144",144,54093,2022-03-19,44.564,81.233,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"145",145,47617,2022-03-05,44.529,74.483,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"146",146,47499,2022-03-16,44.43,82.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"147",147,47459,2022-03-03,44.245,90.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"148",148,31619,2022-03-06,44.143,85.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"149",149,6020,2022-03-08,44.046,68.067,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",67
+"150",150,55773,2022-03-16,43.982,75.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"151",151,47495,2022-03-16,43.934,77.233,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"152",152,38873,2022-03-06,43.757,80.2,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",65
+"153",153,47483,2022-03-16,43.636,78.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"154",154,6112,2022-03-03,43.6,91.833,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",62
+"155",155,20809,2022-03-03,43.446,88.033,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"156",156,6008,2022-03-05,43.369,81.1,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",64
+"157",157,54095,2022-03-16,43.263,79.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"158",158,7906,2022-03-03,43.226,90.867,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",62
+"159",159,15587,2022-03-06,43.189,89.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"160",160,15591,2022-03-06,42.988,86.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"161",161,36451,2022-03-07,42.984,75.133,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",66
+"162",162,47481,2022-03-11,42.938,64.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"163",163,12867,2022-03-06,42.553,84.867,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",65
+"164",164,5988,2022-03-03,42.539,99.133,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",62
+"165",165,2873,2022-03-03,42.491,94.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"166",166,11184,2022-03-16,42.486,76.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"167",167,12787,2022-03-05,42.353,85.567,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",64
+"168",168,36451,2022-03-05,42.27,82.933,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",64
+"169",169,57681,2022-03-16,42.266,76.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"170",170,45621,2022-03-06,42.139,84.733,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"171",171,25561,2022-03-16,42.089,74.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"172",172,47457,2022-03-16,41.887,78.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"173",173,6112,2022-03-15,41.851,85.033,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",74
+"174",174,48745,2022-03-16,41.791,80,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"175",175,47477,2022-03-05,41.533,80.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"176",176,55773,2022-03-02,41.494,78.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"177",177,47457,2022-03-06,41.489,86.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"178",178,12689,2022-03-15,41.466,76.9,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",74
+"179",179,15587,2022-03-16,41.435,79.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"180",180,12835,2022-03-16,41.417,69.1,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",75
+"181",181,7906,2022-03-05,41.367,82.9,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",64
+"182",182,47469,2022-03-05,41.366,74.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"183",183,47621,2022-03-16,41.337,78.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"184",184,4329,2022-03-09,41.317,70,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"185",185,47465,2022-03-16,41.109,75.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"186",186,12697,2022-03-05,41.011,77.8,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",64
+"187",187,15587,2022-03-02,40.82,87.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"188",188,54095,2022-03-05,40.759,77.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"189",189,5872,2022-03-01,40.632,89.533,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",60
+"190",190,48745,2022-03-09,40.29,70.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"191",191,54095,2022-03-02,40.284,88.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"192",192,6112,2022-03-02,40.185,85.533,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",61
+"193",193,47477,2022-03-11,40.093,78.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"194",194,47505,2022-03-05,40.081,78.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"195",195,38875,2022-03-09,40.024,85.7,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",68
+"196",196,2873,2022-03-16,39.964,78.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"197",197,28147,2022-03-05,39.836,77.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"198",198,47459,2022-03-05,39.708,76.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"199",199,47615,2022-03-16,39.556,77.5,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",75
+"200",200,38917,2022-03-16,39.499,78.367,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",75
+"201",201,6008,2022-03-16,39.476,75.367,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",75
+"202",202,47457,2022-03-18,39.34,83.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"203",203,47617,2022-03-16,39.326,75.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"204",204,47487,2022-03-16,39.179,74.897,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"205",205,15591,2022-03-03,39.171,90.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"206",206,37403,2022-03-16,39.125,76.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"207",207,15591,2022-03-16,38.975,80.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"208",208,47459,2022-03-16,38.963,76.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"209",209,15587,2022-03-03,38.891,94.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"210",210,47505,2022-03-16,38.864,78.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"211",211,47581,2022-03-16,38.848,79.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"212",212,47469,2022-03-16,38.847,77.586,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"213",213,55111,2022-03-11,38.821,68.6,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",70
+"214",214,47495,2022-03-03,38.799,96.167,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"215",215,3050,2022-03-03,38.75,89.233,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",62
+"216",216,37403,2022-03-06,38.478,86.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"217",217,1326,2022-03-05,38.436,82.067,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",64
+"218",218,47495,2022-03-05,38.301,82.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"219",219,12835,2022-03-17,38.248,85.233,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",76
+"220",220,28147,2022-03-16,38.124,78.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"221",221,47621,2022-03-03,37.989,83.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"222",222,757,2022-03-16,37.821,78.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"223",223,31619,2022-03-16,37.753,76.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"224",224,5988,2022-03-16,37.734,87.667,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",75
+"225",225,11190,2022-03-05,37.708,73.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"226",226,47633,2022-03-05,37.663,73.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"227",227,11174,2022-03-03,37.577,92.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"228",228,47493,2022-03-05,37.474,77.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"229",229,6006,2022-03-11,37.295,71.333,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",70
+"230",230,20521,2022-03-16,37.292,68.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"231",231,757,2022-03-05,37.222,76.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"232",232,12697,2022-03-17,37.198,80.567,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",76
+"233",233,11180,2022-03-03,37.181,84.857,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"234",234,52885,2022-03-08,37.16,74.267,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",67
+"235",235,38917,2022-03-15,37.148,76.233,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",74
+"236",236,47621,2022-03-05,37.114,73.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"237",237,47477,2022-03-16,36.981,77.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"238",238,757,2022-03-01,36.978,77.733,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"239",239,1326,2022-03-11,36.976,75.433,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",70
+"240",240,47457,2022-03-15,36.938,78.103,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"241",241,11184,2022-03-03,36.872,93.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"242",242,6008,2022-03-11,36.81,74.533,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",70
+"243",243,5872,2022-03-06,36.741,87.1,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",65
+"244",244,47505,2022-03-03,36.713,89,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"245",245,6008,2022-03-15,36.684,81.067,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",74
+"246",246,6020,2022-03-05,36.679,80.733,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",64
+"247",247,1334,2022-03-06,36.592,75.5,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",65
+"248",248,47469,2022-03-03,36.469,86.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"249",249,47581,2022-03-06,36.368,92.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"250",250,28147,2022-03-03,36.218,90.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"251",251,47615,2022-03-03,36.213,85.767,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",62
+"252",252,38917,2022-03-05,36.192,76.933,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",64
+"253",253,47595,2022-03-14,36.155,67,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",73
+"254",254,12697,2022-03-15,36.154,75.767,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",74
+"255",255,47555,2022-03-05,35.95,74.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"256",256,757,2022-03-03,35.939,92,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"257",257,54095,2022-03-03,35.867,94.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"258",258,28147,2022-03-18,35.75,84.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"259",259,47493,2022-03-11,35.598,67.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"260",260,47477,2022-03-03,35.567,94.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"261",261,12703,2022-03-05,35.557,80.333,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"262",262,12689,2022-03-05,35.261,88.067,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",64
+"263",263,55773,2022-03-11,35.19,66.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"264",264,47487,2022-03-05,35.14,73.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"265",265,12823,2022-03-05,35.114,75.567,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",64
+"266",266,28147,2022-03-02,34.992,84.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"267",267,52885,2022-03-11,34.941,67.567,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",70
+"268",268,31619,2022-03-03,34.933,89.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"269",269,12807,2022-03-06,34.928,95.433,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",65
+"270",270,11190,2022-03-16,34.85,75.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"271",271,48459,2022-03-05,34.731,81.4,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",64
+"272",272,28145,2022-03-16,34.681,76.1,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"273",273,47481,2022-03-15,34.677,82.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"274",274,12747,2022-03-06,34.63,73.6,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",65
+"275",275,6112,2022-03-06,34.623,92.233,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",65
+"276",276,52885,2022-03-16,34.453,67.9,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",75
+"277",277,47477,2022-03-09,34.334,66.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"278",278,38917,2022-03-08,34.257,75.621,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",67
+"279",279,38873,2022-03-05,34.238,74.7,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",64
+"280",280,12697,2022-03-11,34.155,70,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",70
+"281",281,6006,2022-03-18,34.03,81.633,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",77
+"282",282,38917,2022-03-17,34,75.7,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",76
+"283",283,12747,2022-03-05,33.937,76.533,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",64
+"284",284,3050,2022-03-09,33.927,67.8,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",68
+"285",285,12286,2022-03-05,33.786,81.552,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",64
+"286",286,55773,2022-03-15,33.786,73.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"287",287,6004,2022-03-06,33.783,86.767,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",65
+"288",288,11644,2022-03-08,33.695,85,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"289",289,12867,2022-03-05,33.648,80.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",64
+"290",290,48745,2022-03-05,33.471,77.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"291",291,11644,2022-03-16,33.319,76.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",75
+"292",292,48459,2022-03-06,33.256,87.533,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",65
+"293",293,20809,2022-03-16,33.091,68.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"294",294,6006,2022-03-17,32.994,81.8,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",76
+"295",295,55111,2022-03-01,32.991,70.267,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",60
+"296",296,31619,2022-03-05,32.902,72.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"297",297,12823,2022-03-18,32.885,91.167,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",77
+"298",298,47481,2022-03-03,32.864,91.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"299",299,54093,2022-03-16,32.859,73.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"300",300,1334,2022-03-05,32.789,73.267,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",64
+"301",301,47465,2022-03-05,32.774,72.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"302",302,12697,2022-03-16,32.691,75.967,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",75
+"303",303,47617,2022-03-02,32.563,77.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"304",304,38873,2022-03-16,32.553,73.5,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",75
+"305",305,45621,2022-03-16,32.499,75.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"306",306,52885,2022-03-01,32.288,74.367,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",60
+"307",307,15587,2022-03-05,32.147,80.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"308",308,47457,2022-03-11,32.137,67.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"309",309,6112,2022-03-04,32.126,81.067,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",63
+"310",310,11190,2022-03-03,32.017,86.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"311",311,47617,2022-03-03,31.987,85.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"312",312,47457,2022-03-01,31.707,74.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"313",313,57681,2022-03-11,31.537,64.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"314",314,6020,2022-03-17,31.525,81.067,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",76
+"315",315,3050,2022-03-04,31.513,76.4,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",63
+"316",316,47581,2022-03-05,31.363,75.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"317",317,47633,2022-03-09,31.269,66.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"318",318,47617,2022-03-14,31.112,71.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"319",319,15591,2022-03-05,31.064,75,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"320",320,38871,2022-03-15,31.033,78.567,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",74
+"321",321,38871,2022-03-01,30.879,73.767,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",60
+"322",322,6020,2022-03-10,30.742,72.2,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",69
+"323",323,6020,2022-03-04,30.733,86.8,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",63
+"324",324,37403,2022-03-11,30.714,64.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"325",325,47499,2022-03-05,30.558,78.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"326",326,38873,2022-03-17,30.511,79.3,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",76
+"327",327,4329,2022-03-08,30.156,83.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"328",328,31261,2022-03-04,29.984,69.931,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",63
+"329",329,20521,2022-03-11,29.935,74.967,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"330",330,55773,2022-03-19,29.643,80.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"331",331,31619,2022-03-09,29.547,64.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"332",332,45621,2022-03-03,29.474,84.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"333",333,12689,2022-03-16,29.342,67.833,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",75
+"334",334,47481,2022-03-02,29.322,89.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"335",335,6020,2022-03-19,29.16,68.233,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",78
+"336",336,5988,2022-03-11,29.157,76.567,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",70
+"337",337,47495,2022-03-12,29.121,65.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"338",338,47633,2022-03-11,29.046,66.31,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"339",339,6112,2022-03-01,29.039,77.633,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",60
+"340",340,47493,2022-03-03,29.011,94.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"341",341,55111,2022-03-12,28.967,67.5,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",71
+"342",342,12286,2022-03-09,28.821,79.6,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",68
+"343",343,47477,2022-03-19,28.666,83.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"344",344,47595,2022-03-20,28.658,71.5,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",79
+"345",345,5988,2022-03-04,28.644,80.533,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",63
+"346",346,28145,2022-03-15,28.634,75.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"347",347,5872,2022-03-15,28.557,83.967,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",74
+"348",348,54093,2022-03-05,28.514,73.1,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"349",349,11184,2022-03-11,28.497,74.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"350",350,12823,2022-03-11,28.457,68.9,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",70
+"351",351,47483,2022-03-11,28.419,71.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"352",352,47483,2022-03-12,28.285,63.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"353",353,1326,2022-03-14,28.274,72.4,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",73
+"354",354,37403,2022-03-05,28.27,73.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"355",355,38871,2022-03-17,28.204,83.433,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",76
+"356",356,47457,2022-03-19,28.198,86.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"357",357,25561,2022-03-05,28.137,77.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"358",358,47617,2022-03-15,28.116,75.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"359",359,47493,2022-03-12,28.084,66.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"360",360,47469,2022-03-19,27.981,83.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"361",361,47581,2022-03-03,27.966,100.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"362",362,11184,2022-03-15,27.927,81.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"363",363,47459,2022-03-19,27.872,85.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"364",364,20809,2022-03-17,27.733,80.867,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"365",365,38875,2022-03-02,27.592,86.533,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",61
+"366",366,47493,2022-03-19,27.579,87.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"367",367,12807,2022-03-16,27.572,87.333,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",75
+"368",368,6008,2022-03-17,27.53,88.533,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",76
+"369",369,47457,2022-03-05,27.526,75,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"370",370,47633,2022-03-12,27.522,64.786,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"371",371,28145,2022-03-11,27.509,61,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"372",372,6004,2022-03-07,27.504,72.3,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",66
+"373",373,47617,2022-03-11,27.439,65.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"374",374,3050,2022-03-16,27.426,77.333,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",75
+"375",375,25561,2022-03-11,27.403,69.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"376",376,38917,2022-03-09,27.395,62.4,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",68
+"377",377,55111,2022-03-18,27.315,82,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",77
+"378",378,39969,2022-03-11,27.248,73.433,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",70
+"379",379,12703,2022-03-16,27.212,71.533,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"380",380,47457,2022-03-03,27.21,89.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"381",381,757,2022-03-15,27.203,80.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"382",382,38873,2022-03-15,27.168,75.067,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",74
+"383",383,53383,2022-03-03,27.109,66.967,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",62
+"384",384,47465,2022-03-11,27.031,63,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"385",385,47495,2022-03-11,26.997,78.1,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"386",386,7906,2022-03-16,26.981,78.567,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",75
+"387",387,3050,2022-03-02,26.839,81.467,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",61
+"388",388,55773,2022-03-12,26.812,61.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"389",389,12787,2022-03-03,26.781,99.5,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",62
+"390",390,38917,2022-03-11,26.781,69,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",70
+"391",391,47555,2022-03-12,26.767,65.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"392",392,12835,2022-03-11,26.748,74.433,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",70
+"393",393,12689,2022-03-17,26.737,86.6,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",76
+"394",394,38871,2022-03-05,26.704,78.7,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",64
+"395",395,12697,2022-03-01,26.693,70.967,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",60
+"396",396,2873,2022-03-05,26.658,78.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"397",397,47633,2022-03-03,26.65,86.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"398",398,47505,2022-03-11,26.619,71.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"399",399,47559,2022-03-06,26.574,91.6,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",65
+"400",400,47505,2022-03-19,26.545,86.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"401",401,15591,2022-03-02,26.541,83.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"402",402,47493,2022-03-15,26.541,84.586,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"403",403,47499,2022-03-02,26.44,85.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"404",404,57681,2022-03-19,26.34,82.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"405",405,1334,2022-03-18,26.287,66,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",77
+"406",406,12823,2022-03-10,26.255,58.867,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",69
+"407",407,6028,2022-03-11,26.245,71.267,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"408",408,6022,2022-03-11,26.237,73.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"409",409,12835,2022-03-01,26.069,77.7,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",60
+"410",410,54093,2022-03-11,26,61.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"411",411,31619,2022-03-02,25.986,80.966,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"412",412,57681,2022-03-15,25.981,74.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"413",413,28145,2022-03-05,25.979,74.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"414",414,11184,2022-03-12,25.957,65.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"415",415,55773,2022-03-13,25.949,53.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"416",416,47481,2022-03-12,25.856,63.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"417",417,12286,2022-03-02,25.855,80,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",61
+"418",418,1326,2022-03-04,25.846,78.133,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",63
+"419",419,55773,2022-03-09,25.815,62.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"420",420,47481,2022-03-19,25.749,81.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"421",421,47615,2022-03-06,25.64,85.885,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",65
+"422",422,38871,2022-03-16,25.609,66.933,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",75
+"423",423,5872,2022-03-03,25.605,85.933,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",62
+"424",424,47595,2022-03-19,25.53,79.5,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",78
+"425",425,12759,2022-03-15,25.475,86.167,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",74
+"426",426,11184,2022-03-19,25.448,90.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"427",427,47499,2022-03-11,25.432,71.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"428",428,12823,2022-03-16,25.402,87.333,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",75
+"429",429,1326,2022-03-07,25.394,77.433,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",66
+"430",430,31261,2022-03-07,25.378,68.767,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",66
+"431",431,47499,2022-03-18,25.3,88.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"432",432,12689,2022-03-12,25.285,61.067,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",71
+"433",433,47499,2022-03-09,25.278,72.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"434",434,15591,2022-03-19,25.26,83.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"435",435,15587,2022-03-11,25.232,76.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"436",436,47595,2022-03-13,25.23,54,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",72
+"437",437,47481,2022-03-09,25.103,65.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"438",438,31619,2022-03-15,25.082,77.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"439",439,12286,2022-03-11,25.081,62.733,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",70
+"440",440,20809,2022-03-07,25.069,86.033,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"441",441,47555,2022-03-09,25.046,66.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"442",442,3050,2022-03-05,25.023,79.967,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",64
+"443",443,12689,2022-03-14,25.021,81.967,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",73
+"444",444,52885,2022-03-15,24.994,77,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",74
+"445",445,47459,2022-03-11,24.958,68.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"446",446,45621,2022-03-05,24.936,74,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"447",447,47493,2022-03-01,24.914,80.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"448",448,5988,2022-03-06,24.882,95.6,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",65
+"449",449,5988,2022-03-15,24.872,88.733,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",74
+"450",450,38873,2022-03-18,24.862,78.433,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",77
+"451",451,12807,2022-03-18,24.86,98.267,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",77
+"452",452,15587,2022-03-09,24.85,69.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"453",453,6022,2022-03-17,24.849,88.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"454",454,47487,2022-03-12,24.841,62,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"455",455,6020,2022-03-13,24.711,61.4,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",72
+"456",456,28147,2022-03-19,24.693,84.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"457",457,47621,2022-03-12,24.671,62.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"458",458,12689,2022-03-01,24.604,84.167,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",60
+"459",459,6004,2022-03-05,24.577,84.433,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",64
+"460",460,20809,2022-03-11,24.562,69.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"461",461,54095,2022-03-12,24.541,64.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"462",462,38875,2022-03-08,24.519,80.967,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",67
+"463",463,47505,2022-03-12,24.511,64.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"464",464,12759,2022-03-06,24.489,88.833,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",65
+"465",465,4329,2022-03-12,24.459,67.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"466",466,25561,2022-03-01,24.437,74.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"467",467,28147,2022-03-12,24.357,63.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"468",468,57681,2022-03-12,24.336,64.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"469",469,47615,2022-03-05,24.285,77.733,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",64
+"470",470,47633,2022-03-19,24.272,82.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"471",471,38917,2022-03-12,24.264,60,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",71
+"472",472,47465,2022-03-12,24.254,62.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"473",473,1334,2022-03-14,24.251,65.4,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",73
+"474",474,15591,2022-03-11,24.242,68.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"475",475,47469,2022-03-15,24.194,75.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"476",476,28147,2022-03-15,24.149,78.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"477",477,6028,2022-03-17,24.105,86.4,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"478",478,47555,2022-03-19,24.097,83.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"479",479,48745,2022-03-15,24.079,76.233,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"480",480,11644,2022-03-03,24.076,90.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"481",481,47481,2022-03-18,24.047,89.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"482",482,11644,2022-03-14,24.021,73.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"483",483,7906,2022-03-12,24.02,72.933,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",71
+"484",484,25561,2022-03-15,24.011,76.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"485",485,57681,2022-03-18,24.008,81.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"486",486,47481,2022-03-01,23.998,80.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"487",487,47555,2022-03-11,23.944,67.862,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"488",488,1326,2022-03-08,23.94,74.1,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",67
+"489",489,37403,2022-03-12,23.934,64.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"490",490,15591,2022-03-09,23.919,69.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"491",491,47499,2022-03-12,23.863,71.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"492",492,12689,2022-03-07,23.842,80.233,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",66
+"493",493,47495,2022-03-15,23.836,80.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"494",494,54095,2022-03-11,23.794,70,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"495",495,1326,2022-03-15,23.779,71.167,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",74
+"496",496,20521,2022-03-17,23.74,84.667,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"497",497,31619,2022-03-18,23.699,82.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"498",498,38917,2022-03-10,23.69,54,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",69
+"499",499,47469,2022-03-12,23.683,64.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"500",500,11190,2022-03-11,23.597,65.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"501",501,47499,2022-03-03,23.593,92.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"502",502,47505,2022-03-15,23.59,75.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"503",503,47633,2022-03-18,23.537,81.966,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"504",504,12721,2022-03-02,23.504,86.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"505",505,15587,2022-03-19,23.504,88.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"506",506,6008,2022-03-07,23.476,85.033,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",66
+"507",507,12747,2022-03-07,23.46,69.6,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",66
+"508",508,47459,2022-03-15,23.414,80.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"509",509,47633,2022-03-15,23.414,75.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"510",510,1326,2022-03-18,23.414,72.267,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",77
+"511",511,37403,2022-03-15,23.39,79.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"512",512,6112,2022-03-08,23.388,89.233,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",67
+"513",513,47617,2022-03-19,23.388,81.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"514",514,12807,2022-03-02,23.384,101.4,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",61
+"515",515,6006,2022-03-08,23.373,77.967,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",67
+"516",516,12807,2022-03-11,23.358,76.133,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",70
+"517",517,47487,2022-03-15,23.327,75.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"518",518,12787,2022-03-10,23.298,65.367,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",69
+"519",519,11644,2022-03-19,23.282,84.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"520",520,47469,2022-03-11,23.273,64.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"521",521,31261,2022-03-03,23.156,70.233,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",62
+"522",522,39969,2022-03-03,23.144,84.967,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",62
+"523",523,37403,2022-03-19,23.106,83.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"524",524,38871,2022-03-11,23.103,70.033,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",70
+"525",525,4329,2022-03-02,23.085,82.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"526",526,25561,2022-03-12,23.076,64.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"527",527,28147,2022-03-11,23.037,68.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"528",528,1334,2022-03-07,23.022,70.233,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",66
+"529",529,47459,2022-03-12,23.022,65.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"530",530,47483,2022-03-15,22.964,82.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"531",531,47617,2022-03-12,22.95,62.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"532",532,47621,2022-03-01,22.938,68.767,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"533",533,28145,2022-03-12,22.933,60.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"534",534,6112,2022-03-12,22.93,73.833,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",71
+"535",535,48745,2022-03-12,22.93,68.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"536",536,4329,2022-03-15,22.919,77.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"537",537,15587,2022-03-18,22.911,84.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"538",538,31619,2022-03-12,22.89,63.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"539",539,15591,2022-03-15,22.879,80.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"540",540,52885,2022-03-12,22.832,62.267,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",71
+"541",541,11190,2022-03-19,22.773,82.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"542",542,15587,2022-03-15,22.711,78.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"543",543,47477,2022-03-12,22.685,64.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"544",544,2873,2022-03-11,22.656,70.4,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"545",545,6112,2022-03-11,22.644,79.133,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",70
+"546",546,55111,2022-03-10,22.638,59.133,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",69
+"547",547,47555,2022-03-15,22.633,77.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"548",548,25561,2022-03-03,22.616,91.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"549",549,37403,2022-03-03,22.562,90.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",62
+"550",550,57681,2022-03-17,22.527,72.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"551",551,12721,2022-03-01,22.499,77.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"552",552,11190,2022-03-15,22.475,76.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"553",553,55111,2022-03-13,22.424,54.9,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",72
+"554",554,12787,2022-03-06,22.404,94.467,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",65
+"555",555,12807,2022-03-05,22.397,90.067,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",64
+"556",556,38873,2022-03-11,22.394,66.5,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",70
+"557",557,5872,2022-03-16,22.358,86.133,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",75
+"558",558,12823,2022-03-06,22.351,94.4,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",65
+"559",559,47495,2022-03-01,22.268,82.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"560",560,54093,2022-03-12,22.255,60,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"561",561,47499,2022-03-15,22.206,82.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"562",562,5988,2022-03-09,22.148,66.967,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",68
+"563",563,11644,2022-03-09,22.086,69.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"564",564,47495,2022-03-18,22.073,85,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"565",565,47457,2022-03-12,22.043,65.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"566",566,54095,2022-03-19,22.03,88.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"567",567,48745,2022-03-18,21.979,84.1,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"568",568,7906,2022-03-06,21.976,89.033,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",65
+"569",569,47633,2022-03-02,21.96,78.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"570",570,38873,2022-03-07,21.906,80.367,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",66
+"571",571,47615,2022-03-19,21.858,83.875,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",78
+"572",572,757,2022-03-12,21.857,64.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"573",573,12867,2022-03-16,21.831,70.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",75
+"574",574,5988,2022-03-02,21.769,96.033,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",61
+"575",575,5988,2022-03-18,21.651,91.467,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",77
+"576",576,3050,2022-03-11,21.589,68.733,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",70
+"577",577,48745,2022-03-11,21.586,69.867,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"578",578,7906,2022-03-11,21.583,70.467,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",70
+"579",579,12807,2022-03-15,21.579,92.033,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",74
+"580",580,47499,2022-03-19,21.566,89.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"581",581,15587,2022-03-12,21.525,66.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"582",582,11644,2022-03-11,21.519,68.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"583",583,48459,2022-03-07,21.512,77.333,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",66
+"584",584,15591,2022-03-12,21.507,66.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"585",585,15591,2022-03-18,21.422,87.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"586",586,12787,2022-03-11,21.398,79.867,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",70
+"587",587,47621,2022-03-15,21.375,75.133,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"588",588,31619,2022-03-11,21.347,66,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"589",589,38873,2022-03-02,21.316,79.467,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",61
+"590",590,31619,2022-03-19,21.285,83.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"591",591,12835,2022-03-12,21.227,63.933,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",71
+"592",592,12867,2022-03-03,21.22,88.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"593",593,12867,2022-03-04,21.204,78,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"594",594,47465,2022-03-15,21.187,74.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"595",595,12835,2022-03-14,21.183,75.667,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",73
+"596",596,11180,2022-03-06,21.16,71,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"597",597,12759,2022-03-16,21.117,84.6,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",75
+"598",598,48459,2022-03-18,21.117,72.2,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",77
+"599",599,6008,2022-03-18,21.101,82.8,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",77
+"600",600,54093,2022-03-02,21.089,75.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"601",601,52885,2022-03-03,21.072,89.867,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",62
+"602",602,54095,2022-03-15,21.057,89.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"603",603,39969,2022-03-09,21.039,74.867,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",68
+"604",604,38917,2022-03-01,21.007,70,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",60
+"605",605,39969,2022-03-10,20.98,72.5,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",69
+"606",606,20809,2022-03-10,20.957,62.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"607",607,47621,2022-03-11,20.941,64.033,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"608",608,12823,2022-03-01,20.927,89.233,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",60
+"609",609,12689,2022-03-04,20.901,76.4,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",63
+"610",610,6020,2022-03-15,20.857,69.367,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",74
+"611",611,47477,2022-03-15,20.828,80.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"612",612,12689,2022-03-02,20.767,89.7,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",61
+"613",613,11190,2022-03-12,20.766,65.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"614",614,6008,2022-03-01,20.746,78.567,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",60
+"615",615,47487,2022-03-11,20.705,63.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"616",616,6006,2022-03-10,20.686,63.033,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",69
+"617",617,47495,2022-03-09,20.666,68.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"618",618,6022,2022-03-12,20.621,66.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"619",619,38873,2022-03-14,20.603,69.167,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",73
+"620",620,6006,2022-03-09,20.602,68.367,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",68
+"621",621,20809,2022-03-09,20.591,64.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"622",622,12747,2022-03-18,20.57,69.067,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",77
+"623",623,4329,2022-03-18,20.466,84.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"624",624,5988,2022-03-10,20.418,58.533,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",69
+"625",625,47555,2022-03-18,20.367,83.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"626",626,48745,2022-03-01,20.35,72.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"627",627,2873,2022-03-12,20.3,65.567,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"628",628,6006,2022-03-15,20.207,77.167,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",74
+"629",629,6028,2022-03-12,20.205,64.862,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"630",630,47621,2022-03-18,20.159,82.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"631",631,12807,2022-03-10,20.141,62.333,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",69
+"632",632,5872,2022-03-08,20.139,88,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",67
+"633",633,7906,2022-03-18,20.128,91.767,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",77
+"634",634,48745,2022-03-03,20.035,86.069,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"635",635,12697,2022-03-02,20.015,78.433,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",61
+"636",636,47617,2022-03-04,19.978,75.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"637",637,11174,2022-03-02,19.962,85,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"638",638,12867,2022-03-17,19.941,81.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"639",639,6006,2022-03-12,19.927,65,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",71
+"640",640,11184,2022-03-02,19.882,87.704,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"641",641,47465,2022-03-18,19.876,81.033,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"642",642,20521,2022-03-08,19.862,78.4,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"643",643,47495,2022-03-10,19.861,58.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"644",644,11644,2022-03-18,19.748,84.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"645",645,2873,2022-03-15,19.739,82.033,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"646",646,38875,2022-03-10,19.714,73.633,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",69
+"647",647,31261,2022-03-16,19.676,57.379,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",75
+"648",648,12697,2022-03-07,19.669,83.6,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",66
+"649",649,6006,2022-03-01,19.661,73.833,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",60
+"650",650,2873,2022-03-01,19.655,78.867,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"651",651,3050,2022-03-12,19.619,69.867,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",71
+"652",652,55111,2022-03-19,19.598,82,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",78
+"653",653,47483,2022-03-18,19.584,84.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"654",654,55111,2022-03-07,19.462,86.074,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",66
+"655",655,54093,2022-03-15,19.436,73,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"656",656,5988,2022-03-05,19.421,82.967,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",64
+"657",657,47477,2022-03-18,19.406,82.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"658",658,12807,2022-03-12,19.389,73,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",71
+"659",659,47483,2022-03-19,19.372,84.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"660",660,3050,2022-03-06,19.352,87.7,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",65
+"661",661,20521,2022-03-12,19.341,64.367,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"662",662,12823,2022-03-02,19.299,96.567,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",61
+"663",663,15587,2022-03-01,19.294,80.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"664",664,47487,2022-03-18,19.294,81.133,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"665",665,7906,2022-03-02,19.271,89.033,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",61
+"666",666,12703,2022-03-11,19.246,71.3,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"667",667,757,2022-03-18,19.173,84.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"668",668,47495,2022-03-02,19.171,89.133,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"669",669,47617,2022-03-01,19.146,70.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"670",670,47617,2022-03-18,19.145,82.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"671",671,47481,2022-03-10,19.101,57.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"672",672,47493,2022-03-18,19.048,87.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"673",673,5988,2022-03-01,19.043,88.633,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",60
+"674",674,6112,2022-03-10,19.007,70.533,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",69
+"675",675,12823,2022-03-19,18.994,87.8,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",78
+"676",676,39969,2022-03-01,18.968,72,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",60
+"677",677,38917,2022-03-18,18.955,83.033,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",77
+"678",678,55111,2022-03-08,18.949,81.321,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",67
+"679",679,12807,2022-03-19,18.911,86.733,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",78
+"680",680,55773,2022-03-18,18.898,80.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"681",681,38873,2022-03-03,18.855,85.3,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",62
+"682",682,757,2022-03-11,18.855,65.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"683",683,11184,2022-03-18,18.853,85.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"684",684,47499,2022-03-01,18.78,78.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"685",685,6022,2022-03-08,18.77,81.2,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"686",686,20809,2022-03-12,18.652,63.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"687",687,57965,2022-03-05,18.645,81.9,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",64
+"688",688,12759,2022-03-05,18.598,91.5,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",64
+"689",689,7906,2022-03-08,18.574,88.333,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",67
+"690",690,15591,2022-03-01,18.553,75,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"691",691,38875,2022-03-07,18.51,84.724,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",66
+"692",692,47487,2022-03-19,18.447,83.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"693",693,54095,2022-03-18,18.369,90.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"694",694,31619,2022-03-01,18.33,73.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"695",695,6112,2022-03-14,18.251,77.967,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",73
+"696",696,11644,2022-03-02,18.246,83,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"697",697,12697,2022-03-18,18.245,82.7,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",77
+"698",698,12835,2022-03-07,18.238,83.867,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",66
+"699",699,3050,2022-03-15,18.237,77.667,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",74
+"700",700,52885,2022-03-17,18.207,80.967,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",76
+"701",701,12867,2022-03-11,18.18,71.533,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",70
+"702",702,47621,2022-03-02,18.166,76.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"703",703,6112,2022-03-18,18.155,91.667,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",77
+"704",704,47477,2022-03-02,18.15,87.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"705",705,4329,2022-03-19,18.129,85.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"706",706,6008,2022-03-12,18.126,63.9,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",71
+"707",707,1326,2022-03-19,18.108,76.733,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",78
+"708",708,45621,2022-03-12,18.106,61.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"709",709,47499,2022-03-10,18.098,65,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"710",710,6022,2022-03-09,18.09,66.3,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"711",711,6028,2022-03-08,18.069,79.367,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"712",712,20521,2022-03-07,18.038,85.633,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"713",713,5872,2022-03-05,18.015,81.133,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",64
+"714",714,47457,2022-03-09,18.007,66.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"715",715,12697,2022-03-14,17.973,72,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",73
+"716",716,45621,2022-03-15,17.948,74.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"717",717,12697,2022-03-12,17.942,67,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",71
+"718",718,5988,2022-03-19,17.941,90.9,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",78
+"719",719,12835,2022-03-18,17.93,79.367,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",77
+"720",720,6022,2022-03-10,17.929,64.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"721",721,31619,2022-03-10,17.928,56.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"722",722,12703,2022-03-17,17.923,81.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",76
+"723",723,6022,2022-03-15,17.873,82.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"724",724,47615,2022-03-02,17.841,83,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",61
+"725",725,5872,2022-03-02,17.804,88.6,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",61
+"726",726,12787,2022-03-12,17.791,75.333,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",71
+"727",727,6022,2022-03-03,17.776,98.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"728",728,20809,2022-03-14,17.773,72.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"729",729,15587,2022-03-10,17.772,59,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"730",730,6112,2022-03-09,17.765,73.867,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",68
+"731",731,48459,2022-03-15,17.741,72.333,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",74
+"732",732,55111,2022-03-14,17.735,69.267,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",73
+"733",733,38871,2022-03-12,17.734,63.867,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",71
+"734",734,48745,2022-03-19,17.682,86.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"735",735,12867,2022-03-14,17.661,76.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"736",736,47465,2022-03-19,17.642,82.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"737",737,52885,2022-03-18,17.64,81.467,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",77
+"738",738,48745,2022-03-17,17.62,78.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"739",739,20809,2022-03-18,17.609,80.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"740",740,47493,2022-03-10,17.604,58.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"741",741,6022,2022-03-18,17.601,88.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"742",742,6004,2022-03-04,17.57,82.8,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",63
+"743",743,39969,2022-03-04,17.557,78.067,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",63
+"744",744,3050,2022-03-18,17.534,82.367,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",77
+"745",745,20809,2022-03-04,17.529,77.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"746",746,6028,2022-03-10,17.483,62,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"747",747,6006,2022-03-14,17.474,72.333,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",73
+"748",748,11184,2022-03-09,17.463,70,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"749",749,55773,2022-03-10,17.453,57.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"750",750,48745,2022-03-10,17.444,64.214,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"751",751,11190,2022-03-02,17.443,79.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"752",752,47459,2022-03-18,17.402,86,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"753",753,48459,2022-03-16,17.397,66.633,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",75
+"754",754,47633,2022-03-10,17.384,58.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"755",755,47621,2022-03-17,17.38,75.5,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"756",756,1326,2022-03-09,17.347,67.3,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",68
+"757",757,47615,2022-03-15,17.326,77.633,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",74
+"758",758,6028,2022-03-18,17.312,87.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"759",759,54093,2022-03-17,17.288,73.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"760",760,38875,2022-03-11,17.187,63.2,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",70
+"761",761,47487,2022-03-02,17.156,77.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"762",762,6028,2022-03-15,17.044,80.233,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"763",763,47493,2022-03-09,16.997,67,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"764",764,47495,2022-03-19,16.969,88.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"765",765,12703,2022-03-02,16.952,84.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"766",766,6022,2022-03-01,16.921,83.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"767",767,47495,2022-03-17,16.909,84.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"768",768,4329,2022-03-11,16.904,75.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"769",769,6028,2022-03-03,16.891,96.1,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"770",770,47487,2022-03-17,16.83,75.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"771",771,12807,2022-03-01,16.817,85.6,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",60
+"772",772,6004,2022-03-09,16.806,74.9,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",68
+"773",773,39969,2022-03-07,16.805,86.633,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",66
+"774",774,47555,2022-03-01,16.794,73.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"775",775,12759,2022-03-11,16.753,84.3,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",70
+"776",776,4329,2022-03-01,16.745,78,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"777",777,6020,2022-03-01,16.734,75.867,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",60
+"778",778,25561,2022-03-19,16.727,87.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"779",779,6008,2022-03-02,16.722,87.9,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",61
+"780",780,6020,2022-03-11,16.707,73.667,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",70
+"781",781,6006,2022-03-07,16.673,86.967,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",66
+"782",782,20521,2022-03-18,16.601,80.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"783",783,3050,2022-03-10,16.594,61.767,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",69
+"784",784,12703,2022-03-04,16.592,78.467,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"785",785,15591,2022-03-10,16.569,60.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"786",786,28145,2022-03-17,16.559,74.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"787",787,12823,2022-03-15,16.556,90.067,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",74
+"788",788,3050,2022-03-01,16.552,74.067,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",60
+"789",789,47459,2022-03-02,16.498,83.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"790",790,1334,2022-03-15,16.476,64.067,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",74
+"791",791,47505,2022-03-18,16.441,83.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"792",792,47477,2022-03-07,16.439,85.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"793",793,47465,2022-03-17,16.438,76.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"794",794,57681,2022-03-08,16.415,82,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"795",795,6028,2022-03-01,16.407,82.367,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"796",796,6006,2022-03-04,16.383,70.667,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",63
+"797",797,20521,2022-03-01,16.38,80.433,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"798",798,37403,2022-03-01,16.379,74.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"799",799,48745,2022-03-02,16.375,78.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"800",800,12286,2022-03-10,16.37,73.967,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",69
+"801",801,6112,2022-03-17,16.359,86,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",76
+"802",802,6028,2022-03-09,16.259,64,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"803",803,20521,2022-03-09,16.251,63.367,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"804",804,47469,2022-03-02,16.247,79.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"805",805,45621,2022-03-11,16.235,63.567,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"806",806,47483,2022-03-09,16.189,58,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"807",807,12785,2022-03-16,16.135,82.433,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",75
+"808",808,12721,2022-03-03,16.13,71.567,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"809",809,12823,2022-03-17,16.111,77.833,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",76
+"810",810,12787,2022-03-16,16.086,85.933,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",75
+"811",811,28145,2022-03-19,16.044,83.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"812",812,12286,2022-03-18,16.037,83.767,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",77
+"813",813,47469,2022-03-18,16.029,82.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"814",814,12835,2022-03-19,16.022,86.5,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",78
+"815",815,6008,2022-03-09,16.015,67.333,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",68
+"816",816,47621,2022-03-10,15.999,56.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"817",817,20521,2022-03-10,15.977,61.4,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"818",818,11644,2022-03-15,15.966,78.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"819",819,20521,2022-03-04,15.932,79.1,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"820",820,57681,2022-03-09,15.908,65.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"821",821,6112,2022-03-13,15.875,63.767,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",72
+"822",822,757,2022-03-10,15.842,60.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"823",823,47483,2022-03-10,15.839,57.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"824",824,31261,2022-03-18,15.833,64.567,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",77
+"825",825,47581,2022-03-12,15.831,68.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"826",826,47505,2022-03-02,15.819,81.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"827",827,12835,2022-03-02,15.814,85.767,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",61
+"828",828,28147,2022-03-17,15.793,77.034,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"829",829,6020,2022-03-02,15.787,81.6,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",61
+"830",830,38871,2022-03-07,15.769,83.667,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",66
+"831",831,757,2022-03-19,15.753,84.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"832",832,54095,2022-03-10,15.746,58.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"833",833,5988,2022-03-17,15.721,79.967,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",76
+"834",834,5988,2022-03-12,15.706,70.233,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",71
+"835",835,11190,2022-03-09,15.645,67,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"836",836,12835,2022-03-08,15.633,73.167,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",67
+"837",837,28147,2022-03-01,15.583,77.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"838",838,11190,2022-03-18,15.577,82,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"839",839,757,2022-03-02,15.575,86.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"840",840,47505,2022-03-01,15.53,74.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"841",841,25561,2022-03-18,15.522,81.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"842",842,6004,2022-03-18,15.518,71.233,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",77
+"843",843,38873,2022-03-01,15.517,67.467,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",60
+"844",844,47487,2022-03-10,15.503,57,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"845",845,47493,2022-03-17,15.424,76.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"846",846,20521,2022-03-14,15.397,82,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"847",847,55773,2022-03-01,15.396,71.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"848",848,3050,2022-03-08,15.372,82.3,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",67
+"849",849,11644,2022-03-12,15.344,68.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",71
+"850",850,47621,2022-03-19,15.34,83.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"851",851,6022,2022-03-02,15.335,92.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"852",852,47465,2022-03-02,15.282,78.067,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"853",853,47495,2022-03-04,15.248,79.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"854",854,54095,2022-03-09,15.217,65.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"855",855,47499,2022-03-14,15.202,78.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"856",856,28147,2022-03-04,15.181,73.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"857",857,6006,2022-03-02,15.16,82.367,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",61
+"858",858,4329,2022-03-10,15.151,61.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"859",859,20521,2022-03-15,15.148,75.833,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"860",860,47487,2022-03-01,15.096,69.867,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"861",861,47581,2022-03-15,15.06,92.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",74
+"862",862,52885,2022-03-07,15.04,81.5,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",66
+"863",863,54093,2022-03-01,15.035,67.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"864",864,6006,2022-03-03,15.004,88.8,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",62
+"865",865,12807,2022-03-08,15.004,88.138,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",67
+"866",866,47633,2022-03-01,15,70.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"867",867,47555,2022-03-10,14.995,60.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"868",868,28145,2022-03-18,14.988,81.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"869",869,45621,2022-03-19,14.937,83.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"870",870,57965,2022-03-06,14.914,91.033,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",65
+"871",871,1326,2022-03-12,14.908,68.933,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",71
+"872",872,4329,2022-03-14,14.843,78.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"873",873,47493,2022-03-02,14.841,88.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"874",874,28147,2022-03-09,14.836,64.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"875",875,6028,2022-03-02,14.829,90.833,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"876",876,37403,2022-03-17,14.814,74.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"877",877,47617,2022-03-10,14.806,56.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"878",878,12286,2022-03-12,14.79,76.333,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",71
+"879",879,31619,2022-03-14,14.785,72.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"880",880,47617,2022-03-17,14.776,73.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"881",881,1326,2022-03-02,14.774,77.9,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",61
+"882",882,47469,2022-03-01,14.749,70.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"883",883,11190,2022-03-10,14.72,61,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"884",884,12787,2022-03-02,14.719,93.6,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",61
+"885",885,38875,2022-03-06,14.705,85.067,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",65
+"886",886,38917,2022-03-02,14.68,78.767,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",61
+"887",887,47487,2022-03-07,14.672,84.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"888",888,47633,2022-03-04,14.671,74.448,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"889",889,12787,2022-03-19,14.666,94.633,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",78
+"890",890,6006,2022-03-19,14.652,84.5,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",78
+"891",891,2873,2022-03-02,14.646,88.4,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"892",892,47499,2022-03-17,14.632,81,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"893",893,47469,2022-03-10,14.622,58.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"894",894,12747,2022-03-15,14.617,64.875,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",74
+"895",895,11184,2022-03-17,14.606,85.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"896",896,47459,2022-03-17,14.595,77.724,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"897",897,47465,2022-03-01,14.58,69.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"898",898,31619,2022-03-17,14.578,74.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"899",899,7906,2022-03-04,14.576,79.733,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",63
+"900",900,757,2022-03-17,14.576,78.733,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"901",901,11644,2022-03-04,14.566,82.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"902",902,38875,2022-03-12,14.527,72.667,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",71
+"903",903,6022,2022-03-14,14.482,81.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"904",904,37403,2022-03-02,14.48,83.393,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"905",905,6028,2022-03-14,14.476,80.433,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"906",906,12703,2022-03-01,14.465,75.033,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"907",907,47483,2022-03-17,14.455,79.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"908",908,47555,2022-03-17,14.444,78.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"909",909,20809,2022-03-08,14.44,79.6,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"910",910,39969,2022-03-08,14.423,83.967,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",67
+"911",911,1334,2022-03-04,14.422,72.167,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",63
+"912",912,38873,2022-03-12,14.415,62.067,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",71
+"913",913,47481,2022-03-17,14.381,75.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"914",914,12689,2022-03-18,14.378,76.533,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",77
+"915",915,15587,2022-03-17,14.323,83.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"916",916,47495,2022-03-07,14.316,85.3,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"917",917,6004,2022-03-13,14.316,67.7,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",72
+"918",918,3050,2022-03-19,14.301,82.933,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",78
+"919",919,52885,2022-03-09,14.298,61.933,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",68
+"920",920,47505,2022-03-10,14.286,58.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"921",921,7906,2022-03-19,14.272,89.433,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",78
+"922",922,11184,2022-03-10,14.266,60.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"923",923,47555,2022-03-07,14.251,85.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"924",924,20521,2022-03-19,14.21,88.033,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"925",925,2873,2022-03-17,14.209,77.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"926",926,25561,2022-03-09,14.191,67.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"927",927,45621,2022-03-18,14.19,80.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"928",928,12703,2022-03-10,14.189,64.633,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"929",929,47469,2022-03-17,14.189,75.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"930",930,12286,2022-03-06,14.18,85.862,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",65
+"931",931,47459,2022-03-10,14.165,60,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"932",932,47617,2022-03-07,14.148,84.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"933",933,12703,2022-03-18,14.146,80.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"934",934,12286,2022-03-19,14.129,83.533,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",78
+"935",935,12835,2022-03-03,14.116,90.867,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",62
+"936",936,28147,2022-03-07,14.11,86.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"937",937,47481,2022-03-07,14.094,86.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"938",938,38917,2022-03-20,14.076,75.633,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",79
+"939",939,38871,2022-03-09,14.069,68.2,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",68
+"940",940,54095,2022-03-14,14.066,86.966,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"941",941,12823,2022-03-12,14.061,67.367,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",71
+"942",942,52885,2022-03-19,14.037,82.633,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",78
+"943",943,55111,2022-03-17,14.033,76.1,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",76
+"944",944,7906,2022-03-10,14.013,68.033,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",69
+"945",945,47595,2022-03-16,13.99,74.433,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",75
+"946",946,12703,2022-03-14,13.953,72.867,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",73
+"947",947,47505,2022-03-17,13.942,80.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"948",948,7906,2022-03-01,13.905,76.933,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",60
+"949",949,12835,2022-03-09,13.902,67.2,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",68
+"950",950,38871,2022-03-02,13.894,85.333,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",61
+"951",951,47477,2022-03-14,13.879,84.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"952",952,47459,2022-03-01,13.86,75.929,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"953",953,57681,2022-03-14,13.855,70.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"954",954,6022,2022-03-19,13.777,89.1,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"955",955,47457,2022-03-14,13.74,76.429,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"956",956,12787,2022-03-09,13.739,69.593,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",68
+"957",957,54095,2022-03-17,13.734,80.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"958",958,25561,2022-03-17,13.702,80.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"959",959,47617,2022-03-09,13.681,64.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"960",960,6006,2022-03-20,13.679,74.067,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",79
+"961",961,11174,2022-03-07,13.661,85.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"962",962,20521,2022-03-02,13.654,87.7,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"963",963,54095,2022-03-01,13.601,80.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"964",964,12703,2022-03-07,13.596,84.533,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"965",965,47633,2022-03-17,13.558,75.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"966",966,12703,2022-03-13,13.553,59.067,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"967",967,47459,2022-03-07,13.548,87.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"968",968,55773,2022-03-07,13.534,83.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"969",969,11180,2022-03-05,13.505,71,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",64
+"970",970,11184,2022-03-07,13.494,87.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"971",971,6028,2022-03-19,13.48,87.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"972",972,12747,2022-03-03,13.448,87.567,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",62
+"973",973,57681,2022-03-10,13.436,57,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"974",974,38917,2022-03-19,13.407,84.133,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",78
+"975",975,6022,2022-03-07,13.394,91,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"976",976,12286,2022-03-08,13.37,77.867,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",67
+"977",977,6028,2022-03-07,13.339,89.533,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"978",978,12747,2022-03-04,13.334,77.067,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",63
+"979",979,6112,2022-03-19,13.327,90.867,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",78
+"980",980,37403,2022-03-18,13.319,83.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"981",981,47499,2022-03-07,13.313,91.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"982",982,54093,2022-03-10,13.312,54.4,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"983",983,12867,2022-03-18,13.301,80.967,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",77
+"984",984,6004,2022-03-03,13.298,91.2,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",62
+"985",985,57681,2022-03-07,13.292,85,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"986",986,47459,2022-03-09,13.287,68.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"987",987,47457,2022-03-04,13.282,77.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"988",988,12703,2022-03-03,13.277,90.567,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"989",989,12697,2022-03-03,13.258,84.033,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",62
+"990",990,55773,2022-03-14,13.235,71.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"991",991,37403,2022-03-09,13.217,65.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"992",992,12807,2022-03-17,13.215,80.2,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",76
+"993",993,7906,2022-03-15,13.209,84.333,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",74
+"994",994,1326,2022-03-01,13.206,75.7,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",60
+"995",995,47559,2022-03-05,13.2,81.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",64
+"996",996,45621,2022-03-10,13.17,56.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"997",997,38873,2022-03-09,13.158,62,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",68
+"998",998,47633,2022-03-07,13.137,85.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"999",999,12703,2022-03-15,13.132,76.2,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"1000",1000,47481,2022-03-14,13.107,81.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1001",1001,12703,2022-03-09,13.078,66.933,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"1002",1002,25561,2022-03-04,13.068,80.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1003",1003,2873,2022-03-18,13.061,85.897,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"1004",1004,45621,2022-03-17,13.059,75.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"1005",1005,11190,2022-03-17,13.048,76.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1006",1006,11174,2022-03-01,13.018,76.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1007",1007,38873,2022-03-04,12.973,71.8,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",63
+"1008",1008,47581,2022-03-19,12.966,85.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",78
+"1009",1009,2873,2022-03-04,12.961,80.69,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1010",1010,12703,2022-03-12,12.959,65,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"1011",1011,31261,2022-03-20,12.941,56.167,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",79
+"1012",1012,6020,2022-03-20,12.925,71.8,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",79
+"1013",1013,4329,2022-03-07,12.913,86.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1014",1014,47477,2022-03-10,12.9,59.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1015",1015,54093,2022-03-18,12.871,78,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"1016",1016,15591,2022-03-07,12.866,86.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1017",1017,11184,2022-03-01,12.85,82.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1018",1018,36451,2022-03-15,12.847,71.567,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",74
+"1019",1019,31261,2022-03-19,12.841,71.033,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",78
+"1020",1020,54095,2022-03-07,12.771,87.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1021",1021,47459,2022-03-04,12.739,79.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1022",1022,47457,2022-03-17,12.703,75.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1023",1023,47469,2022-03-04,12.701,76.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1024",1024,36451,2022-03-14,12.698,74.5,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",73
+"1025",1025,47581,2022-03-09,12.673,66.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"1026",1026,12703,2022-03-08,12.631,79.833,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"1027",1027,15591,2022-03-17,12.631,77.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1028",1028,12787,2022-03-01,12.627,86,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",60
+"1029",1029,4329,2022-03-04,12.623,80.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1030",1030,11190,2022-03-04,12.619,79.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1031",1031,47469,2022-03-07,12.616,86.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1032",1032,28147,2022-03-10,12.601,58.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1033",1033,12787,2022-03-15,12.595,84.533,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",74
+"1034",1034,47465,2022-03-10,12.585,56.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"1035",1035,2873,2022-03-10,12.574,59,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"1036",1036,47615,2022-03-04,12.567,84.167,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",63
+"1037",1037,48745,2022-03-04,12.516,81.607,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1038",1038,36451,2022-03-08,12.497,72.655,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",67
+"1039",1039,47505,2022-03-07,12.486,86.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1040",1040,11190,2022-03-01,12.477,71.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1041",1041,12823,2022-03-09,12.435,60.567,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",68
+"1042",1042,25561,2022-03-02,12.424,83.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"1043",1043,12867,2022-03-10,12.411,65.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",69
+"1044",1044,5872,2022-03-07,12.404,89,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",66
+"1045",1045,28147,2022-03-14,12.389,77.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1046",1046,47495,2022-03-14,12.363,85.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1047",1047,15587,2022-03-14,12.361,82.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1048",1048,47615,2022-03-01,12.345,75.967,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",60
+"1049",1049,47581,2022-03-11,12.34,70.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",70
+"1050",1050,47483,2022-03-14,12.297,81.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1051",1051,11184,2022-03-14,12.295,82.16,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1052",1052,15587,2022-03-04,12.271,81.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1053",1053,47505,2022-03-09,12.264,66.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"1054",1054,47457,2022-03-10,12.258,59,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1055",1055,12867,2022-03-07,12.235,85.967,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",66
+"1056",1056,47477,2022-03-01,12.234,82.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1057",1057,15587,2022-03-07,12.233,86.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1058",1058,36451,2022-03-12,12.203,69.4,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",71
+"1059",1059,15591,2022-03-14,12.19,75.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1060",1060,11644,2022-03-07,12.184,89.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1061",1061,47505,2022-03-04,12.183,77.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1062",1062,15591,2022-03-04,12.142,81.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1063",1063,1334,2022-03-16,12.13,62.167,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",75
+"1064",1064,31619,2022-03-07,12.125,86.4,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1065",1065,47559,2022-03-16,12.105,78.033,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",75
+"1066",1066,47493,2022-03-04,12.071,79.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1067",1067,1326,2022-03-03,11.953,83.967,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",62
+"1068",1068,38871,2022-03-03,11.94,91.2,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",62
+"1069",1069,12759,2022-03-01,11.927,85.7,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",60
+"1070",1070,54095,2022-03-04,11.914,76.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1071",1071,54093,2022-03-04,11.898,74.733,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1072",1072,11184,2022-03-04,11.892,83.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1073",1073,12697,2022-03-19,11.878,83.9,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",78
+"1074",1074,47555,2022-03-04,11.861,79.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1075",1075,47621,2022-03-04,11.857,77.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1076",1076,47457,2022-03-07,11.856,86.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1077",1077,48745,2022-03-07,11.848,87.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1078",1078,38871,2022-03-14,11.806,73.033,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",73
+"1079",1079,47493,2022-03-07,11.8,88.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1080",1080,47621,2022-03-14,11.779,69.767,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1081",1081,11174,2022-03-04,11.778,80.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1082",1082,12867,2022-03-20,11.777,76.9,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1083",1083,11190,2022-03-07,11.769,85.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1084",1084,1326,2022-03-16,11.731,66.621,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",75
+"1085",1085,47621,2022-03-09,11.712,65.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1086",1086,6008,2022-03-14,11.689,77.167,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",73
+"1087",1087,47621,2022-03-07,11.685,84.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1088",1088,12867,2022-03-02,11.657,82.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"1089",1089,52885,2022-03-14,11.648,74.5,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",73
+"1090",1090,45621,2022-03-01,11.632,69.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"1091",1091,25561,2022-03-10,11.576,57.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1092",1092,3050,2022-03-07,11.534,87.667,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",66
+"1093",1093,1326,2022-03-17,11.481,82.467,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",76
+"1094",1094,54093,2022-03-09,11.467,60.5,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1095",1095,28145,2022-03-02,11.451,79.3,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"1096",1096,6008,2022-03-19,11.444,90.033,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",78
+"1097",1097,12286,2022-03-20,11.44,78.167,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",79
+"1098",1098,37403,2022-03-10,11.387,56.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1099",1099,39969,2022-03-02,11.376,79.967,"Union",37179,"Urban center","Higher income","Lower unemployment","Southwest",61
+"1100",1100,47581,2022-03-02,11.363,99.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"1101",1101,12759,2022-03-07,11.34,86.933,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",66
+"1102",1102,20809,2022-03-15,11.296,74.2,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"1103",1103,55773,2022-03-04,11.267,77.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1104",1104,2873,2022-03-09,11.256,68.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1105",1105,20809,2022-03-02,11.254,82,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",61
+"1106",1106,6022,2022-03-04,11.25,81.1,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"1107",1107,38871,2022-03-18,11.244,83.967,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",77
+"1108",1108,6112,2022-03-07,11.227,94.3,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",66
+"1109",1109,45621,2022-03-02,11.213,77.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"1110",1110,20521,2022-03-03,11.207,93.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",62
+"1111",1111,47487,2022-03-09,11.18,65.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1112",1112,38871,2022-03-19,11.163,83.233,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",78
+"1113",1113,47469,2022-03-09,11.158,66.367,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"1114",1114,57965,2022-03-07,11.139,77.867,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",66
+"1115",1115,25561,2022-03-07,11.134,85.033,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1116",1116,52885,2022-03-10,11.113,58.167,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",69
+"1117",1117,47481,2022-03-04,11.112,79.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1118",1118,3050,2022-03-20,11.102,78.667,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",79
+"1119",1119,37403,2022-03-04,11.09,78.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1120",1120,47499,2022-03-04,11.067,83.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1121",1121,11180,2022-03-02,11.063,74.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",61
+"1122",1122,47581,2022-03-18,11.052,97.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",77
+"1123",1123,47633,2022-03-14,11.047,71.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1124",1124,6004,2022-03-16,11.02,63.067,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",75
+"1125",1125,37403,2022-03-07,11,85.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1126",1126,47555,2022-03-14,10.997,73.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1127",1127,28145,2022-03-01,10.994,71,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"1128",1128,55773,2022-03-17,10.994,74.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1129",1129,7906,2022-03-17,10.988,85.467,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",76
+"1130",1130,1334,2022-03-03,10.985,76.138,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",62
+"1131",1131,2873,2022-03-07,10.983,87.143,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1132",1132,54093,2022-03-20,10.963,75.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1133",1133,47465,2022-03-04,10.942,78.4,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1134",1134,57965,2022-03-18,10.878,67.133,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",77
+"1135",1135,12697,2022-03-09,10.803,66.933,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",68
+"1136",1136,47487,2022-03-04,10.799,76.967,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1137",1137,12867,2022-03-08,10.799,81.5,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",67
+"1138",1138,6028,2022-03-04,10.793,78.633,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",63
+"1139",1139,12787,2022-03-04,10.774,76.133,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",63
+"1140",1140,47495,2022-03-20,10.753,80.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1141",1141,12759,2022-03-12,10.749,67.3,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",71
+"1142",1142,3050,2022-03-14,10.724,73.133,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",73
+"1143",1143,47465,2022-03-07,10.71,83.9,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1144",1144,12689,2022-03-11,10.698,77.267,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",70
+"1145",1145,47493,2022-03-14,10.678,80.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1146",1146,12835,2022-03-04,10.674,77.767,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",63
+"1147",1147,47481,2022-03-08,10.67,81.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1148",1148,12286,2022-03-17,10.627,77.7,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",76
+"1149",1149,6004,2022-03-17,10.615,83.233,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",76
+"1150",1150,12867,2022-03-19,10.589,86.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"1151",1151,54093,2022-03-03,10.587,83,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"1152",1152,6008,2022-03-03,10.53,94.033,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",62
+"1153",1153,47459,2022-03-14,10.506,76.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1154",1154,31261,2022-03-02,10.452,65.567,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",61
+"1155",1155,54093,2022-03-07,10.377,82.933,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1156",1156,5872,2022-03-14,10.351,84,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",73
+"1157",1157,12703,2022-03-19,10.334,83.2,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"1158",1158,47483,2022-03-20,10.309,75.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1159",1159,7906,2022-03-20,10.282,90.967,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",79
+"1160",1160,48745,2022-03-08,10.256,85.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1161",1161,47465,2022-03-09,10.251,66.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1162",1162,6004,2022-03-15,10.222,75.533,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",74
+"1163",1163,47477,2022-03-04,10.216,81.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1164",1164,12867,2022-03-12,10.189,65.733,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",71
+"1165",1165,57681,2022-03-13,10.143,55.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1166",1166,12867,2022-03-09,10.134,67.467,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",68
+"1167",1167,48745,2022-03-20,10.108,81.8,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1168",1168,11184,2022-03-20,10.107,81.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1169",1169,12807,2022-03-20,10.105,90.667,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",79
+"1170",1170,28145,2022-03-04,10.104,74.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1171",1171,11190,2022-03-14,10.091,72.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1172",1172,47487,2022-03-20,10.077,76.5,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1173",1173,5988,2022-03-20,10.048,82.133,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",79
+"1174",1174,47505,2022-03-14,10.016,76.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1175",1175,47469,2022-03-14,10.008,71.233,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1176",1176,47559,2022-03-15,9.979,85.233,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",74
+"1177",1177,36451,2022-03-03,9.971,86,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",62
+"1178",1178,31619,2022-03-04,9.94,77.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1179",1179,47487,2022-03-14,9.902,70,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1180",1180,757,2022-03-04,9.9,80.3,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1181",1181,47633,2022-03-13,9.886,56.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1182",1182,12807,2022-03-07,9.877,95.9,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",66
+"1183",1183,12697,2022-03-20,9.856,74.733,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",79
+"1184",1184,12835,2022-03-20,9.855,78.833,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",79
+"1185",1185,28147,2022-03-20,9.844,76.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1186",1186,47469,2022-03-20,9.84,76.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1187",1187,31619,2022-03-08,9.832,80,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1188",1188,757,2022-03-07,9.823,85.65,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1189",1189,757,2022-03-09,9.811,69.267,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1190",1190,55111,2022-03-20,9.765,76.867,"Hoke",37093,"Urban center","Middle income","Moderate unemployment","Sandhills",79
+"1191",1191,38875,2022-03-15,9.739,84.767,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",74
+"1192",1192,2873,2022-03-20,9.675,80.767,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1193",1193,47615,2022-03-11,9.668,72.4,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",70
+"1194",1194,47493,2022-03-20,9.65,79.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1195",1195,38873,2022-03-19,9.632,82.133,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",78
+"1196",1196,12747,2022-03-12,9.619,60.08,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",71
+"1197",1197,12759,2022-03-17,9.569,87.2,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",76
+"1198",1198,47581,2022-03-10,9.544,60.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1199",1199,47499,2022-03-20,9.528,83.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1200",1200,48459,2022-03-17,9.52,76.967,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",76
+"1201",1201,28147,2022-03-13,9.518,60.1,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1202",1202,52885,2022-03-13,9.517,56.567,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",72
+"1203",1203,5988,2022-03-14,9.516,86.467,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",73
+"1204",1204,12697,2022-03-10,9.472,61.067,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",69
+"1205",1205,47499,2022-03-08,9.459,87.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1206",1206,57681,2022-03-20,9.431,78,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1207",1207,48459,2022-03-11,9.423,74.033,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",70
+"1208",1208,28145,2022-03-10,9.4,53.567,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"1209",1209,12823,2022-03-04,9.395,84.033,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",63
+"1210",1210,12697,2022-03-08,9.383,72,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",67
+"1211",1211,6008,2022-03-10,9.376,58.367,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",69
+"1212",1212,12787,2022-03-17,9.37,85.833,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",76
+"1213",1213,36451,2022-03-16,9.327,77.8,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",75
+"1214",1214,45621,2022-03-07,9.318,84.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1215",1215,37403,2022-03-20,9.315,78.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1216",1216,28145,2022-03-03,9.314,85.867,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"1217",1217,2873,2022-03-14,9.308,79.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1218",1218,57965,2022-03-03,9.307,92.233,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",62
+"1219",1219,47581,2022-03-14,9.294,87.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1220",1220,47617,2022-03-20,9.26,75.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1221",1221,47621,2022-03-20,9.258,75.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1222",1222,47559,2022-03-11,9.249,68.5,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",70
+"1223",1223,55773,2022-03-20,9.225,74.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1224",1224,47465,2022-03-20,9.188,76.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1225",1225,38875,2022-03-14,9.181,80.633,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",73
+"1226",1226,47615,2022-03-10,9.139,71,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",69
+"1227",1227,25561,2022-03-20,9.137,79.633,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1228",1228,47615,2022-03-14,9.088,68,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",73
+"1229",1229,47457,2022-03-20,9.062,78.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1230",1230,47505,2022-03-20,9.059,76.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1231",1231,47633,2022-03-20,9.059,76.759,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1232",1232,6020,2022-03-14,9.051,73.267,"Cherokee",37039,"Not urban","Middle income","Moderate unemployment","Western",73
+"1233",1233,38875,2022-03-01,9.045,79.067,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",60
+"1234",1234,12747,2022-03-16,9.039,62.6,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",75
+"1235",1235,47581,2022-03-01,9.028,89.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1236",1236,37403,2022-03-14,9.016,74.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1237",1237,47459,2022-03-20,9.01,78.69,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1238",1238,28145,2022-03-07,9.003,83.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1239",1239,47555,2022-03-20,8.993,77.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1240",1240,47581,2022-03-04,8.988,80.167,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1241",1241,38917,2022-03-03,8.98,86.1,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",62
+"1242",1242,12286,2022-03-15,8.976,80,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",74
+"1243",1243,12823,2022-03-20,8.97,78.8,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",79
+"1244",1244,7906,2022-03-14,8.938,74.133,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",73
+"1245",1245,54095,2022-03-20,8.934,88,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1246",1246,28145,2022-03-20,8.926,75.192,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1247",1247,5872,2022-03-19,8.896,90.69,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",78
+"1248",1248,48459,2022-03-13,8.864,60.067,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",72
+"1249",1249,12787,2022-03-20,8.852,85.379,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",79
+"1250",1250,28145,2022-03-09,8.845,59.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1251",1251,6004,2022-03-01,8.842,81.767,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",60
+"1252",1252,45621,2022-03-13,8.83,56,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1253",1253,47481,2022-03-20,8.82,77.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1254",1254,45621,2022-03-04,8.792,76.5,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1255",1255,47615,2022-03-07,8.771,85,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",66
+"1256",1256,12823,2022-03-14,8.752,86.833,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",73
+"1257",1257,38917,2022-03-07,8.747,83.867,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",66
+"1258",1258,757,2022-03-20,8.634,79.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1259",1259,12747,2022-03-11,8.6,71.1,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",70
+"1260",1260,47559,2022-03-03,8.582,99.077,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",62
+"1261",1261,2873,2022-03-08,8.577,84.034,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1262",1262,15591,2022-03-20,8.56,79,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1263",1263,15591,2022-03-08,8.539,83,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1264",1264,38871,2022-03-08,8.525,69.967,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",67
+"1265",1265,57965,2022-03-12,8.523,63.167,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",71
+"1266",1266,36451,2022-03-19,8.497,75.467,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",78
+"1267",1267,1326,2022-03-10,8.465,65.379,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",69
+"1268",1268,47615,2022-03-12,8.459,72.2,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",71
+"1269",1269,55773,2022-03-08,8.454,78.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1270",1270,11180,2022-03-09,8.45,57,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",68
+"1271",1271,38871,2022-03-04,8.444,73.967,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",63
+"1272",1272,20809,2022-03-19,8.383,85.233,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",78
+"1273",1273,6004,2022-03-14,8.362,78.667,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",73
+"1274",1274,36451,2022-03-17,8.347,83.867,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",76
+"1275",1275,12286,2022-03-07,8.328,83.233,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",66
+"1276",1276,11190,2022-03-20,8.31,77.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1277",1277,12867,2022-03-15,8.301,75.667,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",74
+"1278",1278,31619,2022-03-20,8.298,75.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1279",1279,5988,2022-03-07,8.287,93,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",66
+"1280",1280,7906,2022-03-07,8.146,88.933,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",66
+"1281",1281,15587,2022-03-20,8.144,80.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1282",1282,757,2022-03-14,8.132,77.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1283",1283,48459,2022-03-12,8.096,69.733,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",71
+"1284",1284,12867,2022-03-01,8.071,74.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",60
+"1285",1285,5872,2022-03-20,8.042,86,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",79
+"1286",1286,12807,2022-03-14,8.014,89,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",73
+"1287",1287,6004,2022-03-11,8.01,81.6,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",70
+"1288",1288,1334,2022-03-11,7.957,68.6,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",70
+"1289",1289,47559,2022-03-12,7.948,62.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",71
+"1290",1290,12823,2022-03-07,7.912,89.3,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",66
+"1291",1291,36451,2022-03-09,7.865,67.444,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",68
+"1292",1292,12689,2022-03-09,7.842,71.481,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",68
+"1293",1293,15587,2022-03-08,7.838,83.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1294",1294,47493,2022-03-08,7.787,83.862,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1295",1295,45621,2022-03-09,7.771,65.333,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1296",1296,45621,2022-03-20,7.733,77.167,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1297",1297,6112,2022-03-20,7.692,83.552,"Stanly",37167,"Urban center","Middle income","Lower unemployment","Southwest",79
+"1298",1298,47633,2022-03-08,7.686,81.333,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1299",1299,12759,2022-03-18,7.677,88.467,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",77
+"1300",1300,48745,2022-03-14,7.645,72,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1301",1301,38873,2022-03-10,7.609,54.533,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",69
+"1302",1302,25561,2022-03-14,7.586,77.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",73
+"1303",1303,11644,2022-03-01,7.582,75.7,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1304",1304,48459,2022-03-02,7.566,80.167,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",61
+"1305",1305,5872,2022-03-09,7.548,87.567,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",68
+"1306",1306,12689,2022-03-10,7.529,58.7,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",69
+"1307",1307,38873,2022-03-08,7.514,66.533,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",67
+"1308",1308,54095,2022-03-08,7.489,82,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1309",1309,47499,2022-03-13,7.489,63.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1310",1310,47555,2022-03-08,7.469,81.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1311",1311,47559,2022-03-19,7.457,92.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",78
+"1312",1312,11180,2022-03-04,7.434,78.25,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",63
+"1313",1313,31261,2022-03-08,7.426,64.714,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",67
+"1314",1314,12759,2022-03-02,7.395,91.033,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",61
+"1315",1315,12286,2022-03-01,7.379,74.379,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",60
+"1316",1316,1334,2022-03-02,7.347,71.75,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",61
+"1317",1317,757,2022-03-13,7.322,60.667,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1318",1318,38871,2022-03-10,7.307,61.267,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",69
+"1319",1319,12787,2022-03-07,7.304,92,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",66
+"1320",1320,4329,2022-03-20,7.289,79.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1321",1321,47477,2022-03-20,7.281,76.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1322",1322,11644,2022-03-10,7.28,63,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",69
+"1323",1323,5872,2022-03-18,7.277,84.867,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",77
+"1324",1324,11184,2022-03-08,7.252,83.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1325",1325,47457,2022-03-08,7.208,82.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1326",1326,47581,2022-03-17,7.207,78.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1327",1327,47615,2022-03-20,7.19,82.8,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",79
+"1328",1328,47477,2022-03-17,7.103,83.8,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1329",1329,31261,2022-03-17,7.09,68,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",76
+"1330",1330,31261,2022-03-11,7.041,66.333,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",70
+"1331",1331,20521,2022-03-20,7.006,77.8,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1332",1332,6004,2022-03-19,7.001,83.933,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",78
+"1333",1333,6008,2022-03-04,6.989,71.933,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",63
+"1334",1334,47465,2022-03-14,6.982,69.833,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1335",1335,47559,2022-03-18,6.951,85.586,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",77
+"1336",1336,47581,2022-03-07,6.942,94.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1337",1337,1334,2022-03-19,6.909,73,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",78
+"1338",1338,12787,2022-03-08,6.897,87.133,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",67
+"1339",1339,47555,2022-03-13,6.883,57.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1340",1340,11180,2022-03-08,6.869,72.75,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1341",1341,12759,2022-03-19,6.856,89.833,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",78
+"1342",1342,47495,2022-03-08,6.822,83.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1343",1343,11180,2022-03-01,6.82,61,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",60
+"1344",1344,12689,2022-03-19,6.764,93.467,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",78
+"1345",1345,12823,2022-03-08,6.753,86.6,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",67
+"1346",1346,1334,2022-03-10,6.743,62.567,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",69
+"1347",1347,6008,2022-03-08,6.661,72.033,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",67
+"1348",1348,11190,2022-03-08,6.621,82,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1349",1349,4329,2022-03-17,6.586,79.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1350",1350,12785,2022-03-01,6.574,80.633,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",60
+"1351",1351,38917,2022-03-04,6.563,73.767,"Caswell",37033,"Not urban","Middle income","Moderate unemployment","Piedmont Triad",63
+"1352",1352,12747,2022-03-19,6.51,73.308,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",78
+"1353",1353,45621,2022-03-14,6.501,70,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1354",1354,47487,2022-03-13,6.499,56.533,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1355",1355,12697,2022-03-04,6.429,74.833,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",63
+"1356",1356,47459,2022-03-08,6.414,82.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1357",1357,28147,2022-03-08,6.412,80.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1358",1358,54093,2022-03-14,6.36,68,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1359",1359,48459,2022-03-14,6.354,72.933,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",73
+"1360",1360,47615,2022-03-08,6.341,84.739,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",67
+"1361",1361,37403,2022-03-08,6.332,82.733,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1362",1362,6004,2022-03-12,6.301,66,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",71
+"1363",1363,12787,2022-03-14,6.297,87.419,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",73
+"1364",1364,47469,2022-03-08,6.294,81.133,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1365",1365,5988,2022-03-08,6.292,84.7,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",67
+"1366",1366,5872,2022-03-12,6.222,84.9,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",71
+"1367",1367,57681,2022-03-06,6.217,83.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",65
+"1368",1368,12759,2022-03-09,6.21,66.5,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",68
+"1369",1369,2873,2022-03-13,6.208,62.133,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1370",1370,36451,2022-03-02,6.205,81.8,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",61
+"1371",1371,6022,2022-03-13,6.203,65.933,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1372",1372,1334,2022-03-12,6.172,63.4,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",71
+"1373",1373,47505,2022-03-08,6.118,81.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1374",1374,48459,2022-03-20,5.976,68.467,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",79
+"1375",1375,5872,2022-03-04,5.939,83.433,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",63
+"1376",1376,3050,2022-03-17,5.919,77,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",76
+"1377",1377,47617,2022-03-08,5.87,79.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1378",1378,11184,2022-03-13,5.84,67.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1379",1379,47621,2022-03-08,5.824,80.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1380",1380,20521,2022-03-13,5.812,64.033,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1381",1381,11644,2022-03-20,5.771,80.667,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1382",1382,48459,2022-03-19,5.743,83.733,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",78
+"1383",1383,48459,2022-03-01,5.741,75.033,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",60
+"1384",1384,5872,2022-03-11,5.727,85.9,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",70
+"1385",1385,12759,2022-03-03,5.716,95.767,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",62
+"1386",1386,6028,2022-03-13,5.702,64.433,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1387",1387,31261,2022-03-13,5.639,48.733,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",72
+"1388",1388,47487,2022-03-08,5.631,81.6,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1389",1389,38875,2022-03-13,5.63,61.133,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",72
+"1390",1390,54093,2022-03-08,5.606,80,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1391",1391,25561,2022-03-08,5.562,82.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1392",1392,38871,2022-03-13,5.542,58.633,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1393",1393,52885,2022-03-20,5.464,76.067,"Rowan",37159,"Urban outlying","Middle income","Moderate unemployment","Southwest",79
+"1394",1394,6004,2022-03-10,5.454,61.767,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",69
+"1395",1395,54095,2022-03-13,5.398,69.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1396",1396,28145,2022-03-14,5.342,71.133,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1397",1397,5872,2022-03-13,5.337,80,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",72
+"1398",1398,48745,2022-03-13,5.327,58.6,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1399",1399,47617,2022-03-13,5.262,54.767,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1400",1400,47483,2022-03-13,5.214,61.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1401",1401,12697,2022-03-13,5.197,58,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",72
+"1402",1402,3050,2022-03-13,5.156,57.2,"Cumberland",37051,"Urban center","Middle income","Moderate unemployment","Sandhills",72
+"1403",1403,12823,2022-03-13,5.154,67.533,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",72
+"1404",1404,12747,2022-03-17,5.15,81.1,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",76
+"1405",1405,47477,2022-03-13,5.124,62.467,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1406",1406,12747,2022-03-02,5.12,83.267,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",61
+"1407",1407,47581,2022-03-08,5.107,84.2,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",67
+"1408",1408,6006,2022-03-13,5.102,59.4,"Gaston",37071,"Urban outlying","Middle income","Lower unemployment","Southwest",72
+"1409",1409,757,2022-03-08,5.091,83.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1410",1410,28145,2022-03-08,5.082,80,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1411",1411,47495,2022-03-13,5.06,67.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1412",1412,47465,2022-03-08,5.049,81.2,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1413",1413,31261,2022-03-10,5.021,56.733,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",69
+"1414",1414,4329,2022-03-13,4.965,61.433,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1415",1415,47559,2022-03-02,4.961,90.75,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",61
+"1416",1416,38875,2022-03-17,4.908,75.615,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",76
+"1417",1417,47493,2022-03-13,4.902,62.267,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1418",1418,31261,2022-03-12,4.9,59.867,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",71
+"1419",1419,12785,2022-03-15,4.865,88.5,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",74
+"1420",1420,47621,2022-03-13,4.849,55.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1421",1421,11180,2022-03-07,4.782,83.125,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",66
+"1422",1422,36451,2022-03-10,4.766,72.5,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",69
+"1423",1423,47465,2022-03-13,4.736,55.433,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1424",1424,37403,2022-03-13,4.711,56.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1425",1425,36451,2022-03-01,4.687,74.7,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",60
+"1426",1426,15587,2022-03-13,4.545,64.567,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1427",1427,47457,2022-03-13,4.526,59.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1428",1428,28145,2022-03-13,4.492,54.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1429",1429,11644,2022-03-17,4.468,78.967,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",76
+"1430",1430,6008,2022-03-13,4.455,64.067,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",72
+"1431",1431,45621,2022-03-08,4.44,81.633,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1432",1432,31619,2022-03-13,4.434,56.867,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1433",1433,47581,2022-03-20,4.428,89.3,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1434",1434,48459,2022-03-08,4.425,75.167,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",67
+"1435",1435,47559,2022-03-04,4.418,76.467,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",63
+"1436",1436,54093,2022-03-13,4.411,53.767,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1437",1437,48459,2022-03-09,4.361,64.133,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",68
+"1438",1438,1334,2022-03-20,4.333,64.367,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",79
+"1439",1439,47481,2022-03-13,4.298,60.533,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1440",1440,12689,2022-03-08,4.261,76.067,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",67
+"1441",1441,12759,2022-03-14,4.235,87.267,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",73
+"1442",1442,12807,2022-03-13,4.222,72.9,"Wayne",37191,"Urban center","Middle income","Moderate unemployment","Southeast",72
+"1443",1443,12785,2022-03-03,4.221,92.167,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",62
+"1444",1444,5988,2022-03-13,4.201,68.767,"Nash",37127,"Urban center","Middle income","Moderate unemployment","North Central",72
+"1445",1445,38875,2022-03-16,4.167,74.067,"Pender",37141,"Urban outlying","Higher income","Moderate unemployment","Southeast",75
+"1446",1446,12759,2022-03-04,4.122,81.833,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",63
+"1447",1447,57965,2022-03-04,4.121,75.667,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",63
+"1448",1448,47559,2022-03-17,4.105,85,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",76
+"1449",1449,6022,2022-03-20,4.095,82.467,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1450",1450,5872,2022-03-10,4.075,84.833,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",69
+"1451",1451,6004,2022-03-02,4.036,89,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",61
+"1452",1452,12286,2022-03-14,4.028,71.833,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",73
+"1453",1453,47505,2022-03-13,3.98,60.5,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1454",1454,36451,2022-03-13,3.948,63.467,"Clay",37043,"Not urban","Lower income","Moderate unemployment","Western",72
+"1455",1455,7906,2022-03-13,3.946,67.5,"Duplin",37061,"Not urban","Lower income","Moderate unemployment","Southeast",72
+"1456",1456,12689,2022-03-20,3.938,76.6,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",79
+"1457",1457,6028,2022-03-20,3.919,81.167,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1458",1458,31261,2022-03-01,3.916,62,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",60
+"1459",1459,47615,2022-03-09,3.91,78,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",68
+"1460",1460,12759,2022-03-10,3.907,61.3,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",69
+"1461",1461,15591,2022-03-13,3.89,58.067,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1462",1462,47459,2022-03-13,3.886,60.6,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1463",1463,12286,2022-03-13,3.865,57.897,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",72
+"1464",1464,12759,2022-03-08,3.831,79.517,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",67
+"1465",1465,12787,2022-03-13,3.819,71.667,"Edgecombe",37065,"Urban center","Lower income","Higher unemployment","North Central",72
+"1466",1466,11190,2022-03-13,3.796,57,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1467",1467,47559,2022-03-07,3.794,88.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",66
+"1468",1468,6008,2022-03-20,3.79,78.267,"Forsyth",37067,"Urban center","Higher income","Lower unemployment","Piedmont Triad",79
+"1469",1469,47469,2022-03-13,3.713,54.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1470",1470,12747,2022-03-08,3.558,65.333,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",67
+"1471",1471,12835,2022-03-13,3.55,63.333,"Lincoln",37109,"Urban outlying","Higher income","Lower unemployment","Southwest",72
+"1472",1472,1334,2022-03-13,3.513,55.933,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",72
+"1473",1473,1334,2022-03-08,3.454,67.367,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",67
+"1474",1474,12286,2022-03-16,3.429,76.633,"Brunswick",37019,"Urban center","Higher income","Moderate unemployment","Southeast",75
+"1475",1475,47559,2022-03-20,3.395,83.276,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",79
+"1476",1476,31261,2022-03-09,3.373,57.533,"Yancey",37199,"Not urban","Lower income","Lower unemployment","Northwest",68
+"1477",1477,12785,2022-03-05,3.359,72.7,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",64
+"1478",1478,47615,2022-03-17,3.359,79.633,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",76
+"1479",1479,5872,2022-03-17,3.356,85.533,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",76
+"1480",1480,38871,2022-03-20,3.331,77.8,"Iredell",37097,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1481",1481,1334,2022-03-09,3.262,69.9,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",68
+"1482",1482,6004,2022-03-08,3.24,75.4,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",67
+"1483",1483,12703,2022-03-20,3.22,75.333,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1484",1484,38873,2022-03-13,3.204,53.533,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",72
+"1485",1485,1326,2022-03-13,3.166,60.933,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",72
+"1486",1486,47615,2022-03-13,3.09,69,"Johnston",37101,"Urban center","Higher income","Lower unemployment","North Central",72
+"1487",1487,57965,2022-03-14,3.081,77.7,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",73
+"1488",1488,1334,2022-03-17,3.076,74.367,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",76
+"1489",1489,1326,2022-03-20,3.001,67.633,"Haywood",37087,"Urban center","Middle income","Lower unemployment","Western",79
+"1490",1490,25561,2022-03-13,2.919,60.833,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1491",1491,48459,2022-03-10,2.886,64.067,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",69
+"1492",1492,11644,2022-03-13,2.871,59.933,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1493",1493,12785,2022-03-18,2.865,89,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",77
+"1494",1494,47559,2022-03-08,2.786,82.233,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",67
+"1495",1495,12759,2022-03-20,2.756,76.933,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",79
+"1496",1496,12747,2022-03-13,2.668,59.267,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",72
+"1497",1497,12785,2022-03-11,2.641,62.967,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",70
+"1498",1498,57965,2022-03-16,2.632,68.967,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",75
+"1499",1499,57965,2022-03-01,2.61,81.267,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",60
+"1500",1500,12689,2022-03-13,2.568,71.3,"Wilkes",37193,"Urban center","Middle income","Lower unemployment","Northwest",72
+"1501",1501,47581,2022-03-13,2.52,70.9,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",72
+"1502",1502,12747,2022-03-01,2.489,75.448,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",60
+"1503",1503,6004,2022-03-20,2.449,76.467,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",79
+"1504",1504,38873,2022-03-20,2.39,72.233,"Rockingham",37157,"Urban outlying","Middle income","Moderate unemployment","Piedmont Triad",79
+"1505",1505,12785,2022-03-06,2.372,87.7,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",65
+"1506",1506,12785,2022-03-02,2.338,90.7,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",61
+"1507",1507,57965,2022-03-15,2.243,76.267,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",74
+"1508",1508,20809,2022-03-13,2.162,58,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1509",1509,1334,2022-03-01,2.009,67.467,"Macon",37113,"Not urban","Middle income","Lower unemployment","Western",60
+"1510",1510,12785,2022-03-17,1.988,72.967,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",76
+"1511",1511,12785,2022-03-19,1.974,86.967,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",78
+"1512",1512,12747,2022-03-14,1.967,70.296,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",73
+"1513",1513,47497,2022-03-20,1.956,65.259,"Wake",37183,"Urban center","Higher income","Lower unemployment","North Central",79
+"1514",1514,47559,2022-03-09,1.95,65.724,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",68
+"1515",1515,12785,2022-03-10,1.935,60.933,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",69
+"1516",1516,12759,2022-03-13,1.823,65.6,"Guilford",37081,"Urban center","Higher income","Moderate unemployment","Piedmont Triad",72
+"1517",1517,12747,2022-03-09,1.755,73.808,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",68
+"1518",1518,57965,2022-03-02,1.737,89.667,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",61
+"1519",1519,12747,2022-03-20,1.719,77.167,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",79
+"1520",1520,12867,2022-03-13,1.646,63.133,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",72
+"1521",1521,12747,2022-03-10,1.581,66.067,"Transylvania",37175,"Urban center","Middle income","Lower unemployment","Western",69
+"1522",1522,47559,2022-03-01,1.536,80,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",60
+"1523",1523,57965,2022-03-09,1.514,58.367,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",68
+"1524",1524,12785,2022-03-12,1.379,65.267,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",71
+"1525",1525,47559,2022-03-10,1.285,57.167,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",69
+"1526",1526,47559,2022-03-14,1.224,80.367,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",73
+"1527",1527,57965,2022-03-11,1.137,72.033,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",70
+"1528",1528,12785,2022-03-07,1.054,89.033,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",66
+"1529",1529,12785,2022-03-09,0.896,63.433,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",68
+"1530",1530,12785,2022-03-04,0.885,72.4,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",63
+"1531",1531,57965,2022-03-13,0.753,64.467,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",72
+"1532",1532,12785,2022-03-20,0.752,81.367,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",79
+"1533",1533,57965,2022-03-10,0.735,64,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",69
+"1534",1534,57965,2022-03-17,0.72,82.467,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",76
+"1535",1535,32481,2022-03-19,0.699,82.966,"Chatham",37037,"Urban center","Higher income","Lower unemployment","North Central",78
+"1536",1536,57965,2022-03-08,0.671,74.767,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",67
+"1537",1537,57965,2022-03-19,0.669,83.633,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",78
+"1538",1538,12785,2022-03-14,0.666,75.333,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",73
+"1539",1539,12785,2022-03-08,0.411,83.967,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",67
+"1540",1540,20809,2022-03-20,0.353,76.567,"Mecklenburg",37119,"Urban center","Higher income","Lower unemployment","Southwest",79
+"1541",1541,57965,2022-03-20,0.312,74.2,"Buncombe",37021,"Urban center","Higher income","Lower unemployment","Western",79
+"1542",1542,47559,2022-03-13,0.107,67.7,"Durham",37063,"Urban center","Higher income","Lower unemployment","North Central",72
+"1543",1543,12785,2022-03-13,0.105,59.867,"Halifax",37083,"Urban center","Lower income","Higher unemployment","Northeast",72
